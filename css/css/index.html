@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial | Skilledu</title>
+    <meta name="description" content="A complete, interactive CSS tutorial covering all topics with live code examples and a built-in code editor.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <!-- Favicon to prevent 404 error -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+    <!-- SEO & Open Graph (Added by Step 3) -->
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="CSS Tutorial | Skilledu">
+    <meta property="og:description" content="A comprehensive interactive CSS tutorial with live code examples.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Tutorial | Skilledu">
+    <meta name="twitter:description" content="A comprehensive interactive CSS tutorial with live code examples.">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    
+    <!-- Favicon & Manifest -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" href="/assets/images/logo-dark.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Complete Interactive CSS Tutorial",
+  "description": "A comprehensive CSS3 tutorial covering properties, flexbox, grid, animations, and more.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "sameAs": "https://REPLACE-WITH-REAL-DOMAIN.com"
+  },
+  "hasPart": [
+    {
+      "@type": "LearningResource",
+      "name": "Quick Guide",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/quick-guide.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Syntax",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/syntax.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Inclusion",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/inclusion.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "CSS Selectors",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/selectors.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "CSS Combinators",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/combinators.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "CSS Specificity",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/specificity.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "CSS Inheritance",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/inheritance.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Colors — Basics",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/colors-basics.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Colors — Advanced (RGBA, HSL & Opacity)",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/colors-advanced.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Box Model",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/box-model.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "CSS Display",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/display.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Positioning",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/positioning.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "CSS Float",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/float.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Visibility",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/visibility.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Text",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/text-basics.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Fonts",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/fonts.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Web Fonts",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/web-fonts.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Links",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/links.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Lists",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/lists.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Tables",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/tables.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Background",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/background.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Multi Background",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/multi-background.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Gradients",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/gradients.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Border Image",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/border-image.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Using Images",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/using-images.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Measurement Units — Absolute",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/measurement-units-absolute.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "CSS Math Functions",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/math-functions.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Measurement Units — Relative",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/measurement-units-relative.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Pseudo Classes",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/pseudo-classes.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Pseudo Elements",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/pseudo-elements.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Media Types",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/media-types.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Responsive",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/responsive.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "CSS Flexbox",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/flexbox.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "CSS Grid",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/css-grid.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Multi Columns",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/multi-columns.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Layouts",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/layouts.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "CSS Transitions",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/transitions.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Animation",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/animation.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "2d Transforms",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/2d-transforms.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "3D Transforms",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/3d-transforms.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "CSS Variables (Custom Properties)",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/css-variables.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "User Interface",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/user-interface.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Cursors",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/cursors.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Text",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/text-overflow.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Layers",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/layers.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "@ Rules",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/rules.html"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Validations",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/validations.html"
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+
+    <!-- ===================================================
+         SECTION 1: HOME PAGE
+    =================================================== -->
+    <div id="home-page" class="home-page">
+
+        <!-- Navbar -->
+        <nav class="home-nav">
+            <div class="home-nav-brand">
+                <!-- Premium Logo -->
+                <img src="assets/images/logo-light.png" class="img-logo light-only" alt="Skilledu" width="135" height="30">
+                <img src="assets/images/logo-dark.png" class="img-logo dark-only" alt="Skilledu" width="135" height="30">
+            </div>
+            <div class="home-nav-right">
+                <button class="theme-toggle-btn" id="home-theme-btn" title="Toggle Dark/Light Mode">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="4.22" x2="19.78" y2="5.64"/></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+        <div class="home-hero">
+            <!-- Floating background shapes -->
+            <div class="hero-blob hero-blob-1"></div>
+            <div class="hero-blob hero-blob-2"></div>
+
+            <div class="home-hero-inner">
+                <div class="hero-pill animate-fade-up" style="animation-delay:0s">
+                    <span class="hero-pill-dot"></span>
+                    Complete Interactive Guide
+                </div>
+                <h1 class="hero-title animate-fade-up" style="animation-delay:.1s">
+                    Master <span class="hero-highlight">CSS</span><br>Step by Step
+                </h1>
+                <p class="hero-subtitle animate-fade-up" style="animation-delay:.2s">
+                    Learn CSS with our beautifully crafted, interactive tutorial.<br>
+                    Structured examples, live editor, and real projects.
+                </p>
+
+                <div class="hero-stats animate-fade-up" style="animation-delay:.3s">
+                    <div class="hero-stat">
+                        <div class="hero-stat-num" id="total-topics-count">36</div>
+                        <div class="hero-stat-label">Chapters</div>
+                    </div>
+                    <div class="hero-stat-sep"></div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-num">100+</div>
+                        <div class="hero-stat-label">Examples</div>
+                    </div>
+                    <div class="hero-stat-sep"></div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-num">Live</div>
+                        <div class="hero-stat-label">Code Editor</div>
+                    </div>
+                </div>
+
+                <div class="hero-btns animate-fade-up" style="animation-delay:.4s">
+                    <button class="btn-start-hero" id="btn-start">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        Start Learning Now
+                    </button>
+                    <button class="btn-browse-hero" id="btn-browse">
+                        Browse Chapters
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="m9 18 6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Hero Code Card -->
+            <div class="hero-code-card-wrap animate-fade-left" style="animation-delay:.3s">
+                <div class="hero-code-card">
+                <div class="hero-card-header">
+                    <span class="hc-dot red"></span>
+                    <span class="hc-dot amber"></span>
+                    <span class="hc-dot green"></span>
+                    <span class="hc-file">style.css</span>
+                </div>
+                <pre class="hero-code-body"><code><span class="hc-sel">.button</span> {
+  <span class="hc-prop">background</span>: <span class="hc-val">linear-gradient(</span>
+    <span class="hc-val">#f5a623, #e06c10</span>
+  <span class="hc-val">)</span>;
+  <span class="hc-prop">color</span>: <span class="hc-val">#ffffff</span>;
+  <span class="hc-prop">padding</span>: <span class="hc-val">14px 32px</span>;
+  <span class="hc-prop">border-radius</span>: <span class="hc-val">40px</span>;
+  <span class="hc-prop">font-weight</span>: <span class="hc-val">700</span>;
+  <span class="hc-prop">transition</span>: <span class="hc-val">all .3s</span>;
+  <span class="hc-prop">box-shadow</span>: <span class="hc-val">0 8px 24px</span>
+    <span class="hc-val">rgba(245,166,35,.35)</span>;
+}</code></pre>
+                <div class="hero-card-footer">
+                    <span class="hc-tag">CSS</span>
+                    <span class="hc-dot-pulse"></span>
+                    <span class="hc-live">Live Preview</span>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tutorial Chapters -->
+        <div class="chapters-section" id="home-topics-section">
+            <div class="chapters-header">
+                <h2>Tutorial Chapters</h2>
+                <div class="chapters-underline"></div>
+                <p>Click any chapter to jump directly to it</p>
+            </div>
+            <div class="chapters-grid" id="topics-preview-grid"></div>
+        </div>
+
+        <footer class="home-footer">
+            <div class="footer-logo">
+                <img src="assets/images/logo-light.png" class="img-logo light-only" alt="Skilledu" width="135" height="30">
+                <img src="assets/images/logo-dark.png" class="img-logo dark-only" alt="Skilledu" width="135" height="30">
+            </div>
+            <p><span id="footer-progress-text">0 topics completed</span> &nbsp;•&nbsp; CSS Tutorial</p>
+        </footer>
+    </div>
+
+    <!-- ===================================================
+         SECTION 2: TUTORIAL APP
+    =================================================== -->
+    <div id="tutorial-app" class="tutorial-app" style="display:none;">
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-brand">
+                <img src="assets/images/logo-light.png" class="img-logo light-only" alt="Skilledu" width="135" height="30">
+                <img src="assets/images/logo-dark.png" class="img-logo dark-only" alt="Skilledu" width="135" height="30">
+            </div>
+            <div class="sidebar-search-wrap">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+                </svg>
+                <input type="text" id="topic-search" placeholder="Search topics..." autocomplete="off">
+            </div>
+            <div class="sidebar-progress">
+                <div class="progress-info">
+                    <span>Progress</span>
+                    <span id="progress-count">0 / 36</span>
+                </div>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar-fill" id="progress-bar"></div>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul id="topic-list"></ul>
+            </nav>
+        </aside>
+
+        <!-- Main -->
+        <div class="main-wrapper">
+            <!-- Topbar -->
+            <header class="topbar">
+                <button class="menu-btn" id="menu-btn" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <div class="topbar-actions">
+                    <!-- Prev / Next -->
+                    <button class="btn-nav-step" id="btn-prev" title="Previous Chapter">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="m15 18-6-6 6-6"/></svg>
+                        <span>Prev</span>
+                    </button>
+                    <div class="bottom-nav-info" id="bottom-nav-info" style="font-weight:600; font-size:0.9rem; color:var(--text-color); margin: 0 5px;">Chapter — of —</div>
+                    <button class="btn-nav-step" id="btn-next" title="Next Chapter">
+                        <span>Next</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="m9 18 6-6-6-6"/></svg>
+                    </button>
+
+                    <div class="topbar-sep"></div>
+
+                    <button class="theme-toggle-btn" id="tut-theme-btn" title="Toggle Dark/Light Mode">
+                        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="4.22" x2="19.78" y2="5.64"/></svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    </button>
+                    <button class="btn-home-tut" id="breadcrumb-home-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        Home
+                    </button>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <main class="content-area" id="content-area">
+                <div class="topic-content" id="topic-content"></div>
+            </main>
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+    </div>
+
+    <!-- Try It Modal -->
+    <div class="modal-backdrop" id="modal-backdrop">
+        <div class="modal" id="try-modal">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    <span>Try It Yourself</span>
+                </div>
+                <div class="modal-header-actions">
+                    <button id="modal-run-btn" class="btn-run">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        Run
+                    </button>
+                    <button id="modal-reset-btn" class="btn-reset" title="Reset">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                    </button>
+                    <button id="modal-close-btn" class="btn-modal-close" title="Close">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="editor-pane">
+                    <div class="pane-label"><span class="pane-dot html"></span>HTML / CSS / JS</div>
+                    <textarea id="code-editor" spellcheck="false" placeholder="Write your HTML/CSS/JS here..."></textarea>
+                </div>
+                <div class="preview-pane">
+                    <div class="pane-label"><span class="pane-dot preview"></span>Live Preview</div>
+                    <iframe id="preview-frame" sandbox="allow-scripts" title="Live Preview"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><polyline points="20 6 9 17 4 12"/></svg>
+        <span id="toast-msg">Copied!</span>
+    </div>
+
+    <!-- Defer applied for Core Web Vitals optimization -->
+    <script src="assets/js/chapters.js?v=1785146225512" defer></script>
+    <script src="assets/js/app.js?v=1785146225513" defer></script>
+</body>
+</html>

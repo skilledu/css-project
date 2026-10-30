@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradients | Skilledu Tutorial</title>
+    <meta name="description" content="Gradients display the combination of two or more colors as shown below:">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/gradients.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Gradients | Skilledu Tutorial">
+    <meta property="og:description" content="Gradients display the combination of two or more colors as shown below:">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/gradients.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Gradients | Skilledu Tutorial">
+    <meta name="twitter:description" content="Gradients display the combination of two or more colors as shown below:">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Gradients",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/gradients.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Gradients | Skilledu Tutorial",
+  "description": "Gradients display the combination of two or more colors as shown below:",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/gradients.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'gradients';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-gradients" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-gradients" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 24</span>
+    <h1>Gradients</h1>
+  </div>
+  <div class="topic-section">
+    <h2>What is Gradients?</h2>
+    <p>Gradients display the combination of two or more colors as shown below:</p>
+    <h2>Types of gradients</h2>
+    <table class="css-table">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Linear Gradients</td>
+          <td>down/up/left/right/diagonally</td>
+        </tr>
+        <tr>
+          <td>Radial Gradients</td>
+          <td>defined by their center</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Linear gradients</h3>
+    <p>Linear gradients are used to arrange two or more colors in linear formats like top to bottom.</p>
+    <h3>Top to bottom</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         #grad1 {
+            height: 100px;
+            background: -webkit-linear-gradient(pink,green);
+            background: -o-linear-gradient(pink,green);
+            background: -moz-linear-gradient(pink,green);
+            background: linear-gradient(pink,green);
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;div id="grad1"&gt;&lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Left to right</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         #grad1 {
+            height: 100px;
+            background: -webkit-linear-gradient(left, red , blue);
+            background: -o-linear-gradient(right, red, blue);
+            background: -moz-linear-gradient(right, red, blue);
+            background: linear-gradient(to right, red , blue);
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;div id="grad1"&gt;&lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Diagonal</h3>
+    <p>Diagonal gradients can start at the top-left and go to the bottom-right.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         #grad1 {
+            height: 100px;
+            background: -webkit-linear-gradient(left top, red , blue);
+            background: -o-linear-gradient(bottom right, red, blue);
+            background: -moz-linear-gradient(bottom right, red, blue);
+            background: linear-gradient(to bottom right, red , blue);
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;div id="grad1"&gt;&lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Multi color</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         #grad2 {
+            height: 100px;
+            background: -webkit-linear-gradient(red, orange, yellow, red, blue,
+green,pink);
+            background: -o-linear-gradient(red, orange, yellow, red, blue, green,pink);
+            background: -moz-linear-gradient(red, orange, yellow, red, blue,
+green,pink);
+            background: linear-gradient(red, orange, yellow, red, blue, green,pink);
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;div id="grad1"&gt;&lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>CSS3 Radial Gradients</h3>
+    <p>Radial gradients appear at the center by default.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         #grad1 {
+            height: 100px;
+            width: 550px;
+            background: -webkit-radial-gradient(red 5%, green 15%, pink 60%);
+            background: -o-radial-gradient(red 5%, green 15%, pink 60%);
+            background: -moz-radial-gradient(red 5%, green 15%, pink 60%);
+            background: radial-gradient(red 5%, green 15%, pink 60%);
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;div id="grad1"&gt;&lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>CSS3 Repeat Radial Gradients</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         #grad1 {
+            height: 100px;
+            width: 550px;
+            background: -webkit-repeating-radial-gradient(blue, yellow 10%, green 15%);
+            background: -o-repeating-radial-gradient(blue, yellow 10%, green 15%);
+            background: -moz-repeating-radial-gradient(blue, yellow 10%, green 15%);
+            background: repeating-radial-gradient(blue, yellow 10%, green 15%);
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;div id="grad1"&gt;&lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+
+
+<h2>Practical Examples</h2><p>A vibrant, modern button with an angled linear gradient, and a striped progress bar utilizing a repeating linear gradient:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+/* Standard Angled Gradient */
+.btn-gradient {
+   background-image: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+   color: white;
+}
+
+/* Striped Progress Bar Effect */
+.progress-bar {
+   background-image: repeating-linear-gradient(
+      45deg,
+      #3b82f6,
+      #3b82f6 10px,
+      #2563eb 10px,
+      #2563eb 20px
+   );
+}
+&lt;/style&gt;
+
+&lt;button class="btn-gradient" style="padding:15px 30px; border:none; border-radius:5px; margin-bottom:20px; color:white;"&gt;Cool Button&lt;/button&gt;
+&lt;div class="progress-bar" style="height:30px; width:100%; border-radius:15px;"&gt;&lt;/div&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Treating gradients as a color</strong> − Gradients cannot be applied to the <code>background-color</code> property. They are generated by the browser as an image, and must be applied to <code>background-image</code> (or the <code>background</code> shorthand).</li><li><strong>Failing to provide a solid fallback</strong> − Older environments or email clients strip out gradients. Always declare a solid <code>background-color</code> right before your gradient rule so the layout survives.</li><li><strong>The <code>"Gray Dead Zone"</code> in Safari</strong> − Fading from a solid color to <code>transparent</code> can create an ugly grayish-black artifact in Safari. Best practice is to fade to an invisible version of the same color (e.g., <code>rgba(255,0,0, 1)</code> to <code>rgba(255,0,0, 0)</code>).</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Use degrees for angles</strong> − While <code>to bottom right</code> is easy to read, using degrees (like <code>135deg</code>) provides far more precision and consistency, especially when syncing design files from Figma.</li><li><strong>Use Hard Stops for sharp lines</strong> − As shown in the progress bar example, if two color stops share the exact same percentage (e.g., red stops at 50%, blue starts at 50%), the gradient creates a razor-sharp dividing line instead of a soft blend.</li></ul><h2>Interview Questions</h2><p><strong>Q: Are CSS gradients applied to the <code>background-color</code> or <code>background-image</code> property?</strong></p><p>A: <code>background-image</code>. The browser dynamically generates an image from the gradient math.</p><p><strong>Q: How do you create a sharp, distinct line between two colors in a gradient instead of a smooth fade?</strong></p><p>A: By placing two color stops at the exact same location (e.g., <code>linear-gradient(to right, red 50%, blue 50%)</code>).</p><p><strong>Q: What is the difference between a linear and a radial gradient?</strong></p><p>A: A linear gradient flows in a straight line from one side to another. A radial gradient radiates outward in a circle or ellipse from a central point.</p><h2>Summary</h2><p>CSS Gradients eliminate the need for hefty background images just to create smooth color transitions. By understanding color stops, angles, and the power of repeating gradients (for stripes and patterns), you can build highly performant, visually stunning UI components directly in code.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="multi-background.html">&larr; Previous Chapter: Multi Background</a>
+            <a href="border-image.html">Next Chapter: Border Image &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

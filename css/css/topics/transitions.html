@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions | Skilledu Tutorial</title>
+    <meta name="description" content="CSS transitions allow you to change property values smoothly, over a given duration, rather than having them snap instantly. (e.g. from state A to state...">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/transitions.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Transitions | Skilledu Tutorial">
+    <meta property="og:description" content="CSS transitions allow you to change property values smoothly, over a given duration, rather than having them snap instantly. (e.g. from state A to state...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/transitions.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Transitions | Skilledu Tutorial">
+    <meta name="twitter:description" content="CSS transitions allow you to change property values smoothly, over a given duration, rather than having them snap instantly. (e.g. from state A to state...">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "CSS Transitions",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/transitions.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Transitions | Skilledu Tutorial",
+  "description": "CSS transitions allow you to change property values smoothly, over a given duration, rather than having them snap instantly. (e.g. from state A to state...",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/transitions.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'transitions';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-transitions" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-transitions" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        <div class="topic-header"><span class="topic-badge">Topic 38</span><h1>CSS Transitions</h1></div><div class="topic-section"><p>CSS transitions allow you to change property values smoothly, over a given duration, rather than having them snap instantly. (e.g. from state A to state B).</p><p><em>Note: Transitions are distinct from <strong>Animations</strong>. Transitions require a trigger (like <code>:hover</code>) and go from state A to B. Animations (using <code>@keyframes</code>) can run automatically, loop, and have multiple complex steps. We cover Animations in a separate chapter!</em></p><h3>Transition Properties</h3><table class="css-table">
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>transition-property</code></td>
+      <td>The specific CSS property you want to transition (e.g., <code>background-color</code>).</td>
+    </tr>
+    <tr>
+      <td><code>transition-duration</code></td>
+      <td>How long the transition takes (e.g., <code>0.3s</code>).</td>
+    </tr>
+    <tr>
+      <td><code>transition-timing-function</code></td>
+      <td>The speed curve of the transition.</td>
+    </tr>
+    <tr>
+      <td><code>transition-delay</code></td>
+      <td>A delay before the transition starts.</td>
+    </tr>
+    <tr>
+      <td><code>transition</code></td>
+      <td>The shorthand property for the 4 properties above.</td>
+    </tr>
+  </tbody>
+</table><h3>Common Timing Functions</h3><table class="css-table">
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>ease</code></td>
+      <td>Slow start, then fast, then end slowly (default).</td>
+    </tr>
+    <tr>
+      <td><code>linear</code></td>
+      <td>Same speed from start to end.</td>
+    </tr>
+    <tr>
+      <td><code>ease-in</code></td>
+      <td>Slow start.</td>
+    </tr>
+    <tr>
+      <td><code>ease-out</code></td>
+      <td>Slow end.</td>
+    </tr>
+    <tr>
+      <td><code>ease-in-out</code></td>
+      <td>Slow start and end.</td>
+    </tr>
+    <tr>
+      <td><code>cubic-bezier(n,n,n,n)</code></td>
+      <td>Lets you define your own custom speed curve.</td>
+    </tr>
+  </tbody>
+</table><h3>Examples</h3><p><strong>Example 1: Button Hover Color Change</strong></p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>.btn {
+   background-color: blue;
+   transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+   background-color: red;
+}</code></pre></div><p><strong>Example 2: Scale Transformation</strong></p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>.card {
+   transform: scale(1);
+   transition: transform 0.2s linear;
+}
+
+.card:hover {
+   transform: scale(1.1);
+}</code></pre></div>
+
+<h2>Practical Examples</h2><p>A modern, interactive button that smoothly changes color and scales up slightly when hovered:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+.btn-interactive {
+   background-color: #3b82f6;
+   color: white;
+   padding: 10px 20px;
+   transform: scale(1);
+
+   /* Apply the transition to the DEFAULT state, not the hover state */
+   transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.btn-interactive:hover {
+   background-color: #1d4ed8;
+   transform: scale(1.05);
+}
+&lt;/style&gt;
+
+&lt;div style="padding:20px; text-align:center;"&gt;
+  &lt;button class="btn-interactive"&gt;Hover Me!&lt;/button&gt;
+&lt;/div&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Putting the transition on the <code>:hover</code> state</strong> − If you put the <code>transition</code> property inside <code>.btn:hover</code>, the animation will play smoothly when the mouse enters, but will instantly snap back abruptly when the mouse leaves. Always put it on the default state!</li><li><strong>Transitioning <code>display</code></strong> − You cannot transition an element from <code>display: none</code> to <code>display: block</code>. It will snap instantly. You must transition <code>opacity</code> or <code>visibility</code> instead.</li><li><strong>Transitioning <code>width</code> or <code>height</code></strong> − Animating layout properties (like width, height, margin) forces the browser to recalculate the layout on every single frame, causing horrible lag. Transition <code>transform</code> instead.</li><li><strong>Making transitions too slow</strong> − A 1-second hover transition feels incredibly sluggish to users. Hover effects should feel snappy.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Keep it snappy (0.2s - 0.3s)</strong> − The sweet spot for UI interactions (like hovers and clicks) is between 200ms and 300ms.</li><li><strong>Animate Hardware-Accelerated Properties</strong> − Whenever possible, only transition <code>transform</code> (scale, translate) and <code>opacity</code>. The browser hands these off to the GPU, guaranteeing a buttery-smooth 60fps. Transitioning these performs vastly better than transitioning <code>width</code>, <code>height</code>, <code>top</code>, or <code>left</code>, because the former do not trigger layout recalculation.</li><li><strong>Specify the property</strong> − Avoid using <code>transition: all</code>. It forces the browser to monitor everything, which can cause performance drops. Explicitly state the properties you want to animate.</li></ul><h2>Interview Questions</h2><p><strong>Q: What is the default <code>timing-function</code> of a transition?</strong></p><p>A: <code>ease</code>, which starts slow, goes fast in the middle, and ends slowly.</p><p><strong>Q: Why should you transition <code>transform: scale()</code> instead of <code>width</code>?</strong></p><p>A: Transitioning <code>width</code> triggers layout recalculations and repaints on every frame, causing performance lag. <code>transform</code> is handled by the GPU and does not affect surrounding elements, resulting in a smooth animation.</p><p><strong>Q: How do you transition multiple properties at different speeds?</strong></p><p>A: By separating them with commas: <code>transition: opacity 0.2s, transform 0.5s;</code>.</p><h2>Summary</h2><p>Transitions are the easiest way to make a website feel premium and interactive. By applying transitions to the default state (not the hover state) and keeping durations short and snappy, you can dramatically improve the user experience. Always prioritize animating <code>opacity</code> and <code>transform</code> for optimal performance.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="layouts.html">&larr; Previous Chapter: Layouts</a>
+            <a href="animation.html">Next Chapter: Animation &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

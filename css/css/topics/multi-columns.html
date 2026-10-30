@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Multi Columns | Skilledu Tutorial</title>
+    <meta name="description" content="CSS3 supported multi columns to arrange the text as news paper structure.">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/multi-columns.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Multi Columns | Skilledu Tutorial">
+    <meta property="og:description" content="CSS3 supported multi columns to arrange the text as news paper structure.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/multi-columns.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Multi Columns | Skilledu Tutorial">
+    <meta name="twitter:description" content="CSS3 supported multi columns to arrange the text as news paper structure.">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Multi Columns",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/multi-columns.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Multi Columns | Skilledu Tutorial",
+  "description": "CSS3 supported multi columns to arrange the text as news paper structure.",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/multi-columns.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'multi-columns';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-multi-columns" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-multi-columns" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 36</span>
+    <h1>Multi Columns</h1>
+  </div>
+  <div class="topic-section">
+    <p>CSS3 supported multi columns to arrange the text as news paper structure.</p>
+    <p>Some of most common used multi columns properties as shown below −</p>
+    <table class="css-table">
+      <thead>
+        <tr>
+          <th>Value</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>column-count</code></td>
+          <td>Used to count the number of columns that element should be divided</td>
+        </tr>
+        <tr>
+          <td><code>column-fill</code></td>
+          <td>Used to decide, how to fill the columns</td>
+        </tr>
+        <tr>
+          <td><code>column-gap</code></td>
+          <td>Used to decide the gap between the columns</td>
+        </tr>
+        <tr>
+          <td><code>column-rule</code></td>
+          <td>Used to specifies the number of rules</td>
+        </tr>
+        <tr>
+          <td><code>rule-color</code></td>
+          <td>Used to specifies the column rule color</td>
+        </tr>
+        <tr>
+          <td><code>rule-style</code></td>
+          <td>Used to specifies the style rule for column</td>
+        </tr>
+        <tr>
+          <td><code>rule-width</code></td>
+          <td>Used to specifies the width</td>
+        </tr>
+        <tr>
+          <td><code>column-span</code></td>
+          <td>Used to specifies the span between columns</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Example</h3>
+    <p>Below example shows the arrangement of text as new paper structure.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         .multi {
+            /* Column count property */
+            -webkit-column-count: 4;
+            -moz-column-count: 4;
+            column-count: 4;
+            /* Column gap property */
+            -webkit-column-gap: 40px;
+            -moz-column-gap: 40px;
+            column-gap: 40px;
+            /* Column style property */
+            -webkit-column-rule-style: solid;
+            -moz-column-rule-style: solid;
+            column-rule-style: solid;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;div class="multi"&gt;
+         This is an Hello World used to demonstrate CSS styling.
+         Tutorials Point originated from the idea that there exists a class of readers who respond better to online content and prefer to learn new skills at their own pace from the comforts of their drawing rooms. The journey commenced with a single tutorial on HTML in 2006 and elated by the response it generated, we worked our way to adding fresh tutorials to our repository which now proudly flaunts a wealth of tutorials and allied articles on topics ranging from programming languages to web designing to academics and much more.
+      &lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <p>For suppose, if user wants to make text as new paper without line, we can do this by removing style syntax as shown below</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>.multi {
+   /* Column count property */
+   -webkit-column-count: 4;
+   -moz-column-count: 4;
+   column-count: 4;
+   /* Column gap property */
+   -webkit-column-gap: 40px;
+   -moz-column-gap: 40px;
+   column-gap: 40px;
+}</code></pre>
+    </div>
+
+
+
+<h2>Practical Examples</h2><p>A classic, responsive card grid (like Pinterest) built using the CSS Multi-column layout module, ensuring cards aren't sliced in half:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+.card-masonry {
+   column-width: 300px; /* Responsive: browsers calculate how many columns fit */
+   column-gap: 20px;
+}
+
+.card {
+   /* CRITICAL: Prevents the card from being cut in half across two columns */
+   break-inside: avoid;
+   margin-bottom: 20px;
+   background: #fff;
+   border-radius: 8px;
+}
+&lt;/style&gt;
+
+&lt;div class="card-masonry"&gt;
+  &lt;div class="card" style="height:100px; background:#eee; margin-bottom:10px; padding:10px;"&gt;Card 1&lt;/div&gt;
+  &lt;div class="card" style="height:150px; background:#ddd; margin-bottom:10px; padding:10px;"&gt;Card 2&lt;/div&gt;
+  &lt;div class="card" style="height:80px; background:#ccc; margin-bottom:10px; padding:10px;"&gt;Card 3&lt;/div&gt;
+  &lt;div class="card" style="height:120px; background:#bbb; margin-bottom:10px; padding:10px;"&gt;Card 4&lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Using CSS Columns for UI grids</strong> − CSS Columns read vertically (top-to-bottom, then left-to-right). If you have a list of products (1, 2, 3, 4), they will stack vertically. If you want a traditional horizontal grid (1, 2 across the top row), you MUST use CSS Grid, not CSS Columns.</li><li><strong>Forgetting <code>break-inside: avoid</code></strong> − If you put cards or paragraphs in a multi-column layout without this property, the browser will literally slice the card in half at the bottom of Column 1 and render the bottom half at the top of Column 2.</li><li><strong>Using <code>column-count</code> instead of <code>column-width</code></strong> − <code>column-count: 3</code> forces exactly 3 columns even on a narrow smartphone, crushing the content. <code>column-width</code> is natively responsive.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Use for Masonry Image Galleries</strong> − CSS Grid struggles with true masonry (Pinterest-style) layouts where items have varying heights. CSS Multi-columns handles varying heights beautifully, making it the best tool for masonry image galleries.</li><li><strong>Use <code>column-rule</code> for neat dividers</strong> − Instead of hacking borders onto child elements, use <code>column-rule: 1px solid #ccc;</code> to automatically draw perfect vertical lines between your columns.</li></ul><h2>Interview Questions</h2><p><strong>Q: What CSS property prevents an element from being split across two columns in a multi-column layout?</strong></p><p>A: <code>break-inside: avoid;</code>.</p><p><strong>Q: How does <code>column-width</code> act responsively without media queries?</strong></p><p>A: It acts as a minimum optimal width. The browser will automatically divide the container width by the <code>column-width</code> value to determine how many columns can fit. As the screen shrinks, the number of columns naturally decreases.</p><p><strong>Q: How do you make a headline span completely across all columns?</strong></p><p>A: Apply <code>column-span: all;</code> to the headline element.</p><h2>Summary</h2><p>The CSS Multi-column Layout module mimics classic newspaper typesetting. While it shouldn't be used for main structural UI layouts, it remains the absolute best, most responsive tool for flowing long text natively and building varying-height masonry layouts like Pinterest.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="css-grid.html">&larr; Previous Chapter: CSS Grid</a>
+            <a href="layouts.html">Next Chapter: Layouts &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

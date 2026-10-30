@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables (Custom Properties) | Skilledu Tutorial</title>
+    <meta name="description" content="CSS variables (officially known as custom properties) are entities defined by CSS authors that contain specific values to be reused throughout a document....">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/css-variables.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Variables (Custom Properties) | Skilledu Tutorial">
+    <meta property="og:description" content="CSS variables (officially known as custom properties) are entities defined by CSS authors that contain specific values to be reused throughout a document....">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/css-variables.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Variables (Custom Properties) | Skilledu Tutorial">
+    <meta name="twitter:description" content="CSS variables (officially known as custom properties) are entities defined by CSS authors that contain specific values to be reused throughout a document....">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "CSS Variables (Custom Properties)",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/css-variables.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Variables (Custom Properties) | Skilledu Tutorial",
+  "description": "CSS variables (officially known as custom properties) are entities defined by CSS authors that contain specific values to be reused throughout a document....",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/css-variables.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'css-variables';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-css-variables" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-css-variables" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        <div class="topic-header"><span class="topic-badge">Topic 42</span><h1>CSS Variables (Custom Properties)</h1></div><div class="topic-section"><h3>Introduction to CSS Variables</h3><p>CSS variables (officially known as custom properties) are entities defined by CSS authors that contain specific values to be reused throughout a document. They make it easy to maintain themes, colors, and sizing across a large project.</p><h3>Declaring and Using Variables</h3><p>Variables are declared using double hyphens (<code>--</code>) and accessed using the <code>var()</code> function.</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>/* Declaring globally */
+:root {
+   --primary-color: #3b82f6;
+   --spacing-md: 16px;
+}
+
+/* Using variables */
+.btn {
+   background-color: var(--primary-color);
+   padding: var(--spacing-md);
+}</code></pre></div><h3>Fallback Values</h3><p>You can provide a fallback value in the <code>var()</code> function in case the variable is not defined.</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>.text {
+   /* Will use #333 if --text-color is missing */
+   color: var(--text-color, #333);
+}</code></pre></div><h2>Scoping (Global vs Local)</h2><p>Variables follow CSS cascading rules. Variables declared in the <code>:root</code> pseudo-class are global. Variables declared inside a specific selector are local to that element and its children.</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>.card {
+   --card-bg: #fff; /* Local variable */
+   background-color: var(--card-bg);
+}
+
+.card-dark {
+   --card-bg: #222; /* Overriding local variable */
+}</code></pre></div><h3>Theming</h3><p>Variables make dark mode toggling extremely easy. You just swap the variable values!</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>:root {
+   --bg-color: #ffffff;
+   --text-color: #000000;
+}
+
+body.dark-theme {
+   --bg-color: #1a1a1a;
+   --text-color: #ffffff;
+}
+
+body {
+   background-color: var(--bg-color);
+   color: var(--text-color);
+}</code></pre></div><h2>Practical Examples</h2>
+<p>Here is a complete, working example using CSS variables for theming.</p>
+<div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">HTML/CSS</span></div><div class="code-actions"><button type="button" class="btn-copy">Copy</button><button type="button" class="btn-try">Try It Yourself</button></div></div><pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         :root {
+            --primary-color: #4CAF50;
+            --text-color: white;
+         }
+         .btn {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;h1&gt;CSS Variables Example&lt;/h1&gt;
+      &lt;button class="btn"&gt;Themed Button&lt;/button&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre></div>
+<h2>Common Mistakes</h2><ul class="list"><li><strong>Case Sensitivity:</strong> CSS variables are case-sensitive. <code>--primaryColor</code> is not the same as <code>--primarycolor</code>.</li><li><strong>Forgetting the var() function:</strong> You cannot write <code>color: --primary-color;</code>. It must be <code>color: var(--primary-color);</code>.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Use :root for Globals:</strong> Always define your global design tokens (colors, typography, spacing) in the <code>:root</code> selector.</li><li><strong>Semantic Naming:</strong> Name variables based on their intent (<code>--color-danger</code>) rather than their value (<code>--color-red</code>).</li></ul><h2>Interview Questions</h2><ul class="list"><li><strong>What is the difference between CSS Variables and SASS Variables?</strong><br>CSS variables exist in the DOM, meaning they can be changed dynamically with JavaScript and respect the cascade. SASS variables are compiled away into hardcoded values.</li><li><strong>Can CSS variables be updated with JavaScript?</strong><br>Yes! You can use <code>element.style.setProperty('--var-name', 'value')</code>.</li></ul><h2>Summary</h2><p>CSS Custom Properties (Variables) bring programmatic power to raw CSS. They reduce repetition, enable dynamic theming (like light/dark mode) natively, and can be manipulated via JavaScript, making them an indispensable part of modern CSS architecture.</p>
+</div>
+
+        <nav class="page-nav">
+            <a href="3d-transforms.html">&larr; Previous Chapter: 3D Transforms</a>
+            <a href="user-interface.html">Next Chapter: User Interface &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo Elements | Skilledu Tutorial</title>
+    <meta name="description" content="CSS pseudo-elements are used to add special effects to some selectors. You do not need to use JavaScript or any other script to use those effects. A...">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/pseudo-elements.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Pseudo Elements | Skilledu Tutorial">
+    <meta property="og:description" content="CSS pseudo-elements are used to add special effects to some selectors. You do not need to use JavaScript or any other script to use those effects. A...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/pseudo-elements.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Pseudo Elements | Skilledu Tutorial">
+    <meta name="twitter:description" content="CSS pseudo-elements are used to add special effects to some selectors. You do not need to use JavaScript or any other script to use those effects. A...">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Pseudo Elements",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/pseudo-elements.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Pseudo Elements | Skilledu Tutorial",
+  "description": "CSS pseudo-elements are used to add special effects to some selectors. You do not need to use JavaScript or any other script to use those effects. A...",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/pseudo-elements.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'pseudo-elements';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-pseudo-elements" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-pseudo-elements" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 31</span>
+    <h1>Pseudo Elements</h1>
+  </div>
+  <div class="topic-section">
+    <p>CSS pseudo-elements are used to add special effects to some selectors. You do not need to use JavaScript or any other script to use those effects. A simple syntax of pseudo-element is as follows:</p>
+    <div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS Syntax</span></div><div class="code-actions"><button type="button" class="btn-copy">Copy</button></div></div><pre class="code-block"><code>selector:pseudo-element {property: value}</code></pre></div>
+    <p>CSS classes can also be combined with pseudo-elements:</p>
+    <div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS Syntax</span></div><div class="code-actions"><button type="button" class="btn-copy">Copy</button></div></div><pre class="code-block"><code>selector.class:pseudo-element {property: value}</code></pre></div>
+    <p>The most commonly used pseudo-elements are as follows:</p>
+    <table class="css-table">
+      <thead><tr>
+        <th>Pseudo-Element</th>
+        <th>Description</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>:first-line</td><td>Adds special styles to the first line of the text in a selector.</td></tr>
+        <tr><td>:first-letter</td><td>Adds special style to the first letter of the text in a selector.</td></tr>
+        <tr><td>:before</td><td>Inserts some content before an element.</td></tr>
+        <tr><td>:after</td><td>Inserts some content after an element.</td></tr>
+      </tbody>
+    </table>
+    <h3><code>first-line</code> pseudo-element</h3>
+    <p>The following example demonstrates how to use the <code>::first-line</code> element to add special effects to the first line of elements in the document.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style type="text/css"&gt;
+         p:first-line { text-decoration: underline; }
+         p.noline:first-line { text-decoration: none; }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p class="normal"&gt;This line would not have any underline because this belongs to normal class.&lt;/p&gt;
+      &lt;p&gt;The first line of this paragraph will be underlined as defined in the CSS rule
+above. Rest of the lines in this paragraph will remain normal. This example shows how to
+use :first-line pseudo element to give effect to the first line of any HTML element.&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3><code>first-letter</code> pseudo-element</h3>
+    <p>The following example demonstrates how to use the <code>::first-letter</code> element to add special effects to the first letter of elements in the document.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style type="text/css"&gt;
+         p:first-letter { font-size: 5em; }
+         p.normal:first-letter { font-size: 10px; }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p class="normal"&gt;First character of this paragraph will be normal and will have font size 10px;&lt;/p&gt;
+      &lt;p&gt;The first character of this paragraph will be 5em big  as  defined in the CSS
+rule above. Rest of the characters in this paragraph will remain normal. This example
+shows how to use :first-letter pseudo element to give effect to the first characters  of
+any HTML element.&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3><code>before</code> pseudo-element</h3>
+    <p>The following example demonstrates how to use the <code>::before</code> element to add some content before any element.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style type="text/css"&gt;
+         p::before {
+            content: "🔥 ";
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p&gt;This line will be preceded by a fire emoji.&lt;/p&gt;
+      &lt;p&gt;This line will also be preceded by a fire emoji.&lt;/p&gt;
+      &lt;p&gt;Pseudo-elements make adding icons easy!&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3><code>after</code> pseudo-element</h3>
+    <p>The following example demonstrates how to use the <code>::after</code> element to add some content after any element.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style type="text/css"&gt;
+         .new-item::after {
+            content: " New!";
+            color: white;
+            background-color: red;
+            font-size: 10px;
+            padding: 2px 5px;
+            margin-left: 5px;
+            border-radius: 3px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p&gt;Regular Item&lt;/p&gt;
+      &lt;p class="new-item"&gt;Special Limited Item&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+
+<h2>Practical Examples</h2><p>Injecting decorative quotation marks around a blockquote purely via CSS, keeping the HTML semantic and clean:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+blockquote {
+   position: relative;
+   padding: 20px 40px;
+}
+
+blockquote::before {
+   content: <code>"“"</code>; /* Injecting the opening quote */
+   position: absolute;
+   left: 10px;
+   top: -10px;
+   font-size: 4rem;
+   color: #ccc;
+}
+
+blockquote::after {
+   content: <code>"”"</code>; /* Injecting the closing quote */
+   /* Position logic goes here */
+}
+&lt;/style&gt;
+
+&lt;blockquote&gt;CSS is awesome!&lt;/blockquote&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Forgetting the <code>content</code> property</strong> − <code>::before</code> and <code>::after</code> will not render at all unless you include the <code>content</code> property. Even if it is empty, you must declare <code>content: "";</code>.</li><li><strong>Using them for critical content</strong> − Injecting important text or images via pseudo-elements is bad for SEO and screen readers. They should be used strictly for decorative flourishes.</li><li><strong>Using single colons (<code>:before</code>)</strong> − While older browsers supported single colons, the modern CSS3 standard requires double colons (<code>::</code>) to clearly distinguish pseudo-elements from pseudo-classes.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Use for purely visual elements</strong> − Use pseudo-elements for custom bullet points, custom checkboxes, quotation marks, or gradient overlays. This keeps your HTML DOM lean and semantic.</li><li><strong>Display block</strong> − By default, <code>::before</code> and <code>::after</code> render as inline elements. If you want to give them width/height, you must set them to <code>display: block</code> or <code>inline-block</code> (unless they are absolutely positioned).</li><li><strong>Keep essential content in HTML</strong> − Content inserted via <code>::before</code> and <code>::after</code> with the <code>content:</code> property is often invisible to screen readers. It should only be used for decorative elements, not essential information.</li></ul><h2>Interview Questions</h2><p><strong>Q: Why is the <code>content</code> property mandatory for <code>::before</code> and <code>::after</code>?</strong></p><p>A: Because pseudo-elements are virtually injected into the DOM. Without the <code>content</code> property, the browser assumes there is nothing to inject, so the element is never generated.</p><p><strong>Q: Can you interact with pseudo-elements using JavaScript?</strong></p><p>A: Not directly. Because they are not part of the actual HTML DOM (they only exist in the CSS rendering tree), you cannot attach event listeners (like clicks) directly to a pseudo-element.</p><p><strong>Q: What does the <code>::selection</code> pseudo-element do?</strong></p><p>A: It allows you to style the background color and text color of the text that a user highlights/selects with their mouse.</p><h2>Summary</h2><p>Pseudo-elements act like virtual HTML tags created entirely within CSS. They allow you to add decorative content, icons, and complex stylistic overlays to elements without bloating your actual HTML markup. Always remember the double colon syntax and the mandatory <code>content</code> property.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="pseudo-classes.html">&larr; Previous Chapter: Pseudo Classes</a>
+            <a href="media-types.html">Next Chapter: Media Types &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

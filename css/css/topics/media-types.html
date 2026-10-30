@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Types | Skilledu Tutorial</title>
+    <meta name="description" content="One of the most important features of style sheets is that they specify how a document is to be presented on different media: on the screen, on paper,...">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/media-types.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Media Types | Skilledu Tutorial">
+    <meta property="og:description" content="One of the most important features of style sheets is that they specify how a document is to be presented on different media: on the screen, on paper,...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/media-types.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Media Types | Skilledu Tutorial">
+    <meta name="twitter:description" content="One of the most important features of style sheets is that they specify how a document is to be presented on different media: on the screen, on paper,...">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Media Types",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/media-types.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Media Types | Skilledu Tutorial",
+  "description": "One of the most important features of style sheets is that they specify how a document is to be presented on different media: on the screen, on paper,...",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/media-types.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'media-types';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-media-types" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-media-types" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 32</span>
+    <h1>Media Types</h1>
+  </div>
+  <div class="topic-section">
+    <p>One of the most important features of style sheets is that they specify how a document is to be presented on different media: on the screen, on paper, with a speech synthesizer, with a braille device, etc.</p>
+    <p>We have currently two ways to specify media dependencies for style sheets −</p>
+    <ul class="list">
+      <li>Specify the target medium from a style sheet with the <code>@media</code> or <code>@import</code> at-rules.</li>
+      <li>Specify the target medium within the document language.</li>
+    </ul>
+    <h2>The @media rule</h2>
+    <p>An @media rule specifies the target media types separated by commas, of a set of rules. Given below is an example −</p>
+
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style type="text/css"&gt;
+         /* Default screen style */
+         @media screen {
+            body { font-family: Arial; font-size: 16px; background-color: #e0f7fa; }
+            .box { padding: 20px; border: 2px solid #00acc1; border-radius: 8px; }
+         }
+
+         /* Print style */
+         @media print {
+            body { font-family: serif; font-size: 12pt; background-color: white; color: black; }
+            .box { padding: 10px; border: 1px solid black; }
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;div class="box"&gt;
+         &lt;h2&gt;The @media Rule&lt;/h2&gt;
+         &lt;p&gt;This box has a light blue background on the screen. If you print this page (Ctrl+P), the background will disappear and the text will resize to save ink!&lt;/p&gt;
+      &lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+    <h3>The Document Language</h3>
+    <p>In HTML 4.0, the media attribute on the LINK element specifies the target media of an external style sheet − Following is an example −</p>
+
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;Link Media Attribute&lt;/title&gt;
+      &lt;style&gt;
+         body { font-family: Arial; background-color: #f8fafc; color: #334155; padding: 20px; }
+      &lt;/style&gt;
+      &lt;!-- The browser will ONLY load this CSS file when printing the page --&gt;
+      &lt;link rel="stylesheet" type="text/css" media="print" href="print-styles.css"&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;h2&gt;Media Attribute Example&lt;/h2&gt;
+      &lt;p&gt;This is a normal paragraph visible on screens.&lt;/p&gt;
+      &lt;p&gt;The &lt;code&gt;media="print"&lt;/code&gt; attribute on the &lt;code&gt;&amp;lt;link&amp;gt;&lt;/code&gt; tag tells the browser to ONLY apply that specific stylesheet when the document is being printed.&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+    <h3>Recognized Media Types</h3>
+    <p>The names chosen for CSS media types reflect target devices for which the relevant properties make sense. They give a sense of what device the media type is meant to refer to. Given below is a list of various media types −</p>
+    <table class="css-table">
+      <thead>
+        <tr>
+          <th>Value</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>all</td>
+          <td>Suitable for all devices.</td>
+        </tr>
+        <tr>
+          <td>aural</td>
+          <td>Intended for speech synthesizers.</td>
+        </tr>
+        <tr>
+          <td>braille</td>
+          <td>Intended for braille tactile feedback devices.</td>
+        </tr>
+        <tr>
+          <td>embossed</td>
+          <td>Intended for paged braille printers.</td>
+        </tr>
+        <tr>
+          <td>handheld</td>
+          <td>Intended for handheld devices typically small screen, monochrome, limited bandwidth.</td>
+        </tr>
+        <tr>
+          <td>print</td>
+          <td>Intended for paged, opaque material and for documents viewed on screen in print preview mode. Please consult the section on paged media.</td>
+        </tr>
+        <tr>
+          <td>projection</td>
+          <td>Intended for projected presentations, for example projectors or print to transparencies. Please consult the section on paged media.</td>
+        </tr>
+        <tr>
+          <td>screen</td>
+          <td>Intended primarily for color computer screens.</td>
+        </tr>
+        <tr>
+          <td>tty</td>
+          <td>Intended for media using a fixed-pitch character grid, such as teletypes, terminals, or portable devices with limited display capabilities.</td>
+        </tr>
+        <tr>
+          <td>tv</td>
+          <td>Intended for television-type devices.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>NOTE − Media type names are case-insensitive.</p>
+    <h2>CSS PAGED MEDIA - @PAGE RULE</h2>
+    <p>Paged media differ from continuous media in that the content of the document is split into one or more discrete pages. Paged media includes paper, transparencies, pages that are displayed on computer screens, etc.</p>
+    <p>The CSS2 standard introduces some basic pagination control features that let authors help the browser figure out how to best print their documents.</p>
+    <p>The CSS2 page model specifies how a document is formatted within a rectangular area -- the page box -- that has a finite width and height. These features fall into two groups −</p>
+    <ul class="list">
+      <li>CSS2 features that define a particular page layout.</li>
+      <li>CSS2 features that control the pagination of a document.</li>
+    </ul>
+    <h3>Defining Pages : the @page rule</h3>
+    <p>The CSS2 defines a <code>"page box"</code>, a box of finite dimensions in which content is rendered. The page box is a rectangular region that contains two areas −</p>
+    <ul class="list">
+      <li><strong>The page area</strong> − The page area includes the boxes laid out on that page. The edges of the page area act as the initial containing block for layout that occurs between page breaks.</li>
+      <li><strong>The margin area</strong> − It surrounds the page area.</li>
+    </ul>
+    <p>You can specify the dimensions, orientation, margins, etc., of a page box within an @page rule.</p>
+    <p>The dimensions of the page box are set with the <code>size</code> property. The dimensions of the page area are the dimensions of the page box minus the margin area.</p>
+    <p>For example, the following <code>@page</code> rule sets the page box size to 8.5 × 11 inches and creates <code>2cm</code> margin on all sides between the page box edge and the page area −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>@page { size:8.5in 11in; margin: 2cm }</code></pre>
+    </div>
+
+    <p>You can use the <code>margin</code>, <code>margin-top</code>, <code>margin-bottom</code>, <code>margin-left</code>, and <code>margin-right</code> properties within the <code>@page</code> rule to set margins for your page.</p>
+    <p>Finally, the <code>marks</code> property is used within the <code>@page</code> rule to create crop and registration marks outside the page box on the target sheet. By default, no marks are printed. You may use one or both of the crop and cross keywords to create crop marks and registration marks, respectively, on the target print page.</p>
+    <h3>Setting Page Size</h3>
+    <p>The <code>size</code> property specifies the size and orientation of a page box. There are four values which can be used for page size −</p>
+    <table class="css-table">
+      <thead>
+        <tr>
+          <th>Value</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>auto</td>
+          <td>The page box will be set to the size and orientation of the target sheet.</td>
+        </tr>
+        <tr>
+          <td>landscape</td>
+          <td>Overrides the target's orientation. The page box is the same size as the target, and the longer sides are horizontal.</td>
+        </tr>
+        <tr>
+          <td>portrait</td>
+          <td>Overrides the target's orientation. The page box is the same size as the target, and the shorter sides are horizontal.</td>
+        </tr>
+        <tr>
+          <td>length</td>
+          <td>Length values for the 'size' property create an absolute page box. If only one length value is specified, it sets both the width and height of the page box. Percentage values are not allowed for the 'size' property.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>In the following example, the outer edges of the page box will align with the target. The percentage value on the <code>margin</code> property is relative to the target size so if the target sheet dimensions are 21.0cm × 29.7cm i. e. , A4, the margins are 2.10cm and 2.97cm.</p>
+
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>@page {
+   size: auto;   /* auto is the initial value */
+   margin: 10%;
+}</code></pre>
+    </div>
+    <p>The following example sets the width of the page box to be 8.5 inches and the height to be 11 inches. The page box in this example requires a target sheet size of 8.5" × 11" or larger.</p>
+
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>@page {
+   size: 8.5in 11in;  /* width height */
+}</code></pre>
+    </div>
+    <p>Once you create a named page layout, you can use it in your document by adding the <code>page</code> property to a style that is later applied to an element in your document. For example, this style renders all the tables in your document on landscape pages −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>@page { size : portrait }
+@page rotated { size : landscape }
+table { page : rotated }</code></pre>
+    </div>
+
+    <p>Due to the above rule, while printing, if the browser encounters a <code>&lt;table&gt;</code> element in your document and the current page layout is the default portrait layout, it starts a new page and prints the table on a landscape page.</p>
+    <h3>Left, Right, and First pages</h3>
+    <p>When printing double-sided documents, the page boxes on left and right pages should be different. It can be expressed through two CSS pseudo-classes as follows −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>@page :left {
+   margin-left: 4cm;
+   margin-right: 3cm;
+}
+@page :right {
+   margin-left: 3cm;
+   margin-right: 4cm;
+}</code></pre>
+    </div>
+    <p>You can specify the style for the first page of a document with the :first pseudo-class −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>@page { margin: 2cm } /* All margins set to 2cm */
+@page :first {
+   margin-top: 10cm    /* Top margin on first page 10cm */
+}</code></pre>
+    </div>
+    <h3>Controlling Pagination</h3>
+    <p>Unless you specify otherwise, page breaks occur only when the page format changes or when the content overflows the current page box. To otherwise force or suppress page breaks, use the <code>page-break-before</code>, <code>page-break-after</code>, and <code>page-break-inside</code> properties.</p>
+    <p>Both the <code>page-break-before</code> and <code>page-break-after</code> accept the <code>auto</code>, <code>always</code>, <code>avoid</code>, <code>left</code>, and <code>right</code> keywords.</p>
+    <p>The keyword <code>auto</code> is the default, it lets the browser generate page breaks as needed. The keyword <code>always</code> forces a page break before or after the element, while <code>avoid</code> suppresses a page break immediately before or after the element. The <code>left</code> and <code>right</code> keywords force one or two page breaks, so that the element is rendered on a left-hand or right-hand page.</p>
+    <p>Using pagination properties is quite straightforward. Suppose your document has level-1 headers start new chapters with level-2 headers to denote sections. You'd like each chapter to start on a new, right-hand page, but you don't want section headers to be split across a page break from the subsequent content. You can achieve this using following rule −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>h1 { page-break-before : right }
+h2 { page-break-after : avoid }</code></pre>
+    </div>
+
+    <p>Use only the <code>auto</code> and <code>avoid</code> values with the <code>page-break-inside</code> property. If you prefer that your tables not be broken across pages if possible, you would write the rule −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>table { page-break-inside : avoid }</code></pre>
+    </div>
+
+    <h3>Controlling Widows and Orphans</h3>
+    <p>In typographic lingo, orphans are those lines of a paragraph stranded at the bottom of a page due to a page break, while widows are those lines remaining at the top of a page following a page break. Generally, printed pages do not look attractive with single lines of text stranded at the top or bottom. Most printers try to leave at least two or more lines of text at the top or bottom of each page.</p>
+    <p>The <code>orphans</code> property specifies the minimum number of lines of a paragraph that must be left at the bottom of a page.</p>
+    <p>The <code>widows</code> property specifies the minimum number of lines of a paragraph that must be left at the top of a page.</p>
+    <p>Here is the example to create 4 lines at the bottom and 3 lines at the top of each page −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>@page{orphans:4; widows:2;}</code></pre>
+    </div>
+
+
+
+<h2>Practical Examples</h2><p>A classic print media query ensuring that when a user prints the page, navigation bars are hidden and text is optimized for paper:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+/* Standard screen styles */
+body {
+   font-family: sans-serif;
+   color: #333;
+}
+
+/* Print-specific styles */
+@media print {
+   .navbar, .footer, .ad-banner {
+      display: none; /* Hide UI elements to save ink */
+   }
+
+   body {
+      font-family: serif; /* Serifs read better on paper */
+      color: #000;
+      background: transparent;
+   }
+}
+&lt;/style&gt;
+
+&lt;div class="navbar"&gt;Nav&lt;/div&gt;
+&lt;div class="ad-banner"&gt;Ad&lt;/div&gt;
+&lt;p&gt;Press Ctrl+P (or Cmd+P) to see how this page prints (nav and ads will hide).&lt;/p&gt;
+&lt;div class="footer"&gt;Footer&lt;/div&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Targeting specific phone models</strong> − Writing media queries for exactly 375px or 414px (iPhone sizes). New devices are released constantly; your layout will break. Always set breakpoints where the layout naturally breaks, not based on device specs.</li><li><strong>Forgetting the print stylesheet</strong> − Assuming your webpage looks fine when printed. Users printing articles often get 10 pages of broken navigation menus and black backgrounds wasting their ink.</li><li><strong>Max-width chaos</strong> − Building a desktop site first and using dozens of <code>max-width</code> queries to squeeze it down to mobile. This results in heavy, convoluted CSS.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Mobile-First Design (min-width)</strong> − Write the base CSS for mobile phones first. Then, use <code>@media (min-width: 768px)</code> to ADD complexity as the screen gets larger. This keeps CSS leaner and faster for mobile users.</li><li><strong>Always provide a basic print media query</strong> − Hiding the navigation, footers, and forcing text to black is a 5-minute task that vastly improves user experience for printed documents (like recipes or articles).</li><li><strong>Minimize unused media types</strong> − Loading unnecessary print or speech stylesheets on every page adds network overhead. Only include them where they are genuinely needed.</li></ul><h2>Interview Questions</h2><p><strong>Q: What is the difference between <code>@media screen</code> and <code>@media print</code>?</strong></p><p>A: <code>screen</code> applies styles only when viewed on digital displays (monitors, phones). <code>print</code> applies styles only when the user is printing the document to physical paper or saving it as a PDF.</p><p><strong>Q: What does the <code>"Mobile-First"</code> approach mean in relation to media queries?</strong></p><p>A: It means writing the default CSS rules for the smallest screens first, and then using <code>min-width</code> media queries to layer on more complex layout styles as the viewport becomes wider.</p><p><strong>Q: How do you target a device in landscape mode?</strong></p><p>A: Using the orientation feature: <code>@media (orientation: landscape) { ... }</code>.</p><h2>Summary</h2><p>Media types and media queries are the engines of Responsive Web Design. They allow a single HTML document to adapt beautifully to a smartphone, a massive desktop monitor, or a piece of printed paper. Adopting a mobile-first, <code>min-width</code> approach is the industry standard for scalable, clean CSS architecture.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="pseudo-elements.html">&larr; Previous Chapter: Pseudo Elements</a>
+            <a href="responsive.html">Next Chapter: Responsive &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

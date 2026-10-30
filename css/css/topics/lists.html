@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lists | Skilledu Tutorial</title>
+    <meta name="description" content="Lists are very helpful in conveying a set of either numbered or bulleted points. This chapter teaches you how to control list type, position, style, etc.,...">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/lists.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Lists | Skilledu Tutorial">
+    <meta property="og:description" content="Lists are very helpful in conveying a set of either numbered or bulleted points. This chapter teaches you how to control list type, position, style, etc.,...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/lists.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Lists | Skilledu Tutorial">
+    <meta name="twitter:description" content="Lists are very helpful in conveying a set of either numbered or bulleted points. This chapter teaches you how to control list type, position, style, etc.,...">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Lists",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/lists.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Lists | Skilledu Tutorial",
+  "description": "Lists are very helpful in conveying a set of either numbered or bulleted points. This chapter teaches you how to control list type, position, style, etc.,...",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/lists.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'lists';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-lists" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-lists" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 20</span>
+    <h1>Lists</h1>
+  </div>
+  <div class="topic-section">
+    <p>Lists are very helpful in conveying a set of either numbered or bulleted points. This chapter teaches you how to control list type, position, style, etc., using CSS.</p>
+    <p>We have the following CSS properties, which can be used to control lists:</p>
+    <table class="css-table">
+  <thead>
+    <tr><th>Property</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>list-style-type</code></td><td>allows you to control the shape or appearance of the marker.</td></tr>
+    <tr><td><code>list-style-position</code></td><td>specifies whether a long point that wraps to a second line should align with the first line or start underneath the start of the marker.</td></tr>
+    <tr><td><code>list-style-image</code></td><td>specifies an image for the marker rather than a bullet point or number.</td></tr>
+    <tr><td><code>list-style</code></td><td>serves as shorthand for the preceding properties.</td></tr>
+    <tr><td><code>marker-offset</code></td><td>specifies the distance between a marker and the text in the list.</td></tr>
+  </tbody>
+</table>
+  </div>
+
+  <div class="topic-section">
+    <h3>The list-style-type Property</h3>
+    <p>The <code>list-style-type</code> property allows you to control the shape or style of bullet point (also known as a marker) in the case of unordered lists and the style of numbering characters in ordered lists.</p>
+
+    <h3 style="margin-top: 24px; margin-bottom: 12px; font-size: 1.1em; color: var(--white);">Unordered List Values</h3>
+    <table class="css-table">
+  <thead>
+    <tr><th>Value</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>none</code></td><td>NA (Removes the marker)</td></tr>
+    <tr><td><code>disc</code></td><td>A filled-in circle (default)</td></tr>
+    <tr><td><code>circle</code></td><td>An empty circle</td></tr>
+    <tr><td><code>square</code></td><td>A filled-in square</td></tr>
+  </tbody>
+</table>
+
+    <h3 style="margin-top: 24px; margin-bottom: 12px; font-size: 1.1em; color: var(--white);">Ordered List Values</h3>
+    <table class="css-table">
+  <thead>
+    <tr><th>Value</th><th>Description</th><th>Example</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>decimal</code></td><td>Number</td><td>1, 2, 3, 4, 5</td></tr>
+    <tr><td><code>decimal-leading-zero</code></td><td>0 before the number</td><td>01, 02, 03, 04, 05</td></tr>
+    <tr><td><code>lower-alpha</code></td><td>Lowercase alphanumeric characters</td><td>a, b, c, d, e</td></tr>
+    <tr><td><code>upper-alpha</code></td><td>Uppercase alphanumeric characters</td><td>A, B, C, D, E</td></tr>
+    <tr><td><code>lower-roman</code></td><td>Lowercase Roman numerals</td><td>i, ii, iii, iv, v</td></tr>
+    <tr><td><code>upper-roman</code></td><td>Uppercase Roman numerals</td><td>I, II, III, IV, V</td></tr>
+    <tr><td><code>lower-greek</code></td><td>The marker is lower-greek</td><td>alpha, beta, gamma</td></tr>
+  </tbody>
+</table>
+  </div>
+
+  <div class="topic-section">
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         ul { list-style-type: square; }
+         ol { list-style-type: upper-alpha; }
+         ol.roman { list-style-type: lower-roman; }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;h3&gt;Unordered List&lt;/h3&gt;
+      &lt;ul&gt;
+         &lt;li&gt;Square Item 1&lt;/li&gt;
+         &lt;li&gt;Square Item 2&lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;h3&gt;Ordered List&lt;/h3&gt;
+      &lt;ol&gt;
+         &lt;li&gt;First item (A)&lt;/li&gt;
+         &lt;li&gt;Second item (B)&lt;/li&gt;
+      &lt;/ol&gt;
+
+      &lt;ol class="roman"&gt;
+         &lt;li&gt;First roman item (i)&lt;/li&gt;
+         &lt;li&gt;Second roman item (ii)&lt;/li&gt;
+      &lt;/ol&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+<h2>Practical Examples</h2><p>Styling a list to remove default browser styling, and replacing the bullets with a custom SVG icon using the <code>::before</code> pseudo-element (which offers better alignment control than <code>list-style-image</code>):</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+.custom-list {
+   list-style: none; /* Remove default bullets */
+   padding: 0;       /* Remove default indentation */
+}
+
+.custom-list li {
+   position: relative;
+   padding-left: 30px;
+   margin-bottom: 10px;
+}
+
+.custom-list li::before {
+   content: <code>"✓"</code>;
+   position: absolute;
+   left: 0;
+   color: #10b981; /* Green checkmark */
+   font-weight: bold;
+}
+&lt;/style&gt;
+
+&lt;ul class="custom-list"&gt;
+  &lt;li&gt;First custom item&lt;/li&gt;
+  &lt;li&gt;Second custom item&lt;/li&gt;
+&lt;/ul&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Removing padding without replacing it</strong> − Browsers add default left-padding to <code>&lt;ul&gt;</code> to make room for bullets. If you set <code>padding: 0;</code> but keep <code>list-style-type: disc</code>, the bullets will render outside the screen edge.</li><li><strong>Using <code>list-style-position: inside</code> carelessly</strong> − If a list item wraps to a second line, <code>inside</code> causes the text to wrap directly under the bullet point rather than aligning cleanly with the text above it.</li><li><strong>Using <code>list-style-image</code> for complex icons</strong> − This property is notoriously difficult to position vertically. Using a background image or a pseudo-element is much easier to align.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Reset lists when used for layout</strong> − If you are using a <code>&lt;ul&gt;</code> for a navigation bar, immediately apply <code>list-style: none;</code> and <code>padding: 0;</code> to reset it to a clean slate.</li><li><strong>Prefer pseudo-elements for custom bullets</strong> − As shown in the practical example, <code>::before</code> gives you pixel-perfect control over the size, color, and vertical alignment of custom bullet icons.</li></ul><h2>Interview Questions</h2><p><strong>Q: How do you completely remove the bullets from an unordered list?</strong></p><p>A: Apply <code>list-style: none;</code> or <code>list-style-type: none;</code>.</p><p><strong>Q: What is the difference between <code>list-style-position: inside</code> and <code>outside</code>?</strong></p><p>A: <code>outside</code> (the default) places the bullet outside the text flow, so multi-line text aligns perfectly. <code>inside</code> brings the bullet into the text block, meaning wrapped text will sit directly underneath the bullet.</p><p><strong>Q: Can you style the default bullet color without changing the text color?</strong></p><p>A: Yes, in modern CSS you can use the <code>::marker</code> pseudo-element (e.g., <code>li::marker { color: red; }</code>) to style the bullet independently.</p><h2>Summary</h2><p>While lists are simple by nature, they form the structural backbone of navigation menus and feature sets. Understanding how to reset their default padding, control bullet positioning, and inject custom icons via pseudo-elements allows you to transform boring lists into engaging UI components.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="links.html">&larr; Previous Chapter: Links</a>
+            <a href="tables.html">Next Chapter: Tables &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

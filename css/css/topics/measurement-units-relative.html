@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Measurement Units — Relative | Skilledu Tutorial</title>
+    <meta name="description" content="CSS supports relative measurement units such as percentages, ems, rems, and viewport units. These specify a length relative to another length property,...">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/measurement-units-relative.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Measurement Units — Relative | Skilledu Tutorial">
+    <meta property="og:description" content="CSS supports relative measurement units such as percentages, ems, rems, and viewport units. These specify a length relative to another length property,...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/measurement-units-relative.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Measurement Units — Relative | Skilledu Tutorial">
+    <meta name="twitter:description" content="CSS supports relative measurement units such as percentages, ems, rems, and viewport units. These specify a length relative to another length property,...">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Measurement Units — Relative",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/measurement-units-relative.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Measurement Units — Relative | Skilledu Tutorial",
+  "description": "CSS supports relative measurement units such as percentages, ems, rems, and viewport units. These specify a length relative to another length property,...",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/measurement-units-relative.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'measurement-units-relative';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-measurement-units-relative" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-measurement-units-relative" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 29</span>
+    <h1>Measurement Units — Relative</h1>
+  </div>
+  <div class="topic-section">
+    <p>CSS supports relative measurement units such as percentages, ems, rems, and viewport units. These specify a length relative to another length property, making them ideal for responsive design.</p>
+    <h2>Relative Units</h2>
+    <table class="css-table">
+      <thead>
+        <tr>
+          <th>Unit</th>
+          <th>Description</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr>
+          <td>%</td>
+          <td>Defines a measurement as a percentage relative to another value, typically an enclosing element.</td>
+          <td>p { font-size: 16%; }</td>
+        </tr>
+<tr>
+          <td>em</td>
+          <td>A relative measurement equal to the current font size. If font is 12pt, then 1em = 12pt; 2em = 24pt.</td>
+          <td>p { letter-spacing: 7em; }</td>
+        </tr>
+<tr>
+          <td>ex</td>
+          <td>Defines a measurement relative to a font's x-height — the height of the lowercase letter 'x'.</td>
+          <td>p { line-height: 3ex; }</td>
+        </tr>
+<tr>
+          <td>vh</td>
+          <td>1% of viewport height.</td>
+          <td>h2 { font-size: 3.0vh; }</td>
+        </tr>
+<tr>
+          <td>vw</td>
+          <td>1% of viewport width.</td>
+          <td>h1 { font-size: 5.9vw; }</td>
+        </tr>
+<tr>
+          <td>vmin</td>
+          <td>1vw or 1vh, whichever is smaller.</td>
+          <td>p { font-size: 2vmin; }</td>
+        </tr>
+
+        <tr>
+          <td>rem</td>
+          <td>A relative measurement equal to the root element's font size.</td>
+          <td>p { margin-bottom: 1.5rem; }</td>
+        </tr>
+
+        <tr>
+          <td>vmax</td>
+          <td>1vw or 1vh, whichever is larger.</td>
+          <td>div { padding: 5vmax; }</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Code Examples</h2>
+
+    <h3>Percentage (%)</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>p {
+   font-size: 16pt;
+   line-height: 125%;
+}</code></pre>
+    </div>
+
+
+    <h3>em Unit</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>body {
+   font-size: 16px;  /* base font */
+}
+h1 {
+   font-size: 2em;   /* 2 x 16px = 32px */
+}
+p {
+   letter-spacing: 0.5em;
+}</code></pre>
+    </div>
+
+
+
+    <h3>ex Unit</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>p {
+   line-height: 3ex;
+}</code></pre>
+    </div>
+
+    <h3>rem Unit</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>html {
+   font-size: 16px; /* Root font */
+}
+p {
+   margin-bottom: 1.5rem; /* 1.5 * 16px = 24px */
+}</code></pre>
+    </div>
+
+    <h3>Viewport Units (vh, vw, vmin, vmax)</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>h2 {
+   font-size: 3.0vh;  /* 3% of viewport height */
+}
+h1 {
+   font-size: 5.9vw;  /* 5.9% of viewport width */
+}
+p {
+   font-size: 2vmin;  /* 2% of smaller dimension */
+}
+div {
+   padding: 5vmax;    /* 5% of larger dimension */
+}</code></pre>
+    </div>
+
+
+
+<h2>Practical Examples</h2><p>A responsive layout pattern using a mix of absolute (px) and relative (rem, %) units for scalability:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+.container {
+   /* Layout uses relative percentages */
+   width: 90%;
+   max-width: 1200px; /* Absolute cap */
+   margin: 0 auto;
+}
+
+.card {
+   /* Spacing and typography use rem for accessibility */
+   padding: 2rem;
+   border-radius: 8px; /* px is fine for small decorative touches */
+}
+
+.card-title {
+   font-size: 1.5rem;
+   margin-bottom: 0.5em; /* em is relative to this element's font-size */
+}
+&lt;/style&gt;
+
+&lt;div class="container"&gt;
+  &lt;div class="responsive-box"&gt;I scale based on the root font size and container width!&lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Using px for font sizes</strong> − Hardcoding <code>font-size: 16px;</code> ignores the user's browser accessibility settings. If a visually impaired user scales up their default text size, <code>px</code> values will stubbornly remain small.</li><li><strong>Confusing em and rem</strong> − <code>em</code> compounds wildly when nested (a <code>2em</code> font inside a <code>2em</code> font becomes 4x the size). <code>rem</code> always relates to the root HTML, making it predictable.</li><li><strong>Setting fixed heights in px</strong> − Setting <code>height: 300px;</code> on a container. If text wraps on mobile, the content will overflow the fixed box. Use <code>min-height</code> instead.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Typography &amp; Spacing = REM</strong> − Use <code>rem</code> for all font sizes, margins, and paddings so your site scales perfectly with user accessibility preferences.</li><li><strong>Layout Widths = % or VW</strong> − Use percentages or viewport units for container widths to ensure they shrink fluidly on mobile devices.</li><li><strong>Borders &amp; Small Details = PX</strong> − It is perfectly fine to use <code>px</code> for 1px borders or subtle box-shadows where scaling isn't necessary.</li><li><strong>Accessibility benefits</strong> − Relative units like <code>rem</code> and <code>em</code> scale dynamically with user font-size preferences, unlike fixed <code>px</code> units, making them essential for accessible typography.</li></ul><h2>Interview Questions</h2><p><strong>Q: What is the difference between <code>rem</code> and <code>em</code>?</strong></p><p>A: <code>rem</code> (root em) is relative to the font-size of the root HTML element. <code>em</code> is relative to the font-size of the element's direct parent, which can cause compounding size issues if nested.</p><p><strong>Q: What does <code>100vh</code> mean?</strong></p><p>A: It stands for 100 Viewport Height. It means the element will take up exactly 100% of the visible height of the browser window.</p><p><strong>Q: Why is using <code>px</code> for font sizes considered bad practice?</strong></p><p>A: Because <code>px</code> is an absolute unit. It overrides the user's browser-level font size preferences, creating accessibility barriers for visually impaired users.</p><p><strong>Q: How do you make an element exactly half the width of the screen?</strong></p><p>A: <code>width: 50vw;</code> (50 Viewport Width).</p><h2>Summary</h2><p>Choosing the right CSS measurement unit determines whether your website is rigid and broken, or fluid and accessible. Modern CSS architecture relies heavily on relative units like <code>rem</code> and <code>%</code> to build responsive layouts that respect user accessibility settings, while reserving absolute <code>px</code> for minor decorative borders.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="math-functions.html">&larr; Previous Chapter: CSS Math Functions</a>
+            <a href="pseudo-classes.html">Next Chapter: Pseudo Classes &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

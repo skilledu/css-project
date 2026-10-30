@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 3D Transforms | Skilledu Tutorial</title>
+    <meta name="description" content="CSS 3D transforms allow you to format elements using 3D transformations. You can move, rotate, scale, and skew elements in three-dimensional space.">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/3d-transforms.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS 3D Transforms | Skilledu Tutorial">
+    <meta property="og:description" content="CSS 3D transforms allow you to format elements using 3D transformations. You can move, rotate, scale, and skew elements in three-dimensional space.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/3d-transforms.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS 3D Transforms | Skilledu Tutorial">
+    <meta name="twitter:description" content="CSS 3D transforms allow you to format elements using 3D transformations. You can move, rotate, scale, and skew elements in three-dimensional space.">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "3D Transforms",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/3d-transforms.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS 3D Transforms | Skilledu Tutorial",
+  "description": "CSS 3D transforms allow you to format elements using 3D transformations. You can move, rotate, scale, and skew elements in three-dimensional space.",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/3d-transforms.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = '3d-transforms';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-3d-transforms" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-3d-transforms" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 41</span>
+    <h1>3D Transforms</h1>
+  </div>
+  <div class="topic-section">
+    <p>CSS 3D transforms allow you to format elements using 3D transformations. You can move, rotate, scale, and skew elements in three-dimensional space.</p>
+
+    <h3>3D Transform Methods</h3>
+    <table class="css-table">
+      <thead>
+        <tr>
+          <th>Function</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><code>matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)</code></td><td>Defines a 3D transformation, using a 4x4 matrix of 16 values</td></tr>
+        <tr><td><code>translate3d(x,y,z)</code></td><td>Defines a 3D translation</td></tr>
+        <tr><td><code>translateX(x)</code></td><td>Defines a 3D translation, using only the value for the X-axis</td></tr>
+        <tr><td><code>translateY(y)</code></td><td>Defines a 3D translation, using only the value for the Y-axis</td></tr>
+        <tr><td><code>translateZ(z)</code></td><td>Defines a 3D translation, using only the value for the Z-axis</td></tr>
+        <tr><td><code>scale3d(x,y,z)</code></td><td>Defines a 3D scale transformation</td></tr>
+        <tr><td><code>scaleX(x)</code></td><td>Defines a 3D scale transformation by giving a value for the X-axis</td></tr>
+        <tr><td><code>scaleY(y)</code></td><td>Defines a 3D scale transformation by giving a value for the Y-axis</td></tr>
+        <tr><td><code>scaleZ(z)</code></td><td>Defines a 3D scale transformation by giving a value for the Z-axis</td></tr>
+        <tr><td><code>rotate3d(x,y,z,angle)</code></td><td>Defines a 3D rotation</td></tr>
+        <tr><td><code>rotateX(angle)</code></td><td>Defines a 3D rotation along the X-axis</td></tr>
+        <tr><td><code>rotateY(angle)</code></td><td>Defines a 3D rotation along the Y-axis</td></tr>
+        <tr><td><code>rotateZ(angle)</code></td><td>Defines a 3D rotation along the Z-axis</td></tr>
+        <tr><td><code>perspective(n)</code></td><td>Defines a perspective view for a 3D transformed element</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>div {
+   width: 100px;
+   height: 100px;
+   background: red;
+   transform: rotateX(150deg);
+}</code></pre>
+    </div>
+
+
+<h2>Practical Examples</h2><p>A classic flipping card interaction, where hovering over the container rotates the card 180 degrees in 3D space to reveal the back side:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+/* The parent MUST have perspective to create 3D depth */
+.card-container {
+   perspective: 1000px;
+}
+
+.card-inner {
+   transition: transform 0.6s;
+   transform-style: preserve-3d; /* Allows children to live in 3D space */
+}
+
+.card-container:hover .card-inner {
+   transform: rotateY(180deg); /* Flips it horizontally */
+}
+
+.card-back {
+   /* Hides the back side of the element when it is flipped away from the user */
+   backface-visibility: hidden;
+   transform: rotateY(180deg);
+}
+&lt;/style&gt;
+
+&lt;div class="card-container" style="width:200px; height:300px;"&gt;
+  &lt;div class="card-inner" style="position:relative; width:100%; height:100%;"&gt;
+    &lt;div style="position:absolute; width:100%; height:100%; background:blue; color:white; display:flex; align-items:center; justify-content:center; backface-visibility:hidden;"&gt;FRONT (Hover me)&lt;/div&gt;
+    &lt;div class="card-back" style="position:absolute; width:100%; height:100%; background:red; color:white; display:flex; align-items:center; justify-content:center; top:0; left:0;"&gt;BACK&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Forgetting the <code>perspective</code> property</strong> − If you apply <code>transform: rotateX(45deg)</code> without setting <code>perspective</code> on the parent, the element will just look like it awkwardly squished vertically in 2D space. Perspective gives the rotation 3D depth.</li><li><strong>Forgetting <code>backface-visibility: hidden</code></strong> − When building a flipping card, if you don't hide the backface, the user will just see a mirrored, backwards version of the front of the card when it rotates 180 degrees.</li><li><strong>Applying perspective to the transformed element itself</strong> − The <code>perspective</code> property must almost always be applied to the PARENT container holding the elements you want to transform in 3D.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Use <code>translate3d</code> for Performance Hacks</strong> − Even if you only need a 2D translation, writing <code>transform: translate3d(x, y, 0);</code> forces the browser to hardware-accelerate the element on the GPU, which can resolve flickering or lag on older devices.</li><li><strong>Keep perspective values between 500px and 1000px</strong> − A very low perspective (like 100px) creates a massive, distorted fisheye lens effect. A very high value (like 3000px) flattens the 3D effect completely.</li><li><strong>Prioritize Performance</strong> − 3D transforms are GPU-accelerated, meaning preferring <code>transform</code> over animating <code>top</code> or <code>left</code> will result in much smoother performance.</li></ul><h2>Interview Questions</h2><p><strong>Q: What does the <code>perspective</code> property do in CSS?</strong></p><p>A: It defines how far away the object is from the user. It gives a 3D-transformed element depth, determining how intense the 3D effect and foreshortening will appear.</p><p><strong>Q: What is the purpose of <code>transform-style: preserve-3d</code>?</strong></p><p>A: By default, nested elements are flattened into the 2D plane of their parent. <code>preserve-3d</code> allows children to maintain their own independent 3D positioning inside a 3D-transformed parent.</p><p><strong>Q: What happens if you don't use <code>backface-visibility: hidden</code> on a 180-degree flipped element?</strong></p><p>A: The element remains visible, but it appears completely mirrored (backwards) to the user.</p><h2>Summary</h2><p>3D Transforms bring depth and realism to web interfaces. By combining <code>rotateX</code>, <code>rotateY</code>, and <code>translateZ</code> with a strong <code>perspective</code> on the parent container, you can build engaging, hardware-accelerated interactions like flipping cards and 3D carousels with pure CSS.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="2d-transforms.html">&larr; Previous Chapter: 2d Transforms</a>
+            <a href="css-variables.html">Next Chapter: CSS Variables (Custom Properties) &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

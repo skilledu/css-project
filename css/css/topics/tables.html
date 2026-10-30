@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tables | Skilledu Tutorial</title>
+    <meta name="description" content="This tutorial will teach you how to set different properties of an HTML table using CSS. You can set following properties of a table −">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/tables.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Tables | Skilledu Tutorial">
+    <meta property="og:description" content="This tutorial will teach you how to set different properties of an HTML table using CSS. You can set following properties of a table −">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/tables.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Tables | Skilledu Tutorial">
+    <meta name="twitter:description" content="This tutorial will teach you how to set different properties of an HTML table using CSS. You can set following properties of a table −">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Tables",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/tables.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Tables | Skilledu Tutorial",
+  "description": "This tutorial will teach you how to set different properties of an HTML table using CSS. You can set following properties of a table −",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/tables.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'tables';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-tables" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-tables" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 21</span>
+    <h1>Tables</h1>
+  </div>
+  <div class="topic-section">
+    <p>This tutorial will teach you how to set different properties of an HTML table using CSS. You can set following properties of a table −</p>
+    <table class="css-table">
+  <thead>
+    <tr><th>Property</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>border-collapse</code></td><td>Specifies whether the browser should control the appearance of the adjacent borders that touch each other or whether each cell should maintain its style.</td></tr>
+    <tr><td><code>border-spacing</code></td><td>Specifies the width that should appear between table cells.</td></tr>
+    <tr><td><code>caption-side</code></td><td>Captions are presented in the &lt;caption&gt; element. By default, these are rendered above the table in the document. You use the <code>caption-side</code> property to control the placement of the table caption.</td></tr>
+    <tr><td><code>empty-cells</code></td><td>Specifies whether the border should be shown if a cell is empty.</td></tr>
+    <tr><td><code>table-layout</code></td><td>Allows browsers to speed up layout of a table by using the first <code>width</code> properties it comes across for the rest of a column rather than having to load the whole table before rendering it.</td></tr>
+  </tbody>
+</table>
+    <p>Now, we will see how to use these properties with examples. The border-collapse Property: This property can have two values <code>collapse</code> and <code>separate</code>. The following example uses both the values:</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+   &lt;style type="text/css"&gt;
+      table.one {border-collapse:collapse;}
+      table.two {border-collapse:separate;}
+      td.a {
+         border-style:dotted;
+         border-width:3px;
+         border-color:#000000;
+         padding: 10px;
+      }
+      td.b {
+         border-style:solid;
+         border-width:3px;
+         border-color:#333333;
+         padding:10px;
+      }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;table class="one"&gt;
+&lt;caption&gt;Collapse Border Example&lt;/caption&gt;
+&lt;tr&gt;&lt;td class="a"&gt; Cell A Collapse Example&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="b"&gt; Cell B Collapse Example&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br /&gt;
+&lt;table class="two"&gt;
+&lt;caption&gt;Separate Border Example&lt;/caption&gt;
+&lt;tr&gt;&lt;td class="a"&gt; Cell A Separate Example&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="b"&gt; Cell B Separate Example&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h2>The border-spacing Property</h2>
+    <p>The <code>border-spacing</code> property specifies the distance that separates adjacent cells'. borders. It can take either one or two values; these should be units of length.</p>
+    <p>If you provide one value, it will applies to both vertical and horizontal borders. Or you can specify two values, in which case, the first refers to the horizontal spacing and the second to the vertical spacing − NOTE − Unfortunately, this property does not work in Netscape 7 or IE 6.</p>
+
+    <p><strong>Example — one value:</strong></p>
+    <div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy">Copy</button></div></div><pre class="code-block"><code>table.example { border-spacing: 10px; }</code></pre></div>
+    <p><strong>Example — two values:</strong></p>
+    <div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy">Copy</button></div></div><pre class="code-block"><code>table.example { border-spacing: 10px 15px; }</code></pre></div>
+
+    <p>Now let's modify the previous example and see the effect −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+   &lt;style type="text/css"&gt;
+      table.one {.
+         border-collapse:separate;
+         width:400px;
+         border-spacing:10px;
+      }
+      table.two {
+         border-collapse:separate;
+         width:400px;
+         border-spacing:10px 50px;
+      }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;table class="two"&gt;
+&lt;caption&gt;Separate Border Example with border-spacing&lt;/caption&gt;
+&lt;tr&gt;&lt;td class="a"&gt; Cell A Collapse Example&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="b"&gt; Cell B Collapse Example&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br /&gt;
+&lt;table class="two"&gt;
+&lt;caption&gt;Separate Border Example with border-spacing&lt;/caption&gt;
+&lt;tr&gt;&lt;td class="a"&gt; Cell A Separate Example&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="b"&gt; Cell B Separate Example&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h2>The caption-side Property</h2>
+    <p>The <code>caption-side</code> property allows you to specify where the content of a &lt;caption&gt; element should be placed in relationship to the table. This property can have one of the four values <code>top</code>, <code>bottom</code>, <code>left</code> or <code>right</code>. The following example uses each value.</p>
+
+
+
+    <p>NOTE: These properties may not work with your IE Browser.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style type="text/css"&gt;
+         caption.top {caption-side:top}
+         caption.bottom {caption-side:bottom}
+         caption.left {caption-side:left}
+         caption.right {caption-side:right}
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;table style="width:400px; border:1px solid black;"&gt;
+      &lt;caption&gt;
+         This caption will appear at the top
+      &lt;/caption&gt;
+      &lt;tr&gt;&lt;td&gt; Cell A&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt; Cell B&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;br /&gt;
+      &lt;table style="width:400px; border:1px solid black;"&gt;
+      &lt;caption&gt;
+         This caption will appear at the bottom
+      &lt;/caption&gt;
+      &lt;tr&gt;&lt;td&gt; Cell A&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt; Cell B&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;br /&gt;
+      &lt;table style="width:400px; border:1px solid black;"&gt;
+      &lt;caption&gt;
+         This caption will appear at the left
+      &lt;/caption&gt;
+      &lt;tr&gt;&lt;td&gt; Cell A&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt; Cell B&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;br /&gt;
+      &lt;table style="width:400px; border:1px solid black;"&gt;
+      &lt;caption&gt;
+         This caption will appear at the right
+      &lt;/caption&gt;
+      &lt;tr&gt;&lt;td&gt; Cell A&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt; Cell B&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h2>The empty-cells Property</h2>
+    <p>The <code>empty-cells</code> property indicates whether a cell without any content should have a border displayed.</p>
+    <p>This property can have one of the three values <code>show</code>, <code>hide</code> or <code>inherit</code>.</p>
+    <p>Here is the <code>empty-cells</code> property used to hide borders of empty cells in the &lt;table&gt; element.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style type="text/css"&gt;
+         table.empty{
+            width:350px;
+            border-collapse:separate;
+            empty-cells:hide;
+         }
+         td.empty{
+            padding:5px;
+            border-style:solid;
+            border-width:1px;
+            border-color:#999999;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;table&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Title one&lt;/th&gt;
+&lt;th&gt;Title two&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;Row Title&lt;/th&gt;
+&lt;td&gt;value&lt;/td&gt;
+&lt;td&gt;value&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;Row Title&lt;/th&gt;
+&lt;td&gt;value&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h2>The table-layout Property</h2>
+    <p>The <code>table-layout</code> property is supposed to help you control how a browser should render or lay out a table.</p>
+    <p>This property can have one of the three values: <code>fixed</code>, <code>auto</code> or <code>inherit</code>.</p>
+    <p>The following example shows the difference between these properties.</p>
+    <p>NOTE − This property is not supported by many browsers so do not rely on this property.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style type="text/css"&gt;
+         table.auto {
+            table-layout: auto
+         }
+         table.fixed{
+            table-layout: fixed
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;table&gt;
+&lt;tr&gt;
+&lt;td width="20%"&gt;1000000000000000000000000000&lt;/td&gt;
+&lt;td width="40%"&gt;10000000&lt;/td&gt;
+&lt;td width="40%"&gt;100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br /&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td width="20%"&gt;1000000000000000000000000000&lt;/td&gt;
+&lt;td width="40%"&gt;10000000&lt;/td&gt;
+&lt;td width="40%"&gt;100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+
+<h2>Practical Examples</h2><p>A clean, modern data table with collapsed borders, distinct headers, and a striped row effect for readability:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+.data-table {
+   width: 100%;
+   border-collapse: collapse;
+   table-layout: fixed;
+}
+
+.data-table th,
+.data-table td {
+   border: 1px solid #ddd;
+   padding: 12px;
+   text-align: left;
+}
+
+.data-table th {
+   background-color: #f4f4f4;
+   font-weight: bold;
+}
+
+/* Zebra Striping */
+.data-table tr:nth-child(even) {
+   background-color: #fafafa;
+}
+
+/* Hover Effect */
+.data-table tr:hover {
+   background-color: #f1f5f9;
+}
+&lt;/style&gt;
+
+&lt;table class="data-table"&gt;
+  &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Alice&lt;/td&gt;&lt;td&gt;25&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Bob&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Forgetting <code>border-collapse</code></strong> − By default, tables use <code>border-collapse: separate</code>, which creates an ugly double-border effect between cells if you apply borders to both the table and the <code>td</code>.</li><li><strong>Ignoring mobile responsiveness</strong> − Tables do not shrink well. If a table has too many columns, it will break the mobile layout. You must wrap the table in a container with <code>overflow-x: auto</code> to allow horizontal scrolling on small screens.</li><li><strong>Using HTML attributes for styling</strong> − Using old HTML attributes like <code>cellpadding="10"</code> or <code>border="1"</code> instead of applying padding and borders via CSS.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Use <code>table-layout: fixed</code></strong> − This property makes table rendering much faster and column widths predictable (based on the first row or specific width definitions), rather than the browser guessing based on content volume.</li><li><strong>Use <code>:nth-child</code> for striping</strong> − Zebra-striping rows using <code>tr:nth-child(even)</code> makes reading wide rows of data significantly easier for the user.</li><li><strong>Align numbers to the right</strong> − In data tables, always align numerical data (like prices or quantities) to the right so decimal points line up vertically.</li></ul><h2>Interview Questions</h2><p><strong>Q: What is the difference between <code>border-collapse: collapse</code> and <code>border-collapse: separate</code>?</strong></p><p>A: <code>separate</code> leaves a gap between the borders of adjacent cells (creating double borders). <code>collapse</code> merges adjacent borders into a single, clean border line.</p><p><strong>Q: How do you change the space between cells if the borders are separated?</strong></p><p>A: Using the <code>border-spacing</code> property.</p><p><strong>Q: What does <code>table-layout: fixed</code> do?</strong></p><p>A: It forces the table to obey defined widths regardless of the cell content, preventing a single long word from blowing out the width of the entire column.</p><h2>Summary</h2><p>While tables should never be used for overall page layout anymore, they remain the absolute best tool for displaying tabular data. Mastering properties like <code>border-collapse</code>, <code>table-layout</code>, and pseudo-classes for row striping will allow you to build clean, readable, and professional data grids.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="lists.html">&larr; Previous Chapter: Lists</a>
+            <a href="background.html">Next Chapter: Background &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Inheritance | Skilledu Tutorial</title>
+    <meta name="description" content="Inheritance in CSS controls what happens when no value is specified for a property on an element. Some CSS properties inherit by default, while others do...">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/inheritance.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Inheritance | Skilledu Tutorial">
+    <meta property="og:description" content="Inheritance in CSS controls what happens when no value is specified for a property on an element. Some CSS properties inherit by default, while others do...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/inheritance.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Inheritance | Skilledu Tutorial">
+    <meta name="twitter:description" content="Inheritance in CSS controls what happens when no value is specified for a property on an element. Some CSS properties inherit by default, while others do...">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "CSS Inheritance",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/inheritance.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Inheritance | Skilledu Tutorial",
+  "description": "Inheritance in CSS controls what happens when no value is specified for a property on an element. Some CSS properties inherit by default, while others do...",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/inheritance.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'inheritance';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-inheritance" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-inheritance" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        <div class="topic-header"><span class="topic-badge">Topic 7</span><h1>CSS Inheritance</h1></div><div class="topic-section"><p>Inheritance in CSS controls what happens when no value is specified for a property on an element. Some CSS properties inherit by default, while others do not.</p><h3>Inherited vs Non-Inherited Properties</h3><p><strong>Inherited properties:</strong> When no value for an inherited property has been specified on an element, the element gets the computed value of that property on its parent element. Examples include typography properties like <code>color</code> and <code>font-family</code>.</p><p><strong>Non-inherited properties:</strong> When no value for a <code>non-inherited</code> property has been specified on an element, the element gets the initial value of that property (as specified in the property's summary). Examples include layout properties like <code>margin</code> and <code>border</code>.</p><h3>Inheritance Keywords</h3><p>CSS provides four special universal property values for controlling inheritance:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>/* Forces a property to inherit its value from its parent */
+.child { color: inherit; }
+
+/* Sets a property to its initial (default) value */
+.box { border: initial; }
+
+/* Acts as inherit for inherited properties, and initial for non-inherited ones */
+.text { font-weight: unset; }
+
+/* Reverts the cascaded value to the user agent's default style */
+.element { display: revert; }</code></pre></div><h3>Common Properties Table</h3><table class="css-table"><thead><tr><th>Inherited Properties (Naturally passed down)</th><th>Non-Inherited Properties (Not passed down)</th></tr></thead><tbody><tr><td><code>color</code></td><td><code>background</code> (color, image)</td></tr><tr><td><code>font</code> (family, size, weight, style)</td><td><code>border</code>, <code>outline</code></td></tr><tr><td><code>line-height</code>, <code>letter-spacing</code></td><td><code>margin</code>, <code>padding</code></td></tr><tr><td><code>text-align</code>, <code>text-transform</code></td><td><code>width</code>, <code>height</code>, <code>max-width</code></td></tr><tr><td><code>visibility</code></td><td><code>position</code>, <code>display</code></td></tr></tbody></table>
+
+<h2>Practical Examples</h2><p>A practical example showing how to force form elements (which normally reject inherited typography) to inherit the font stack of the body:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+body {
+   font-family: 'Helvetica', sans-serif;
+   color: #333;
+}
+
+/* Form elements do NOT inherit fonts by default. We must force it: */
+button, input, textarea {
+   font-family: inherit;
+   color: inherit;
+}
+&lt;/style&gt;
+
+&lt;div style="padding:20px;"&gt;This text inherits the font from the body.&lt;br&gt;&lt;br&gt;
+  &lt;button class="custom-button"&gt;This button breaks inheritance&lt;/button&gt;
+&lt;/div&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Assuming layout properties inherit</strong> − Beginners often wonder why a child <code>div</code> doesn't inherit the <code>border</code> or <code>padding</code> of its parent. Layout properties are explicitly non-inherited.</li><li><strong>Forgetting about User Agent defaults</strong> − Assuming <code>&lt;a&gt;</code> tags will inherit text color from the body. Browsers apply a default blue color to links, which overrides inheritance. You must explicitly set <code>a { color: inherit; }</code> if you want it to blend in.</li><li><strong>Using inherit blindly</strong> − Setting <code>width: inherit</code> on everything can cause layout chaos. It's better to let block elements naturally fill space (auto) rather than forcing inheritance.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Rely on natural inheritance for Typography</strong> − Set your <code>font-family</code>, <code>line-height</code>, and primary <code>color</code> on the <code>body</code> or <code>:root</code> element and let it cascade down naturally.</li><li><strong>Use <code>currentColor</code> for SVG icons</strong> − If you want an SVG icon to inherit the text color of its parent button, set its fill to <code>fill: currentColor;</code>, which relies on inheritance.</li><li><strong>Use <code>unset</code> to clear complex properties</strong> − If you need to strip all styling off a custom component, using <code>unset</code> is safer than guessing whether a property was originally inherited or not.</li></ul><h2>Interview Questions</h2><p><strong>Q: What is the difference between an inherited property and a <code>non-inherited</code> property?</strong></p><p>A: Inherited properties (like <code>color</code> and <code>font-size</code>) automatically pass down to child elements. Non-inherited properties (like <code>margin</code> and <code>border</code>) do not pass down and reset to their initial values.</p><p><strong>Q: What does the <code>inherit</code> keyword do?</strong></p><p>A: It forces a property that normally wouldn't inherit (like a border) to explicitly take the computed value of its parent element.</p><p><strong>Q: What is the difference between <code>initial</code> and <code>inherit</code>?</strong></p><p>A: <code>initial</code> sets the property to the browser's default CSS specification value (e.g., black for color). <code>inherit</code> sets it to whatever value the parent has.</p><p><strong>Q: What does the <code>unset</code> keyword do?</strong></p><p>A: It acts as a hybrid: if the property is naturally inheritable, it acts like <code>inherit</code>. If it is naturally non-inheritable, it acts like <code>initial</code>.</p><p><strong>Q: Why don't input fields inherit the body's font family automatically?</strong></p><p>A: Because browsers apply a User Agent stylesheet that explicitly sets font properties on form elements (like inputs and buttons), which overrides the natural inheritance cascade.</p><h2>Summary</h2><p>Inheritance is what makes CSS <code>"cascading."</code> Typography properties naturally flow down the DOM tree, while layout properties stay contained to their specific boxes. By mastering the <code>inherit</code>, <code>initial</code>, and <code>unset</code> keywords, you can control exactly how styles pass from parents to children, saving you from writing repetitive code.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="specificity.html">&larr; Previous Chapter: CSS Specificity</a>
+            <a href="colors-basics.html">Next Chapter: Colors — Basics &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

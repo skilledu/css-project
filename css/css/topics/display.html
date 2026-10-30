@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display | Skilledu Tutorial</title>
+    <meta name="description" content="The display property is the most important CSS property for controlling layout. Every HTML element has a default display value depending on what type of...">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/display.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Display | Skilledu Tutorial">
+    <meta property="og:description" content="The display property is the most important CSS property for controlling layout. Every HTML element has a default display value depending on what type of...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/display.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Display | Skilledu Tutorial">
+    <meta name="twitter:description" content="The display property is the most important CSS property for controlling layout. Every HTML element has a default display value depending on what type of...">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "CSS Display",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/display.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Display | Skilledu Tutorial",
+  "description": "The display property is the most important CSS property for controlling layout. Every HTML element has a default display value depending on what type of...",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/display.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'display';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-display" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-display" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        <div class="topic-header"><span class="topic-badge">Topic 11</span><h1>CSS Display</h1></div><div class="topic-section"><p>The <code>display</code> property is the most important CSS property for controlling layout. Every HTML element has a default display value depending on what type of element it is.</p><h3>Display Values</h3><table class="css-table"><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>block</code></td><td>Takes up the full width available and starts on a new line (e.g. <code>&lt;div&gt;</code>, <code>&lt;h1&gt;</code>).</td></tr><tr><td><code>inline</code></td><td>Takes up only as much width as necessary and does not start on a new line (e.g. <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>).</td></tr><tr><td><code>inline-block</code></td><td>Like inline elements, they do not start on a new line, but you CAN set width and height values on them.</td></tr><tr><td><code>none</code></td><td>Removes the element completely from the document. It will not take up any space.</td></tr></tbody></table><p><em>Note: Modern layouts typically use <strong>flex</strong> or <strong>grid</strong>, which are incredibly powerful and have their own dedicated chapters later in this tutorial!</em></p><h3>Example</h3><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>.box-block {
+   display: block;
+}
+
+.box-inline {
+   display: inline;
+}
+
+.box-hidden {
+   display: none;
+}</code></pre></div><h3>Comparison Table</h3><table class="css-table"><thead><tr><th>Display</th><th>Starts on new line?</th><th>Respects width/height?</th><th>Margin/Padding behavior</th></tr></thead><tbody><tr><td><code>block</code></td><td>Yes</td><td>Yes</td><td>Top/Bottom and Left/Right margins both work.</td></tr><tr><td><code>inline</code></td><td>No</td><td>No</td><td>Top/Bottom margins/padding do not push other elements away.</td></tr><tr><td><code>inline-block</code></td><td>No</td><td>Yes</td><td>Fully respects margin and padding on all sides.</td></tr></tbody></table>
+
+<h2>Practical Examples</h2><p>Converting a standard unordered list into a horizontal navigation bar using <code>inline-block</code>:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+.nav-list {
+   list-style: none;
+   padding: 0;
+}
+
+.nav-item {
+   /* Elements sit side-by-side but respect padding and margins */
+   display: inline-block;
+   margin-right: 20px;
+}
+
+.nav-link {
+   display: block;
+   padding: 10px 15px;
+   background-color: #eee;
+}
+&lt;/style&gt;
+
+&lt;ul class="nav-list"&gt;
+  &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Setting width/height on inline elements</strong> − Beginners often try to set a <code>height</code> on a <code>&lt;span&gt;</code> or <code>&lt;a&gt;</code> tag. Inline elements completely ignore width, height, and top/bottom margins. You must change them to <code>inline-block</code> or <code>block</code> first.</li><li><strong>Confusing <code>display: none</code> with <code>visibility: hidden</code></strong> − <code>display: none</code> completely removes the element from the document flow (as if it doesn't exist). <code>visibility: hidden</code> makes it invisible, but it still takes up empty physical space in the layout.</li><li><strong>Forgetting the whitespace gap</strong> − <code>inline-block</code> elements will have a small ~4px gap between them if there is a line break in the HTML source code, which can unexpectedly break pixel-perfect grid layouts.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Use <code>display: block</code> to increase click targets</strong> − Always change <code>&lt;a&gt;</code> tags inside menus from <code>inline</code> to <code>block</code> so the entire padded area becomes clickable, not just the text itself.</li><li><strong>Limit <code>inline-block</code> for complex layouts</strong> − While great for simple button rows, if you are building complex multi-column layouts, use Flexbox or Grid instead of fighting with <code>inline-block</code> whitespace gaps.</li></ul><h2>Interview Questions</h2><p><strong>Q: What is the difference between <code>block</code> and <code>inline-block</code>?</strong></p><p>A: A <code>block</code> element forces a line break before and after it, taking up the full width available. An <code>inline-block</code> element sits side-by-side with other inline elements, but unlike a pure <code>inline</code> element, it allows you to set width, height, and vertical margins.</p><p><strong>Q: Why can't I set a top margin on an inline element?</strong></p><p>A: Because inline elements are designed to flow with text. They only affect horizontal spacing (left/right margin and padding), ignoring vertical spacing to prevent disrupting the line-height of the paragraph.</p><p><strong>Q: What is the difference between <code>display: none</code> and <code>visibility: hidden</code>?</strong></p><p>A: <code>display: none</code> removes the element entirely from the flow. <code>visibility: hidden</code> leaves the element in the flow, occupying space, but makes it completely transparent.</p><h2>Summary</h2><p>The <code>display</code> property is the most fundamental concept in CSS layout. Knowing exactly how <code>block</code>, <code>inline</code>, and <code>inline-block</code> elements behave by default—and knowing when to override them—is the first step to mastering web structure before moving on to advanced systems like Flexbox.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="box-model.html">&larr; Previous Chapter: Box Model</a>
+            <a href="positioning.html">Next Chapter: Positioning &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

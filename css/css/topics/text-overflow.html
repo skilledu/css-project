@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Overflow & Breaking | Skilledu Tutorial</title>
+    <meta name="description" content="The following are the most commonly used text properties in CSS3:">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/text-overflow.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Text Overflow & Breaking | Skilledu Tutorial">
+    <meta property="og:description" content="The following are the most commonly used text properties in CSS3:">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/text-overflow.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Text Overflow & Breaking | Skilledu Tutorial">
+    <meta name="twitter:description" content="The following are the most commonly used text properties in CSS3:">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Text",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/text-overflow.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Text Overflow & Breaking | Skilledu Tutorial",
+  "description": "The following are the most commonly used text properties in CSS3:",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/text-overflow.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'text-overflow';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-text-overflow" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-text-overflow" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 45</span>
+    <h1>Text</h1>
+  </div>
+  <div class="topic-section">
+    <p>The following are the most commonly used text properties in CSS3:</p>
+    <table class="css-table">
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>text-align-last</code></td>
+          <td>Used to align the last line of the text</td>
+        </tr>
+        <tr>
+          <td><code>text-emphasis</code></td>
+          <td>Used to emphasize text and color</td>
+        </tr>
+        <tr>
+          <td><code>text-overflow</code></td>
+          <td>Used to determine how overflowed content that is not displayed is signaled to users</td>
+        </tr>
+        <tr>
+          <td><code>word-break</code></td>
+          <td>Used to break the line based on word</td>
+        </tr>
+        <tr>
+          <td><code>word-wrap</code></td>
+          <td>Used to break the line and wrap onto the next line</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Text-overflow</h3>
+    <p>The <code>text-overflow</code> property determines how overflowed content that is not displayed is signaled to users. The sample example of text overflow is shown as follows −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         p.text1 {
+            white-space: nowrap;
+            width: 200px;
+            border: 1px solid #000000;
+            overflow: hidden;
+            text-overflow: clip;
+         }
+         p.text2 {
+            white-space: nowrap;
+            width: 200px;
+            border: 1px solid #000000;
+            overflow: hidden;
+            text-overflow: ellipsis;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;b&gt;Original Text:&lt;/b&gt;
+&lt;p&gt;This is an Hello World used to demonstrate CSS styling. It provides enough content to see how text wrapping, spacing, and other typographic properties affect the layout of your web page.&lt;/p&gt;
+&lt;b&gt;Text overflow: clip:&lt;/b&gt;
+&lt;p class="text1"&gt;This is an Hello World used to demonstrate CSS styling. It provides enough content to see how text wrapping, spacing, and other typographic properties affect the layout of your web page.&lt;/p&gt;
+&lt;b&gt;Text overflow: ellipsis:&lt;/b&gt;
+&lt;p class="text2"&gt;This is an Hello World used to demonstrate CSS styling. It provides enough content to see how text wrapping, spacing, and other typographic properties affect the layout of your web page.&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+    <h3>CSS3 Word Breaking</h3>
+    <p>The <code>word-break</code> property is used to break the line. The following code shows a sample code of word breaking:</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         p.text1 {
+            width: 140px;
+            border: 1px solid #000000;
+            word-break: keep-all;
+         }
+         p.text2 {
+            width: 140px;
+            border: 1px solid #000000;
+            word-break: break-all;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;b&gt;Line break at hyphens:&lt;/b&gt;
+&lt;p class="text1"&gt;This is an Hello World used to demonstrate CSS styling. It provides enough content to see how text wrapping, spacing, and other typographic properties affect the layout of your web page.&lt;/p&gt;
+&lt;b&gt;Line break at any character:&lt;/b&gt;
+&lt;p class="text2"&gt;This is an Hello World used to demonstrate CSS styling. It provides enough content to see how text wrapping, spacing, and other typographic properties affect the layout of your web page.&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+    <h3>CSS word wrapping</h3>
+    <p>Word wrapping is used to break the line and wrap onto the next line. The following code shows a sample syntax:</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>p {
+   word-wrap: break-word;
+}</code></pre>
+    </div>
+
+
+<h2>Practical Examples</h2><p>The standard <code>"Holy Trinity"</code> of CSS properties required to gracefully truncate a long username with an ellipsis (<code>...</code>):</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+.user-profile-name {
+   width: 200px; /* Constrain the width */
+
+   /* 1. Prevent text from wrapping to the next line */
+   white-space: nowrap;
+   /* 2. Hide whatever bleeds outside the box */
+   overflow: hidden;
+   /* 3. Add the <code>"..."</code> effect at the cutoff point */
+   text-overflow: ellipsis;
+}
+&lt;/style&gt;
+
+&lt;div class="user-profile-name" style="background:#eee; padding:10px; width:150px;"&gt;JohnDoeWithAVeryLongNameThatWillBeTruncated&lt;/div&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Using text-overflow alone</strong> − Applying <code>text-overflow: ellipsis;</code> does absolutely nothing by itself. It MUST be paired with <code>white-space: nowrap;</code> and <code>overflow: hidden;</code> on a block-level element with a defined width.</li><li><strong>Using <code>word-break: break-all</code> on normal paragraphs</strong> − This forces words to break exactly at the container edge, completely disregarding syllables or hyphens (e.g., breaking the word <code>"Hello"</code> into <code>"He"</code> and <code>"llo"</code>). This ruins readability.</li><li><strong>Applying truncation to multi-line text</strong> − The standard <code>text-overflow: ellipsis</code> only works for single-line text. Multi-line truncation requires complex Flexbox line-clamping techniques (<code>-webkit-line-clamp</code>).</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Understand Vendor Prefixes</strong> − Some newer or experimental CSS properties need a browser-specific prefix (like <code>-webkit-</code> or <code>-moz-</code>) to work in certain browsers before becoming fully standardized. For instance, the <code>-webkit-line-clamp</code> property specifically needs <code>display: -webkit-box</code> and <code>-webkit-box-orient: vertical</code> alongside it to work.</li><li><strong>Use <code>overflow-wrap: break-word</code> globally</strong> − Add this to your base CSS reset. It ensures that if a user pastes a massive, unbroken 100-character URL into a comment, it will wrap gracefully instead of breaking the entire page layout.</li><li><strong>Reserve ellipsis for UI constraints</strong> − Use the ellipsis truncation pattern strictly for tight UI components (like navigation bars, data tables, or card titles). Avoid truncating actual paragraph content.</li></ul><h2>Interview Questions</h2><p><strong>Q: What three CSS properties are required to create a single-line text ellipsis (<code>...</code>) effect?</strong></p><p>A: <code>white-space: nowrap</code>, <code>overflow: hidden</code>, and <code>text-overflow: ellipsis</code>.</p><p><strong>Q: What is the difference between <code>word-break: break-all</code> and <code>overflow-wrap: break-word</code>?</strong></p><p>A: <code>break-all</code> aggressively snaps words exactly at the edge of the box regardless of spacing. <code>break-word</code> is smarter; it will only snap and break a word if the single word is so long that it cannot fit on its own line (like a long URL).</p><p><strong>Q: How do you prevent a specific line of text from wrapping?</strong></p><p>A: By applying <code>white-space: nowrap;</code>.</p><h2>Summary</h2><p>Advanced text properties are essential for defensive CSS. You cannot control what data users will input into your layout. Mastering <code>text-overflow: ellipsis</code> for single-line UI elements and <code>overflow-wrap: break-word</code> for user-generated content ensures your layout will never blow out and horizontally scroll, no matter how long the text is.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="cursors.html">&larr; Previous Chapter: Cursors</a>
+            <a href="layers.html">Next Chapter: Layers &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

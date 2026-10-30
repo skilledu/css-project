@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float | Skilledu Tutorial</title>
+    <meta name="description" content="The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/float.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Float | Skilledu Tutorial">
+    <meta property="og:description" content="The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/float.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Float | Skilledu Tutorial">
+    <meta name="twitter:description" content="The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "CSS Float",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/float.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Float | Skilledu Tutorial",
+  "description": "The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/float.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'float';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-float" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-float" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        <div class="topic-header"><span class="topic-badge">Topic 13</span><h1>CSS Float</h1></div><div class="topic-section"><p>The <code>float</code> property is used for positioning and formatting content e.g. let an image float left to the text in a container.</p><p><em>Important Note: While floats were historically used for entire website layouts, <strong>Flexbox</strong> and <strong>Grid</strong> are the modern, preferred approaches. Today, float should mainly be used for its original purpose: wrapping text around images.</em></p><h3>Float Values</h3><table class="css-table"><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>left</code></td><td>The element floats to the left of its container.</td></tr><tr><td><code>right</code></td><td>The element floats to the right of its container.</td></tr><tr><td><code>none</code></td><td>The element does not float (default).</td></tr></tbody></table><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>img {
+   float: right;
+   margin: 0 0 10px 10px;
+}</code></pre></div><h3>The Clearfix Problem</h3><p>If a floating element is taller than the containing element, it will <code>"overflow"</code> outside of its container. We can fix this using a <code>"clearfix"</code>.</p><p><strong>Legacy method:</strong> Add an empty element after the float and apply <code>clear: both;</code>.</p><p><strong>Modern Hack (<code>::after</code>):</strong> The modern way to fix this is to use the <code>::after</code> pseudo-element on the container:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>.clearfix::after {
+   content: "";
+   clear: both;
+   display: table;
+}</code></pre></div>
+
+<h2>Practical Examples</h2><p>The classic, appropriate use case for a float: wrapping text around an article image, utilizing the modern clearfix hack on the parent container:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+.article-img {
+   float: left;
+   margin-right: 20px;
+   margin-bottom: 10px;
+   width: 300px;
+}
+
+/* The modern Clearfix hack applied to the parent container */
+.clearfix::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+&lt;/style&gt;
+
+&lt;div class="clearfix" style="border:1px solid #ccc; padding:10px;"&gt;
+  &lt;img class="article-img" src="../assets/images/demo-photo.jpg" alt="Placeholder" style="width:100px;"&gt;
+  &lt;p&gt;This text flows around the floated image. The clearfix ensures the parent container expands to fit the image height!&lt;/p&gt;
+&lt;/div&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Using floats for page layout</strong> − Building 3-column layouts using <code>float: left</code> (the 2010 way). This requires complex math, clearing hacks, and breaks easily. Always use Flexbox or Grid for structural layouts today.</li><li><strong>Forgetting to clear floats (Container Collapse)</strong> − If a parent container only contains floated children, the parent's height will collapse to 0 pixels, causing the background to disappear and subsequent elements to overlap.</li><li><strong>Using the wrong clear value</strong> − Using <code>clear: left</code> when you actually have elements floated to the right. <code>clear: both</code> is almost always the safest and most reliable choice.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Restrict float to typography</strong> − Only use floats for their original intended purpose: allowing text to naturally wrap around an image or a pull-quote.</li><li><strong>Use a utility class for clearing</strong> − Keep a standard <code>.clearfix</code> utility class in your global stylesheet so you can easily apply it to any parent container that holds floated elements.</li></ul><h2>Interview Questions</h2><p><strong>Q: What does the <code>float</code> property actually do?</strong></p><p>A: It removes an element from the normal document flow and pushes it to the left or right of its container, allowing text and inline elements to wrap around it.</p><p><strong>Q: What is the <code>"clearfix"</code> hack?</strong></p><p>A: It is a CSS technique using the <code>::after</code> pseudo-element to force a parent container to expand and contain its floated children, preventing it from collapsing to zero height.</p><p><strong>Q: Why don't we use floats for grid layouts anymore?</strong></p><p>A: Because floats were designed for text wrapping, not layout structure. They require complex math, manual clearing, and lack the alignment and distribution capabilities built natively into modern tools like Flexbox and CSS Grid.</p><h2>Summary</h2><p>While <code>float</code> has been retired as a primary layout tool in favor of Flexbox and Grid, it remains an essential tool for editorial design (wrapping text around images). Understanding how floats affect the document flow and how to <code>"clear"</code> them is still a required skill for any CSS developer.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="positioning.html">&larr; Previous Chapter: Positioning</a>
+            <a href="visibility.html">Next Chapter: Visibility &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

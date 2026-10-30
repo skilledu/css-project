@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Links | Skilledu Tutorial</title>
+    <meta name="description" content="We will revisit the same properties when we will discuss Pseudo-Classes of CSS.">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/links.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Links | Skilledu Tutorial">
+    <meta property="og:description" content="We will revisit the same properties when we will discuss Pseudo-Classes of CSS.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/links.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Links | Skilledu Tutorial">
+    <meta name="twitter:description" content="We will revisit the same properties when we will discuss Pseudo-Classes of CSS.">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Links",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/links.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Links | Skilledu Tutorial",
+  "description": "We will revisit the same properties when we will discuss Pseudo-Classes of CSS.",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/links.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'links';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-links" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-links" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 19</span>
+    <h1>Links</h1>
+  </div>
+  <div class="topic-section">
+    <p>We will revisit the same properties when we will discuss Pseudo-Classes of CSS.</p>
+    <p>The <code>:link</code> signifies unvisited hyperlinks.</p>
+    <p>The <code>:visited</code> signifies visited hyperlinks.</p>
+    <p>The <code>:hover</code> signifies an element that currently has the user's mouse pointer hovering over it.</p>
+    <p>The <code>:active</code> signifies an element on which the user is currently clicking.</p>
+    <p>Usually, all these properties are kept in the header part of the HTML document.</p>
+    <p><strong>Remember:</strong> <code>a:hover</code> MUST come after <code>a:link</code> and <code>a:visited</code> in the CSS definition in order to be effective. Also, <code>a:active</code> MUST come after <code>a:hover</code> in the CSS definition as follows:</p>
+    <pre class="code-block" style="background:var(--bg-code,#1e293b); color:#e2e8f0; padding:16px; margin: 16px 0; border-radius: 8px;"><code>a:link {color: #000000;}
+a:visited {color: #006600;}
+a:hover {color: #FFCC00;}
+a:active {color: #FF00CC;}</code></pre>
+    <p>Now, we will see how to use these properties to give different effects to hyperlinks.</p>
+    <h3>Color of Links</h3>
+    <p>The following example demonstrates how to set the link color. Possible values could be any color name in any valid format.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style type="text/css"&gt;
+         a:link {color:#000000}
+     &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;a href="#"&gt;Link&lt;/a&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Color of Visited Links</h3>
+    <p>The following example demonstrates how to set the color of visited links. Possible values could be any color name in any valid format.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style type="text/css"&gt;
+         a:visited {color: #006600}
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;a href="#"&gt;Click this link&lt;/a&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+    <p>It will produce the following link. Once you will click this link, it will change its color to green.</p>
+    <h3>Color of Links when Mouse is Over</h3>
+    <p>The following example demonstrates how to change the color of links when we bring a mouse pointer over that link. Possible values could be any color name in any valid format.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style type="text/css"&gt;
+         a:hover {color: #FFCC00}
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;a href="#"&gt;Link&lt;/a&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+    <p>It will produce the following link. Now, you bring your mouse over this link and you will see that it changes its color to yellow.</p>
+    <h3>Color of Active Links</h3>
+    <p>The following example demonstrates how to change the color of active links. Possible values could be any color name in any valid format.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style type="text/css"&gt;
+         a:active {color: #FF00CC}
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;a href="#"&gt;Link&lt;/a&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+    <p>It will produce the following link. It will change its color to pink when the user clicks it.</p>
+
+
+<h2>Practical Examples</h2><p>Styling a link with distinct visual feedback for hover and focus states, adhering strictly to the LVHA cascade order:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+/* 1. Link (Unvisited) */
+a:link {
+   color: #3b82f6;
+   text-decoration: underline;
+}
+
+/* 2. Visited */
+a:visited {
+   color: #6366f1; /* Slightly different color for visited state */
+}
+
+/* 3. Hover &amp; Focus (Accessibility) */
+a:hover,
+a:focus {
+   color: #1d4ed8;
+   text-decoration: none; /* Provide clear feedback by removing underline */
+}
+
+/* 4. Active (While clicking) */
+a:active {
+   color: #1e3a8a;
+}
+&lt;/style&gt;
+
+&lt;a href="#" class="nav-link"&gt;Hover over me!&lt;/a&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Writing pseudo-classes in the wrong order</strong> − Putting <code>:hover</code> before <code>:visited</code>. Because of the cascade, if the link is visited, the visited style will permanently override the hover style.</li><li><strong>Removing focus outlines</strong> − Writing <code>a:focus { outline: none; }</code> without providing alternative styling. This completely destroys the site for users navigating with a keyboard.</li><li><strong>Relying entirely on color</strong> − Removing underlines from links in paragraph text and relying only on a slightly different color. Colorblind users will not know it's a link.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Follow the LVHA Order</strong> − Always declare link states in this exact order: Link, Visited, Hover, Active. (Mnemonic: LoVe? HA!).</li><li><strong>Provide Visual Feedback</strong> − Links should react when a user hovers over them. Changing color, swapping underlines, or adding slight transitions makes the site feel alive and usable.</li><li><strong>Preserve Accessibility</strong> − Never remove underlines from links within blocks of text, and ensure the <code>:focus</code> state is clearly visible for keyboard navigators.</li><li><strong>Preserve accessibility</strong> − Removing default link underlines and color cues can make links hard to distinguish from plain text for some users. Always ensure links stand out clearly from surrounding content.</li></ul><h2>Interview Questions</h2><p><strong>Q: What is the correct order to define CSS link pseudo-classes?</strong></p><p>A: Link, Visited, Hover, Active (LVHA).</p><p><strong>Q: Why is the LVHA order strictly necessary?</strong></p><p>A: Because these pseudo-classes share the exact same specificity weight. Therefore, the cascade resolves conflicts purely based on source order. If <code>:hover</code> comes before <code>:visited</code>, a visited link will never show its hover state.</p><p><strong>Q: What does the <code>:focus</code> pseudo-class target?</strong></p><p>A: It targets an element when it receives focus, typically by the user tabbing through the page with a keyboard.</p><p><strong>Q: Can you style a <code>:visited</code> link to have a different font-size?</strong></p><p>A: No. For security and privacy reasons (to prevent sites from sniffing your browsing history), browsers heavily restrict what can be styled with <code>:visited</code>. You can generally only change the color.</p><h2>Summary</h2><p>Links are the interactive connective tissue of the web. Proper link styling goes beyond just changing colors—it requires strict adherence to the LVHA cascade order to ensure states don't override each other. By providing clear visual feedback on hover and preserving accessibility outlines, you ensure a superior user experience.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="icons.html">&larr; Previous Chapter: CSS Icons</a>
+            <a href="lists.html">Next Chapter: Lists &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

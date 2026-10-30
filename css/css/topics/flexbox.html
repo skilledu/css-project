@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox | Skilledu Tutorial</title>
+    <meta name="description" content="The Flexible Box Layout Module (Flexbox) makes it easier to design flexible responsive layout structure without using float or positioning.">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/flexbox.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Flexbox | Skilledu Tutorial">
+    <meta property="og:description" content="The Flexible Box Layout Module (Flexbox) makes it easier to design flexible responsive layout structure without using float or positioning.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/flexbox.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Flexbox | Skilledu Tutorial">
+    <meta name="twitter:description" content="The Flexible Box Layout Module (Flexbox) makes it easier to design flexible responsive layout structure without using float or positioning.">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "CSS Flexbox",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/flexbox.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Flexbox | Skilledu Tutorial",
+  "description": "The Flexible Box Layout Module (Flexbox) makes it easier to design flexible responsive layout structure without using float or positioning.",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/flexbox.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'flexbox';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-flexbox" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-flexbox" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        <div class="topic-header"><span class="topic-badge">Topic 34</span><h1>CSS Flexbox</h1></div><div class="topic-section"><h2>Introduction to Flexbox</h2><p>The Flexible Box Layout Module (Flexbox) makes it easier to design flexible responsive layout structure without using float or positioning.</p><p>Before Flexbox, layouts were built using block, inline, table, or float. Flexbox solves the problem of aligning items in 1-Dimensional layouts (either a row or a column), especially when the size of the items is unknown or dynamic.</p><p>You initiate a flex formatting context by setting <code>display: flex</code> (block-level) or <code>display: inline-flex</code> (inline-level).</p><p><strong>Main Axis vs Cross Axis:</strong> Flexbox relies on two axes. If <code>flex-direction</code> is <code>row</code>, the Main Axis runs left-to-right, and the Cross Axis runs top-to-bottom. Alignment properties apply relative to these axes.</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>.container {
+   display: flex;
+}</code></pre></div><h2>Flex Container Properties</h2>
+<p>The following properties apply to the flex container (the parent element that holds the flex items).</p>
+<h3><code>flex-direction</code></h3><p>Defines the direction flex items are placed in the flex container (the Main Axis).</p><table class="css-table">
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>row</code> (default)</td>
+      <td>Left to right.</td>
+    </tr>
+    <tr>
+      <td><code>row-reverse</code></td>
+      <td>Right to left.</td>
+    </tr>
+    <tr>
+      <td><code>column</code></td>
+      <td>Top to bottom.</td>
+    </tr>
+    <tr>
+      <td><code>column-reverse</code></td>
+      <td>Bottom to top.</td>
+    </tr>
+  </tbody>
+</table><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>.container {
+   display: flex;
+   flex-direction: row-reverse;
+}</code></pre></div><h3><code>flex-wrap</code></h3><p>Specifies whether the flex items should wrap or not if there isn't enough room.</p><table class="css-table">
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>nowrap</code> (default)</td>
+      <td>All items fit on one line.</td>
+    </tr>
+    <tr>
+      <td><code>wrap</code></td>
+      <td>Items wrap onto multiple lines.</td>
+    </tr>
+    <tr>
+      <td><code>wrap-reverse</code></td>
+      <td>Items wrap in reverse order.</td>
+    </tr>
+  </tbody>
+</table><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>.container {
+   display: flex;
+   flex-wrap: wrap;
+}</code></pre></div><h3><code>flex-flow</code></h3><p>A shorthand for both <code>flex-direction</code> and <code>flex-wrap</code>.</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>.container {
+   flex-flow: row wrap;
+}</code></pre></div><h3><code>justify-content</code></h3><p>Aligns items along the <strong>Main Axis</strong>.</p><table class="css-table">
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>flex-start</code> (default)</td>
+      <td>Items packed at start.</td>
+    </tr>
+    <tr>
+      <td><code>flex-end</code></td>
+      <td>Items packed at end.</td>
+    </tr>
+    <tr>
+      <td><code>center</code></td>
+      <td>Items packed at center.</td>
+    </tr>
+    <tr>
+      <td><code>space-between</code></td>
+      <td>Items evenly distributed; first line at start, last at end.</td>
+    </tr>
+    <tr>
+      <td><code>space-around</code></td>
+      <td>Items evenly distributed with equal space around them.</td>
+    </tr>
+    <tr>
+      <td><code>space-evenly</code></td>
+      <td>Items evenly distributed with equal space between them and edges.</td>
+    </tr>
+  </tbody>
+</table><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>.container {
+   display: flex;
+   justify-content: space-between;
+}</code></pre></div><h3><code>align-items</code></h3><p>Aligns items along the <strong>Cross Axis</strong>.</p><table class="css-table">
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>stretch</code> (default)</td>
+      <td>Items stretch to fill the container height.</td>
+    </tr>
+    <tr>
+      <td><code>flex-start</code></td>
+      <td>Items placed at the start of cross axis.</td>
+    </tr>
+    <tr>
+      <td><code>flex-end</code></td>
+      <td>Items placed at the end of cross axis.</td>
+    </tr>
+    <tr>
+      <td><code>center</code></td>
+      <td>Items placed in the middle.</td>
+    </tr>
+    <tr>
+      <td><code>baseline</code></td>
+      <td>Items aligned by their text baseline.</td>
+    </tr>
+  </tbody>
+</table><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>.container {
+   display: flex;
+   align-items: center;
+}</code></pre></div><h3><code>align-content</code></h3><p>Aligns flex <strong>lines</strong> when there is extra space in the cross-axis. (Only applies if <code>flex-wrap: wrap</code> is set and there are multiple lines).</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>.container {
+   display: flex;
+   flex-wrap: wrap;
+   align-content: space-around;
+}</code></pre></div><h3><code>gap / row-gap / column-gap</code></h3><p>Defines the space between flex items.</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>.container {
+   display: flex;
+   gap: 20px; /* 20px gap between all items */
+}</code></pre></div><h2>Flex Item Properties</h2>
+<p>The following properties apply directly to the individual flex items (the child elements).</p>
+<h3><code>order</code></h3><p>Controls the order in which items appear. Default is 0.</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>.item-first {
+   order: -1;
+}</code></pre></div><h3><code>flex-grow</code></h3><p>Defines how much a flex item will grow relative to the rest of the flex items. Default is 0 (don't grow).</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>.item {
+   flex-grow: 1; /* Take up remaining space */
+}</code></pre></div><h3><code>flex-shrink</code></h3><p>Defines how much an item will shrink relative to the rest. Default is 1.</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>.item {
+   flex-shrink: 0; /* Do not shrink */
+}</code></pre></div><h3><code>flex-basis</code></h3><p>Specifies the initial main size of a flex item before free space is distributed.</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>.item {
+   flex-basis: 200px;
+}</code></pre></div><h3><code>flex (Shorthand)</code></h3><p>Shorthand for <code>flex-grow</code>, <code>flex-shrink</code>, and <code>flex-basis</code>.</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>.item {
+   flex: 1 1 200px;
+   /* Commonly used as flex: 1 to make items grow evenly */
+}</code></pre></div><h3><code>align-self</code></h3><p>Overrides the container's <code>align-items</code> value for this specific item.</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>.item {
+   align-self: flex-end;
+}</code></pre></div><h2>Responsive Example</h2><p>A common navigation bar layout that collapses to a column on mobile:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>.nav {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+   .nav {
+      flex-direction: column;
+      align-items: center;
+   }
+}</code></pre></div><h2>Practical Examples</h2>
+<p>Here is a complete, working example of a Flexbox layout.</p>
+<div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">HTML/CSS</span></div><div class="code-actions"><button type="button" class="btn-copy">Copy</button><button type="button" class="btn-try">Try It Yourself</button></div></div><pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         .flex-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: DodgerBlue;
+            padding: 10px;
+         }
+         .flex-container &gt; div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;h1&gt;Flexbox Example&lt;/h1&gt;
+      &lt;div class="flex-container"&gt;
+         &lt;div&gt;1&lt;/div&gt;
+         &lt;div&gt;2&lt;/div&gt;
+         &lt;div&gt;3&lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre></div>
+<h2>Common Mistakes</h2><ul class="list"><li><b>Forgetting to set height:</b> <code>align-items: center</code> won't vertically center an item if the flex container doesn't have a defined height.</li><li><b>Misunderstanding justify vs align:</b> Remember: <code>justify-content</code> works on the Main Axis, <code>align-items</code> works on the Cross Axis. If you change <code>flex-direction: column</code>, they swap visual directions!</li></ul><h2>Best Practices</h2><ul class="list"><li><b>Use Shorthand:</b> Prefer using the <code>flex</code> shorthand on flex items instead of writing grow, shrink, and basis separately.</li><li><b>Use Gap:</b> Instead of putting margins on flex items (and fighting with the outer margins), use the <code>gap</code> property on the flex container.</li></ul><h2>Interview Questions</h2><ul class="list"><li><b>What is the difference between align-items and align-content?</b><br><code>align-items</code> aligns individual items on the cross axis. <code>align-content</code> aligns multiple lines of items when they wrap.</li><li><b>What does flex: 1 mean?</b><br>It is shorthand for <code>flex: 1 1 0%</code>. It tells the item to grow to fill space, shrink if needed, and start with a basis of 0.</li></ul><h2>Summary</h2><p>Flexbox is a 1-dimensional layout model that excels at distributing space and aligning items in a single row or column. By understanding the main and cross axes, and the separation between container properties and item properties, you can build complex, responsive layouts with minimal code.</p>
+</div>
+
+        <nav class="page-nav">
+            <a href="responsive.html">&larr; Previous Chapter: Responsive</a>
+            <a href="css-grid.html">Next Chapter: CSS Grid &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

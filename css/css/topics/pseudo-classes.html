@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo Classes | Skilledu Tutorial</title>
+    <meta name="description" content="CSS pseudo-classes are used to add special effects to some selectors. You do not need to use JavaScript or any other script to use these classes. The...">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/pseudo-classes.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Pseudo Classes | Skilledu Tutorial">
+    <meta property="og:description" content="CSS pseudo-classes are used to add special effects to some selectors. You do not need to use JavaScript or any other script to use these classes. The...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/pseudo-classes.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Pseudo Classes | Skilledu Tutorial">
+    <meta name="twitter:description" content="CSS pseudo-classes are used to add special effects to some selectors. You do not need to use JavaScript or any other script to use these classes. The...">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Pseudo Classes",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/pseudo-classes.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Pseudo Classes | Skilledu Tutorial",
+  "description": "CSS pseudo-classes are used to add special effects to some selectors. You do not need to use JavaScript or any other script to use these classes. The...",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/pseudo-classes.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'pseudo-classes';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-pseudo-classes" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-pseudo-classes" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 30</span>
+    <h1>Pseudo Classes</h1>
+  </div>
+  <div class="topic-section">
+    <p>CSS pseudo-classes are used to add special effects to some selectors. You do not need to use JavaScript or any other script to use these classes. The syntax of pseudo-classes is:</p>
+
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS Syntax</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>/* Basic pseudo-class syntax */
+selector:pseudo-class { property: value; }
+
+/* CSS classes combined with pseudo-classes */
+selector.class:pseudo-class { property: value; }</code></pre>
+    </div>
+
+    <h2>Common Pseudo-Classes</h2>
+    <table class="css-table">
+      <thead><tr>
+        <th>Pseudo-Class</th>
+        <th>Description</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>:link</td><td>Applies to unvisited links.</td></tr>
+        <tr><td>:visited</td><td>Applies to links that have been visited.</td></tr>
+        <tr><td>:hover</td><td>Applies when the mouse is placed over an element.</td></tr>
+        <tr><td>:active</td><td>Applies when the element is being activated (e.g., clicked).</td></tr>
+        <tr><td>:focus</td><td>Applies when an element has keyboard focus.</td></tr>
+        <tr><td>:first-child</td><td>Applies to an element that is the first child of its parent.</td></tr>
+        <tr><td>:lang</td><td>Applies based on the language setting of a document.</td></tr>
+      </tbody>
+    </table>
+
+    <h3><code>hover</code> Pseudo-Class</h3>
+    <p>The most popular use of pseudo-classes is to change the color of links when you hover over them.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style type="text/css"&gt;
+         a:link    { color: #000000; }  /* Unvisited link */
+         a:visited { color: #006600; }  /* Visited link */
+         a:hover   { color: #FFCC00; }  /* Mouse over link */
+         a:active  { color: #FF00CC; }  /* Selected link */
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;a href="#"&gt;Bring Mouse Here&lt;/a&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3><code>focus</code> Pseudo-Class</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style type="text/css"&gt;
+         a:focus { color: #0000FF; }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;a href="#"&gt;Click This Link&lt;/a&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3><code>first-child</code> Pseudo-Class</h3>
+    <p>The <code>:first-child</code> pseudo-class matches a specified element that is the first child of another element and adds special style to it.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style type="text/css"&gt;
+         div &gt; p:first-child {
+            text-indent: 25px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;div&gt;
+         &lt;p&gt;First paragraph in div. This will be indented.&lt;/p&gt;
+         &lt;p&gt;Second paragraph in div. This will NOT be indented.&lt;/p&gt;
+      &lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3><code>lang</code> Pseudo-Class</h3>
+    <p>The <code>:lang</code> pseudo-class allows constructing selectors based on the language setting of specific tags. This is useful in documents that must appeal to multiple languages.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style type="text/css"&gt;
+         /* Quote styles for different languages */
+         :lang(en) { quotes: '"' '"' <code>"'"</code> <code>"'"</code>; }
+         :lang(fr) { quotes: <code>"&lt;&lt;"</code> <code>"&gt;&gt;"</code> <code>"&lt;"</code> <code>"&gt;"</code>; }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p&gt;..&lt;q lang="fr"&gt;A French quote&lt;/q&gt;..&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+<h2>Practical Examples</h2><p>Enhancing a list with zebra striping and providing accessible focus states for keyboard users:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+/* Zebra Striping using structural pseudo-classes */
+li:nth-child(even) {
+   background-color: #f3f4f6;
+}
+
+/* Highlighting the very first item */
+li:first-child {
+   font-weight: bold;
+   border-top: 2px solid blue;
+}
+
+/* Modern Accessibility: Show outline only for keyboard focus, not mouse clicks */
+button:focus-visible {
+   outline: 3px solid #3b82f6;
+}
+&lt;/style&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;button&gt;Click to focus (or use Tab)&lt;/button&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Removing focus outlines blindly</strong> − Using <code>*:focus { outline: none; }</code>. This makes the website completely unusable for users navigating with the Tab key. Never remove a focus ring without replacing it with a custom visible style.</li><li><strong>Using hover effects on mobile</strong> − Mobile devices don't have a hover state. Tap interactions often trigger <code>:hover</code> and it gets <code>"stuck"</code> until the user taps elsewhere, creating a confusing UI.</li><li><strong>Misunderstanding nth-child vs nth-of-type</strong> − <code>:nth-child(2)</code> selects the 2nd child of a parent, regardless of what tag it is. <code>:nth-of-type(2)</code> selects the 2nd child that matches a specific tag type.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Use <code>:focus-visible</code></strong> − This modern pseudo-class solves the <code>"ugly focus ring on click"</code> problem. It only shows the outline when the browser detects keyboard navigation, hiding it for mouse users.</li><li><strong>Pair <code>:hover</code> with <code>:focus</code></strong> − Whenever you add a hover effect to a button or link, apply the same effect to the focus state (e.g., <code>a:hover, a:focus</code>) to ensure keyboard users get the same visual feedback.</li><li><strong>Pair Hover and Focus</strong> − Always provide a <code>:focus</code> style when you provide a <code>:hover</code> style for accessibility. The <code>:focus</code> state applies when a form element (input, textarea, button, link) is actively selected or tabbed into. Removing the default focus outline without providing a visible replacement makes it impossible for keyboard-only users to see where they are on the page. For example:<br><pre><code>input:focus {
+  outline: 2px solid #1a73e8;
+}</code></pre></li></ul><h2>Interview Questions</h2><p><strong>Q: What is the difference between a pseudo-class and a pseudo-element?</strong></p><p>A: A pseudo-class (<code>:hover</code>) targets the STATE of an existing element. A pseudo-element (<code>::before</code>) actually injects new virtual content into the DOM.</p><p><strong>Q: How does <code>:nth-child(2n)</code> work?</strong></p><p>A: The <code>n</code> acts as a counter starting from 0. It selects every 2nd element (2*0=0, 2*1=2, 2*2=4, etc.). It is identical to <code>:nth-child(even)</code>.</p><p><strong>Q: What does the <code>:not()</code> pseudo-class do?</strong></p><p>A: It is an exclusion selector. For example, <code>div:not(.hidden)</code> selects all divs EXCEPT those that have the class <code>hidden</code>.</p><h2>Summary</h2><p>Pseudo-classes allow you to style elements based on user interaction (like hovering or focusing) or their structural position in the DOM (like the first or last child). They are essential for creating dynamic, interactive, and accessible user interfaces without writing complex JavaScript event listeners.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="measurement-units-relative.html">&larr; Previous Chapter: Measurement Units — Relative</a>
+            <a href="pseudo-elements.html">Next Chapter: Pseudo Elements &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

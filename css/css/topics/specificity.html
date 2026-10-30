@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity | Skilledu Tutorial</title>
+    <meta name="description" content="CSS Specificity is the set of rules that browsers use to decide which CSS styles should be applied to an HTML element when there are multiple conflicting...">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/specificity.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Specificity | Skilledu Tutorial">
+    <meta property="og:description" content="CSS Specificity is the set of rules that browsers use to decide which CSS styles should be applied to an HTML element when there are multiple conflicting...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/specificity.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Specificity | Skilledu Tutorial">
+    <meta name="twitter:description" content="CSS Specificity is the set of rules that browsers use to decide which CSS styles should be applied to an HTML element when there are multiple conflicting...">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "CSS Specificity",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/specificity.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Specificity | Skilledu Tutorial",
+  "description": "CSS Specificity is the set of rules that browsers use to decide which CSS styles should be applied to an HTML element when there are multiple conflicting...",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/specificity.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'specificity';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-specificity" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-specificity" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+<div class="topic-header">
+    <span class="topic-badge">Topic 6</span>
+    <h1>CSS Specificity</h1>
+  </div>
+  <div class="topic-section">
+    <p>CSS Specificity is the set of rules that browsers use to decide which CSS styles should be applied to an HTML element when there are multiple conflicting rules.</p>
+    <p>Imagine you have multiple CSS rules trying to change the color of the same text. One rule says the text should be red, and another says it should be blue. The browser needs a way to decide which rule wins. Specificity is the scoring system that makes this decision.</p>
+
+    <h3>Simple Example</h3>
+    <p>Let us look at a very simple example where two rules target the same element.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;style&gt;
+    p {
+      color: blue;
+    }
+    .text-red {
+      color: red;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p class="text-red"&gt;This text will be red.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+    <p>In this example, the class selector <code>.text-red</code> wins over the element selector <code>p</code>, so the text becomes red. We will learn exactly why this happens as we explore the priority rules.</p>
+
+    <h3>CSS Specificity Priority</h3>
+    <p>To understand which CSS rule wins, you must know the basic priority order. From strongest to weakest, the order is:</p>
+    <p><strong>Inline Style &gt; ID &gt; Class / Attribute / Pseudo-class &gt; Element / Pseudo-element</strong></p>
+    <p>Let us look at each level of this priority system separately.</p>
+
+    <h3>Inline Styles</h3>
+    <p>An inline style is written directly inside an HTML tag using the <code>style</code> attribute.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;h1 style="color: purple;"&gt;This is a heading&lt;/h1&gt;</code></pre>
+    </div>
+    <p>Inline styles have the highest priority. They will override almost any style written inside a CSS file because they are attached directly to the specific element.</p>
+
+    <h3>ID Selectors</h3>
+    <p>An ID selector uses the <code>id</code> attribute of an HTML element to target it. In CSS, an ID is selected using the hash (<code>#</code>) symbol.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>#main-title {
+  color: green;
+}</code></pre>
+    </div>
+    <p>An ID is meant to be unique on a webpage, meaning it targets only one specific element. Because of this, it has a very high specificity and will always beat class and element selectors.</p>
+
+    <h3>Class, Attribute, and Pseudo-class Selectors</h3>
+    <p>These selectors have medium priority. They are stronger than basic element selectors but weaker than IDs.</p>
+    <ul class="list">
+      <li><strong>Class selectors:</strong> Target elements with a specific class, starting with a dot (like <code>.button</code>).</li>
+      <li><strong>Attribute selectors:</strong> Target elements based on their HTML attributes (like <code>[type="text"]</code>).</li>
+      <li><strong>Pseudo-classes:</strong> Target elements in a specific state (like <code>:hover</code> or <code>:focus</code>).</li>
+    </ul>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>.highlight { color: yellow; } /* Class */
+input[type="text"] { border: 1px solid black; } /* Attribute */
+a:hover { color: orange; } /* Pseudo-class */</code></pre>
+    </div>
+
+    <h3>Element and Pseudo-element Selectors</h3>
+    <p>These are the weakest selectors in CSS.</p>
+    <ul class="list">
+      <li><strong>Element selectors:</strong> Target generic HTML tags directly (like <code>p</code>, <code>div</code>, or <code>h1</code>).</li>
+      <li><strong>Pseudo-elements:</strong> Target specific parts of an element (like <code>::before</code> or <code>::after</code>).</li>
+    </ul>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>p { color: gray; } /* Element */
+p::first-letter { font-size: 24px; } /* Pseudo-element */</code></pre>
+    </div>
+
+    <h3>Specificity Score</h3>
+    <p>Now that you understand the basic priority, let us introduce the numerical scoring system behind it. Every CSS selector is given a score in four categories. This is often written as four numbers separated by commas: <code>0,0,0,0</code>.</p>
+    <ul class="list">
+      <li><strong>Inline Style</strong> gives a score of <code>1,0,0,0</code>.</li>
+      <li><strong>ID</strong> gives a score of <code>0,1,0,0</code>.</li>
+      <li><strong>Class, Attribute, or Pseudo-class</strong> gives a score of <code>0,0,1,0</code>.</li>
+      <li><strong>Element or Pseudo-element</strong> gives a score of <code>0,0,0,1</code>.</li>
+    </ul>
+    <p>You can think of these numbers simply as thousands, hundreds, tens, and ones to easily see which score is larger.</p>
+
+    <h3>How to Calculate Specificity</h3>
+    <p>To calculate the total specificity score of a CSS rule, you just count how many of each type of selector it contains.</p>
+    <ul class="list">
+      <li><code>.button</code> (One class) = <strong>0,0,1,0</strong></li>
+      <li><code>.nav .menu-item</code> (Two classes) = <strong>0,0,2,0</strong></li>
+      <li><code>#header .logo</code> (One ID, one class) = <strong>0,1,1,0</strong></li>
+      <li><code>div p a</code> (Three elements) = <strong>0,0,0,3</strong></li>
+    </ul>
+
+    <h3>Important Specificity Rule</h3>
+    <p>When comparing scores, the browser checks the highest-priority category first (from left to right). A higher priority category will always win, no matter how many lower priority selectors you combine.</p>
+    <p>For example, a score of <strong>0,1,0,0</strong> (one ID) will easily beat a score of <strong>0,0,5,0</strong> (five classes). This is because the ID category is stronger than the Class category.</p>
+
+    <h3>Same Specificity</h3>
+    <p>What happens if two rules have the exact same specificity score? The rule that is written <strong>later</strong> in your CSS code will win. This is the "Cascading" behavior of CSS.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>.text {
+    color: blue;
+}
+
+.text {
+    color: red;
+}</code></pre>
+    </div>
+    <p>Since both selectors are identical classes, they have the exact same score. The text will be red because the red rule is written later.</p>
+
+    <h3>The !important Rule</h3>
+    <p>The <code>!important</code> rule is a special CSS keyword that overrides all normal specificity rules.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>p {
+    color: red !important;
+}</code></pre>
+    </div>
+    <p>Even if another rule has a very high specificity (like an ID or an inline style), the rule with <code>!important</code> will still win. However, it should not be used as a quick fix for every CSS problem. Excessive use of <code>!important</code> makes your CSS very difficult to maintain and debug because it breaks the natural cascading rules.</p>
+
+    <h3>Specificity Cheat Sheet</h3>
+    <table class="css-table">
+      <thead>
+        <tr>
+          <th>Selector Type</th>
+          <th>Example</th>
+          <th>Specificity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Inline Style</td>
+          <td><code>style="color:red"</code></td>
+          <td>1,0,0,0</td>
+        </tr>
+        <tr>
+          <td>ID</td>
+          <td><code>#header</code></td>
+          <td>0,1,0,0</td>
+        </tr>
+        <tr>
+          <td>Class</td>
+          <td><code>.button</code></td>
+          <td>0,0,1,0</td>
+        </tr>
+        <tr>
+          <td>Attribute</td>
+          <td><code>[type="text"]</code></td>
+          <td>0,0,1,0</td>
+        </tr>
+        <tr>
+          <td>Pseudo-class</td>
+          <td><code>:hover</code></td>
+          <td>0,0,1,0</td>
+        </tr>
+        <tr>
+          <td>Element</td>
+          <td><code>div</code></td>
+          <td>0,0,0,1</td>
+        </tr>
+        <tr>
+          <td>Pseudo-element</td>
+          <td><code>::before</code></td>
+          <td>0,0,0,1</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Practical Examples</h2>
+    
+    <h3>Element vs Class</h3>
+    <p>A class selector has a higher specificity (0,0,1,0) than an element selector (0,0,0,1). The text will be blue.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>p { color: red; } /* 0,0,0,1 */
+.highlight { color: blue; } /* 0,0,1,0 (Wins) */</code></pre>
+    </div>
+
+    <h3>Class vs ID</h3>
+    <p>An ID selector has a higher specificity (0,1,0,0) than a class selector (0,0,1,0). The text will be green.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>.highlight { color: blue; } /* 0,0,1,0 */
+#unique-text { color: green; } /* 0,1,0,0 (Wins) */</code></pre>
+    </div>
+
+    <h3>Multiple Classes vs ID</h3>
+    <p>Even if you combine multiple classes, they cannot beat a single ID. The ID category is fundamentally stronger. The text will be purple.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>.box .inner .text { color: orange; } /* 0,0,3,0 */
+#main-box { color: purple; } /* 0,1,0,0 (Wins) */</code></pre>
+    </div>
+
+    <h3>Same Specificity</h3>
+    <p>When two rules have the exact same specificity, the one written last in the CSS file will win. The text will be orange.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>.message { color: yellow; }
+.message { color: orange; } /* Written later (Wins) */</code></pre>
+    </div>
+
+    <h3>Inline Style vs ID</h3>
+    <p>An inline style (1,0,0,0) will always override an ID (0,1,0,0). The text will be pink.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;style&gt;
+  #title { color: black; } /* 0,1,0,0 */
+&lt;/style&gt;
+
+&lt;h1 id="title" style="color: pink;"&gt;Hello World&lt;/h1&gt; &lt;!-- 1,0,0,0 (Wins) --&gt;</code></pre>
+    </div>
+
+    <h2>Common Mistakes</h2>
+    <ul class="list">
+      <li><strong>Using !important everywhere:</strong> Beginners often use <code>!important</code> when their CSS is not working. This is a bad habit that makes future styling changes incredibly difficult.</li>
+      <li><strong>Using unnecessary IDs for styling:</strong> Avoid styling with IDs unless absolutely necessary. Classes are much easier to override and reuse across your project.</li>
+      <li><strong>Writing overly complicated selectors:</strong> A selector like <code>div ul li a.active span</code> is too specific and hard to manage. A simple class like <code>.nav-link-active</code> is much better.</li>
+      <li><strong>Not checking specificity:</strong> When a CSS rule is not applying as expected, it is almost always because another rule has a higher specificity score.</li>
+      <li><strong>Assuming length equals strength:</strong> A very long selector containing many elements (like 10 elements) will still lose to a single simple class selector, because classes are in a higher priority category.</li>
+    </ul>
+
+    <h2>Best Practices</h2>
+    <ul class="list">
+      <li><strong>Prefer simple class selectors:</strong> Build your styles primarily around classes (like <code>.card</code>, <code>.btn</code>, <code>.header</code>). This keeps specificity low and predictable.</li>
+      <li><strong>Keep specificity low:</strong> It is much easier to manage a website where all CSS rules have relatively low specificity scores.</li>
+      <li><strong>Use IDs for JavaScript or HTML anchors:</strong> Use IDs for identifying elements in JavaScript or creating page anchors, rather than for general CSS styling.</li>
+      <li><strong>Use !important only when genuinely needed:</strong> Reserve <code>!important</code> for absolute exceptions, such as overriding a third-party library's styling that you cannot change otherwise.</li>
+    </ul>
+
+    <h2>Interview Questions</h2>
+    <p><strong>Q: What is CSS Specificity?</strong></p>
+    <p>A: It is the set of rules browsers use to determine which CSS styles should be applied to an element when multiple conflicting rules target the same element.</p>
+    
+    <p><strong>Q: Why is CSS Specificity important?</strong></p>
+    <p>A: It ensures that browsers know exactly how to resolve styling conflicts, allowing developers to predictably override and manage styles in large applications.</p>
+    
+    <p><strong>Q: What is the specificity priority order?</strong></p>
+    <p>A: Inline Style &gt; ID &gt; Class / Attribute / Pseudo-class &gt; Element / Pseudo-element.</p>
+    
+    <p><strong>Q: Which is stronger: a class or an ID?</strong></p>
+    <p>A: An ID is always stronger than a class.</p>
+    
+    <p><strong>Q: Which wins: <code>.nav ul li a</code> or <code>#navbar a</code>?</strong></p>
+    <p>A: <code>#navbar a</code> wins because it contains an ID selector, which automatically beats any number of classes and elements.</p>
+    
+    <p><strong>Q: What happens when two selectors have the exact same specificity?</strong></p>
+    <p>A: The rule that appears later in the CSS document will win.</p>
+    
+    <p><strong>Q: What is !important?</strong></p>
+    <p>A: It is a special keyword added to a CSS declaration that overrides all normal specificity rules, including inline styles.</p>
+    
+    <p><strong>Q: Is a longer CSS selector always more specific?</strong></p>
+    <p>A: No. A short selector with an ID (<code>#header</code>) will always beat a very long selector that only contains elements and classes.</p>
+    
+    <p><strong>Q: Why should unnecessary IDs be avoided for styling?</strong></p>
+    <p>A: IDs have extremely high specificity, making them very difficult to override later if you need to reuse or slightly change a component's design.</p>
+
+    <h2>Summary</h2>
+    <p>CSS Specificity acts as a scoring system to resolve styling conflicts. The fundamental rule you must remember is the priority order:</p>
+    <p><strong>Inline Style &gt; ID &gt; Class / Attribute / Pseudo-class &gt; Element / Pseudo-element</strong></p>
+    <p>When two rules have the exact same specificity, <strong>the later rule wins</strong>. By keeping your selectors simple and prioritizing classes over IDs, you will write cleaner, more maintainable CSS code that rarely requires the use of <code>!important</code>.</p>
+  </div>>
+
+        <nav class="page-nav">
+            <a href="combinators.html">&larr; Previous Chapter: CSS Combinators</a>
+            <a href="inheritance.html">Next Chapter: CSS Inheritance &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

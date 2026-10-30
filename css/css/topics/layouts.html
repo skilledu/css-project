@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layouts | Skilledu Tutorial</title>
+    <meta name="description" content="Hope you are very comfortable with HTML tables and you are efficient in designing page layouts using HTML Tables. But you know CSS also provides plenty of...">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/layouts.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Layouts | Skilledu Tutorial">
+    <meta property="og:description" content="Hope you are very comfortable with HTML tables and you are efficient in designing page layouts using HTML Tables. But you know CSS also provides plenty of...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/layouts.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Layouts | Skilledu Tutorial">
+    <meta name="twitter:description" content="Hope you are very comfortable with HTML tables and you are efficient in designing page layouts using HTML Tables. But you know CSS also provides plenty of...">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Layouts",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/layouts.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Layouts | Skilledu Tutorial",
+  "description": "Hope you are very comfortable with HTML tables and you are efficient in designing page layouts using HTML Tables. But you know CSS also provides plenty of...",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/layouts.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'layouts';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-layouts" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-layouts" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 37</span>
+    <h1>Layouts</h1>
+  </div>
+  <div class="topic-section">
+    <p>Hope you are very comfortable with HTML tables and you are efficient in designing page layouts using HTML Tables. But you know CSS also provides plenty of controls for positioning elements in a document. Since CSS is the wave of the future, why not learn and use CSS instead of tables for page layout purposes?</p>
+    <p>The following list collects a few pros and cons of both the technologies −</p>
+    <table class="css-table">
+      <thead>
+        <tr>
+          <th>Aspect</th>
+          <th>Tables</th>
+          <th>CSS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Browser Support</td>
+          <td>Most browsers support tables</td>
+          <td>CSS support is being slowly adopted</td>
+        </tr>
+        <tr>
+          <td>Responsiveness</td>
+          <td>More forgiving when browser window size changes - morphing content and wrapping to accommodate changes accordingly</td>
+          <td>CSS positioning tends to be exact and fairly inflexible</td>
+        </tr>
+        <tr>
+          <td>Ease of Learning</td>
+          <td>Much easier to learn and manipulate</td>
+          <td>CSS rules can be more complex</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>But each of these arguments can be reversed −</p>
+    <table class="css-table">
+      <thead>
+        <tr>
+          <th>Aspect</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Future Support</td>
+          <td>CSS is pivotal to the future of Web documents and will be supported by most browsers</td>
+        </tr>
+        <tr>
+          <td>Precision</td>
+          <td>CSS is more exact than tables, allowing your document to be viewed as you intended, regardless of the browser window</td>
+        </tr>
+        <tr>
+          <td>Organization</td>
+          <td>Keeping track of nested tables can be a real pain. CSS rules tend to be well organized, easily read, and easily changed</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Finally, we would suggest you to use whichever technology makes sense to you and use what you know or what presents your documents in the best way.</p>
+    <p>CSS also provides <code>table-layout</code> property to make your tables load much faster. Following is an example −</p>
+    <div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">HTML/CSS</span></div><div class="code-actions"><button type="button" class="btn-copy">Copy</button></div></div><pre class="code-block"><code>&lt;table style="table-layout:fixed;width:600px;"&gt;
+  &lt;tr&gt;
+    &lt;td width="150"&gt;CSS table layout cell 1&lt;/td&gt;
+    &lt;td width="200"&gt;CSS table layout cell 2&lt;/td&gt;
+    &lt;td width="250"&gt;CSS table layout cell 3&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre></div>
+    <p>You will notice the benefits more on large tables. With traditional HTML, the browser had to calculate every cell before finally rendering the table. When you set the table-layout algorithm to fixed, however, it only needs to look at the first row before rendering the whole table. It means your table will need to have fixed column widths and row heights.</p>
+    <h3>Sample Column Layout</h3>
+    <p>Here are the steps to create a simple Column Layout using CSS −</p>
+    <p>Set the margin and padding of the complete document as follows −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>body {
+   margin:9px 9px 0 9px;
+   padding:0;
+   background:#FFF;
+}</code></pre>
+    </div>
+    <p>Now, we will define a column with yellow color and later, we will attach this rule to a &lt;div&gt;:</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>#level0 {
+   background:#FC0;
+}</code></pre>
+    </div>
+    <p>Upto this point, we will have a document with yellow body, so let us now define another division inside level0 −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>#level1 {
+   margin-left:143px;
+   padding-left:9px;
+   background:#FFF;
+}</code></pre>
+    </div>
+    <p>Now, we will nest one more division inside level1, and we will change just background color −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>#level2 {
+   background:#FFF3AC;
+}</code></pre>
+    </div>
+    <p>Finally, we will use the same technique, nest a level3 division inside level2 to get the visual layout for the right column −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>#level3 {
+   margin-right:143px;
+   padding-right:9px;
+   background:#FFF;
+}
+#main {
+   background:#CCC;
+}</code></pre>
+    </div>
+    <p>Complete the source code as follows −</p>
+
+    <div class="code-wrap">
+      <div class="code-header">
+         <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         body {
+   margin:9px 9px 0 9px;
+   padding:0;
+   background:#FFF;
+}
+#level0 {background:#FC0;}
+#level1 {
+   margin-left:143px;
+   padding-left:9px;
+   background:#FFF;
+}
+#level2 {background:#FFF3AC;}
+#level3 {
+   margin-right:143px;
+   padding-right:9px;
+   background:#FFF;
+}
+#main {background:#CCC;}
+&lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;div id="level0"&gt;
+         &lt;div id="level1"&gt;
+            &lt;div id="level2"&gt;
+               &lt;div id="level3"&gt;
+                  &lt;div id="main"&gt;
+                     Final Content goes here...
+                  &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+    <p>Similarly, you can add a top navigation bar or an ad bar at the top of the page.</p>
+
+
+
+<h2>Practical Examples</h2><p>A masonry-style newspaper layout that flows text gracefully across multiple columns while preventing awkward breaks inside paragraphs:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+.newspaper-article {
+   /* Creates responsive columns that won't get thinner than 250px */
+   column-width: 250px;
+   column-gap: 30px;
+   column-rule: 1px solid #ccc; /* Draws a line between columns */
+}
+
+.newspaper-article p {
+   /* Prevents a single paragraph from being split across two columns */
+   break-inside: avoid;
+   margin-bottom: 1rem;
+}
+&lt;/style&gt;
+
+&lt;div class="newspaper-article"&gt;
+  &lt;p&gt;First paragraph of news. This is a very interesting story.&lt;/p&gt;
+  &lt;p&gt;Second paragraph of news. CSS Layouts are awesome.&lt;/p&gt;
+  &lt;p&gt;Third paragraph of news. Multi-column makes it easy.&lt;/p&gt;
+&lt;/div&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Using CSS Columns for structural grids</strong> − Trying to build a dashboard layout with <code>column-count</code>. CSS Columns flow content top-to-bottom first, then over to the next column. If you want content to read left-to-right (row-by-row), you must use CSS Grid instead.</li><li><strong>Hardcoding <code>column-count: 4</code></strong> − Forcing 4 columns looks great on desktop but creates illegibly thin columns on mobile. Always use <code>column-width</code> instead so the browser can reduce the column count automatically on small screens.</li><li><strong>Setting fixed heights</strong> − Setting a fixed height on the multi-column container prevents the columns from balancing their content evenly.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Use <code>column-width</code> for intrinsic responsiveness</strong> − Declaring a width (e.g., 300px) tells the browser "give me as many columns as will fit, but never thinner than 300px." This eliminates the need for media queries!</li><li><strong>Utilize <code>break-inside: avoid</code></strong> − Always apply this to child elements (like blockquotes, images, or cards) inside the column layout to prevent them from being awkwardly sliced in half at the bottom of a column.</li></ul><h2>Interview Questions</h2><p><strong>Q: What is the main difference between <code>column-count</code> and <code>column-width</code>?</strong></p><p>A: <code>column-count</code> forces an exact number of columns regardless of the screen size, which can break on mobile. <code>column-width</code> defines an ideal minimum width, allowing the browser to calculate how many columns can fit, making it inherently responsive.</p><p><strong>Q: How do you make an element span across all columns (like a large headline in an article)?</strong></p><p>A: By applying <code>column-span: all;</code> to that specific element.</p><p><strong>Q: In what direction does content flow inside a CSS Multi-column layout?</strong></p><p>A: Vertically (top-to-bottom) filling the first column entirely before spilling over into the next column.</p><h2>Summary</h2><p>The CSS Multi-column layout module is highly specialized. While it is terrible for building overall page structures (leave that to Flexbox and Grid), it is absolutely unmatched for flowing text-heavy content like newspaper articles, or building pure-CSS masonry image galleries using <code>break-inside: avoid</code>.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="multi-columns.html">&larr; Previous Chapter: Multi Columns</a>
+            <a href="transitions.html">Next Chapter: CSS Transitions &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

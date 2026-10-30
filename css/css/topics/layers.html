@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layers | Skilledu Tutorial</title>
+    <meta name="description" content="CSS gives you the opportunity to create layers of various divisions. The CSS layers refer to applying the z-index property to elements that overlap with...">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/layers.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Layers | Skilledu Tutorial">
+    <meta property="og:description" content="CSS gives you the opportunity to create layers of various divisions. The CSS layers refer to applying the z-index property to elements that overlap with...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/layers.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Layers | Skilledu Tutorial">
+    <meta name="twitter:description" content="CSS gives you the opportunity to create layers of various divisions. The CSS layers refer to applying the z-index property to elements that overlap with...">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Layers",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/layers.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Layers | Skilledu Tutorial",
+  "description": "CSS gives you the opportunity to create layers of various divisions. The CSS layers refer to applying the z-index property to elements that overlap with...",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/layers.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'layers';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-layers" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-layers" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 46</span>
+    <h1>Layers</h1>
+  </div>
+  <div class="topic-section">
+    <p>CSS gives you the opportunity to create layers of various divisions. The CSS layers refer to applying the <code>z-index</code> property to elements that overlap with each other.</p>
+    <p>The <code>z-index</code> property is used along with the <code>position</code> property to create an effect of layers. You can specify which element should come on top and which element should come at the bottom.</p>
+    <p>A <code>z-index</code> property can help you to create more complex webpage layouts. The following is an example which shows how to create layers in CSS:</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;div style="background-color:red;
+         width:300px;
+         height:100px;
+         position:relative;
+         top:10px;
+         left:80px;
+         z-index:2"&gt;
+      &lt;/div&gt;
+      &lt;div style="background-color:yellow;
+         width:300px;
+         height:100px;
+         position:relative;
+         top:-60px;
+         left:35px;
+         z-index:1;"&gt;
+      &lt;/div&gt;
+      &lt;div style="background-color:green;
+         width:300px;
+         height:100px;
+         position:relative;
+         top:-220px;
+         left:120px;
+         z-index:3;"&gt;
+      &lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+
+<h2>Practical Examples</h2><p>A well-structured z-index hierarchy ensuring a modal overlay always appears above a fixed header navigation:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+.header-nav {
+   position: fixed;
+   z-index: 100; /* Stays above normal scrolling content */
+}
+
+.modal-overlay {
+   position: fixed;
+   z-index: 1000; /* Must be higher than the header */
+}
+&lt;/style&gt;
+
+&lt;div style="position:relative; height:150px;"&gt;
+  &lt;div class="header-nav" style="top:0; left:0; width:100%; background:black; color:white; padding:10px;"&gt;Nav (z-index 100)&lt;/div&gt;
+  &lt;div class="modal-overlay" style="top:50px; left:50px; width:200px; background:rgba(0,0,0,0.8); color:white; padding:20px;"&gt;Modal (z-index 1000)&lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Applying z-index to static elements</strong> − <code>z-index</code> ONLY works if the element has a <code>position</code> property of <code>relative</code>, <code>absolute</code>, <code>fixed</code>, or <code>sticky</code>. Applying it to a <code>static</code> (default) element does absolutely nothing.</li><li><strong>Z-index Wars (99999)</strong> − Frustrated developers often slap <code>z-index: 99999</code> on an element when it isn't showing up. This makes future layering conflicts impossible to debug.</li><li><strong>Misunderstanding Stacking Contexts</strong> − If a parent element has <code>z-index: 10</code>, its child can have <code>z-index: 9999</code>, but it will NEVER appear above an outside element with <code>z-index: 11</code>. The parent traps the child in a local context.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Establish a Global Z-Index Scale</strong> − Use a sensible scale in your project (e.g., 10 for dropdowns, 100 for sticky headers, 1000 for modals/tooltips) to maintain order.</li><li><strong>Create new stacking contexts carefully</strong> − Be aware that properties like <code>opacity</code> (less than 1) and <code>transform</code> automatically generate a new local stacking context, which can cause unexpected layering bugs.</li></ul><h2>Interview Questions</h2><p><strong>Q: Why is my <code>z-index</code> not working?</strong></p><p>A: The two most common reasons are: 1) The element does not have a <code>position</code> property applied (it is still <code>static</code>). 2) The element is trapped inside a parent's lower Stacking Context.</p><p><strong>Q: What is a Stacking Context?</strong></p><p>A: It is a local 3D layering system created by certain CSS properties (like positioned elements with z-index, opacity, or transforms). Child elements are layered relative to this local context, and their z-index values cannot break out above the parent's layer.</p><p><strong>Q: If two elements overlap and neither has a z-index, which one appears on top?</strong></p><p>A: The one that is defined last in the HTML source code will appear on top.</p><h2>Summary</h2><p>Z-index provides 3D depth to 2D web pages. While applying a z-index is simple, mastering it requires a deep understanding of Stacking Contexts—knowing that layering is not global, but rather grouped by parent containers. Keep your z-index numbers sensible and always remember to apply positioning!</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="text-overflow.html">&larr; Previous Chapter: Text</a>
+            <a href="rules.html">Next Chapter: @ Rules &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

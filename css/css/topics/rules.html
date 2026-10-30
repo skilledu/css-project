@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS @ Rules | Skilledu Tutorial</title>
+    <meta name="description" content="This chapter will cover the following important @ rules −">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/rules.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS @ Rules | Skilledu Tutorial">
+    <meta property="og:description" content="This chapter will cover the following important @ rules −">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/rules.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS @ Rules | Skilledu Tutorial">
+    <meta name="twitter:description" content="This chapter will cover the following important @ rules −">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "@ Rules",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/rules.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS @ Rules | Skilledu Tutorial",
+  "description": "This chapter will cover the following important @ rules −",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/rules.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'rules';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-rules" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-rules" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 47</span>
+    <h1>@ Rules</h1>
+  </div>
+  <div class="topic-section">
+    <p>This chapter will cover the following important @ rules −</p>
+    <table class="css-table">
+      <thead>
+        <tr>
+          <th>Rule</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>@import</td>
+          <td>Imports another style sheet into the current style sheet.</td>
+        </tr>
+        <tr>
+          <td>@charset</td>
+          <td>Indicates the character set the style sheet uses.</td>
+        </tr>
+        <tr>
+          <td>@font-face</td>
+          <td>Used to exhaustively describe a font face for use in a document.</td>
+        </tr>
+        <tr>
+          <td>!important</td>
+          <td>Indicates that a user-defined rule should take precedence over the author's style sheets.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>NOTE − There are other @ rules which we will cover in subsequent chapters.</p>
+    <h2>import rule</h2>
+    <p>The <code>@import</code> rule allows you to import styles from another style sheet. It should appear right at the start of the style sheet before any of the rules, and its value is a URL.</p>
+    <p>It can be written in one of the two following ways −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>/*
+@import "mystyle.css";
+or
+@import url("mystyle.css");
+.......other CSS rules .....
+*/</code></pre>
+    </div>
+
+    <p>The significance of the <code>@import</code> rule is that it allows you to develop your style sheets with a modular approach. You can create various style sheets and then include them wherever you need them.</p>
+    <h2>charset Rule</h2>
+    <p>If you are writing your document using a character set other than ASCII or ISO-8859-1 you might want to set the <code>@charset</code> rule at the top of your style sheet to indicate what character set the style sheet is written in.</p>
+    <p>The <code>@charset</code> rule must be written right at the beginning of the style sheet without even a space before it. The value is held in quotes and should be one of the standard character-sets. For example −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>@charset "iso-8859-1";
+/* .......other CSS rules ..... */</code></pre>
+    </div>
+
+    <h2>font-face Rule</h2>
+    <p>The <code>@font-face</code> rule is used to exhaustively describe a font face for use in a document. <code>@font-face</code> may also be used to define the location of a font for download, although this may run into implementation-specific limits.</p>
+    <p>In general, <code>@font-face</code> is extremely complicated, and its use is not recommended for any except those who are experts in font metrics.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>@font-face {
+    font-family: "Scarborough Light";
+    src: url("http://www.font.site/s/scarbo-lt");
+}
+@font-face {
+    font-family: Santiago;
+    src: local("Santiago"), url("http://www.font.site/s/santiago.tt") format("truetype");
+    unicode-range: U+??,U+100-220;
+    font-size: all;
+    font-family: sans-serif;
+}</code></pre>
+    </div>
+    <h2>!important Rule</h2>
+    <p>Cascading Style Sheets cascade. It means that the styles are applied in the same order as they are read by the browser. The first style is applied and then the second and so on.</p>
+    <p>The <code>!important</code> rule provides a way to make your CSS cascade. It also includes the rules that are to be applied always. A rule having an <code>!important</code> property will always be applied, no matter where that rule appears in the CSS document.</p>
+    <p>For example, in the following style sheet, the paragraph text will be black, even though the first style property applied is red:</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>p { color: #ff0000; }
+p { color: #000000; }</code></pre>
+    </div>
+
+    <p>So, if you wanted to make sure that a property always applied, you would add the <code>!important</code> property to the tag. So, to make the paragraph text always red, you should write it as follows −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style type="text/css"&gt;
+         p { color: #ff0000 !important; }
+         p { color: #000000; }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p&gt;Hello World&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+    <p>Here you have made <code>p { color: #ff0000 !important; }</code> mandatory. Now this rule will always apply, even if you have defined another rule like <code>p { color: #000000; }</code>.</p>
+
+    <h2>CSS FILTERS - TEXT AND IMAGE EFFECTS</h2>
+    <p>You can use CSS filters to add special visual effects — like blurring, adjusting brightness/contrast, or shifting colors — to images and other elements on a webpage, without needing extra image files. The standard CSS <code>filter</code> property (part of the CSS Filter Effects Module) lets you apply these effects directly in CSS, and it is supported in all modern browsers.</p>
+    <h3>blur()</h3>
+    <p>Applies a Gaussian blur to the input image.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+<pre class="code-block"><code>img {
+    filter: blur(5px);
+}</code></pre>
+    </div>
+    <h3>brightness()</h3>
+    <p>Applies a linear multiplier to input image, making it appear more or less bright.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+<pre class="code-block"><code>img {
+    filter: brightness(150%);
+}</code></pre>
+    </div>
+    <h3>contrast()</h3>
+    <p>Adjusts the contrast of the input.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+<pre class="code-block"><code>img {
+    filter: contrast(200%);
+}</code></pre>
+    </div>
+    <h3>drop-shadow()</h3>
+    <p>Applies a drop shadow effect to the input image.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+<pre class="code-block"><code>img {
+    filter: drop-shadow(4px 4px 10px rgba(0,0,0,0.5));
+}</code></pre>
+    </div>
+    <h3>grayscale()</h3>
+    <p>Converts the input image to grayscale.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+<pre class="code-block"><code>img {
+    filter: grayscale(100%);
+}</code></pre>
+    </div>
+    <h3>hue-rotate()</h3>
+    <p>Applies a hue rotation on the input image.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+<pre class="code-block"><code>img {
+    filter: hue-rotate(90deg);
+}</code></pre>
+    </div>
+    <h3>invert()</h3>
+    <p>Inverts the samples in the input image.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+<pre class="code-block"><code>img {
+    filter: invert(100%);
+}</code></pre>
+    </div>
+    <h3>opacity()</h3>
+    <p>Applies transparency to the samples in the input image.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+<pre class="code-block"><code>img {
+    filter: opacity(50%);
+}</code></pre>
+    </div>
+    <h3>saturate()</h3>
+    <p>Saturates the input image.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+<pre class="code-block"><code>img {
+    filter: saturate(200%);
+}</code></pre>
+    </div>
+    <h3>sepia()</h3>
+    <p>Converts the input image to sepia.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+<pre class="code-block"><code>img {
+    filter: sepia(100%);
+}</code></pre>
+    </div>
+    <h3>Multiple Filters</h3>
+    <p>You can combine multiple filter functions in one declaration by separating them with a space.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+<pre class="code-block"><code>img {
+    filter: contrast(150%) brightness(1.1);
+}</code></pre>
+  </div>
+
+
+<h2>Practical Examples</h2><p>Defining a custom font face and creating a smooth, infinite rotating animation using CSS rules:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+/* 1. The @font-face rule imports a custom font */
+@font-face {
+   font-family: <code>"MyCustomFont"</code>;
+   src: url(<code>"fonts/my-font.woff2"</code>) format(<code>"woff2"</code>);
+}
+
+/* 2. The @keyframes rule defines the animation logic */
+@keyframes spin {
+   from { transform: rotate(0deg); }
+   to   { transform: rotate(360deg); }
+}
+
+.loading-spinner {
+   animation: spin 2s linear infinite;
+}
+&lt;/style&gt;
+
+&lt;div class="loading-spinner" style="width:50px; height:50px; border:5px solid #ccc; border-top-color:blue; border-radius:50%;"&gt;&lt;/div&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Overusing <code>@import</code></strong> − Using <code>@import</code> inside a CSS file to load other CSS files forces the browser to download them sequentially (one after the other), crippling page load speed. Too many <code>@import</code> statements block rendering much more than a single combined stylesheet.</li><li><strong>Placing <code>@charset</code> incorrectly</strong> − If you use the <code>@charset <code>"UTF-8"</code>;</code> rule, it MUST be the very first character of the CSS file. If there is a space or comment before it, it fails.</li><li><strong>Not providing fallback formats in <code>@font-face</code></strong> − Only providing a <code>.ttf</code> file. Modern development requires optimized formats like <code>.woff2</code> for fast loading.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Link CSS in HTML, don't @import</strong> − Always use multiple <code>&lt;link rel="stylesheet"&gt;</code> tags in your HTML <code>&lt;head&gt;</code> so the browser can download stylesheets in parallel. Too many <code>@import</code> statements block rendering much more than a single combined stylesheet.</li><li><strong>Use <code>@keyframes</code> for UI interactions</strong> − CSS animations are hardware-accelerated. Prefer them over JavaScript-based animations for simple spinners, loaders, and hover effects.</li></ul><h2>Interview Questions</h2><p><strong>Q: Why is <code>@import</code> considered bad practice for web performance?</strong></p><p>A: Because it blocks parallel downloading. The browser must download, parse, and execute the main CSS file before it even discovers the <code>@import</code> rule, delaying the download of the secondary stylesheet.</p><p><strong>Q: What does the <code>@font-face</code> rule do?</strong></p><p>A: It allows developers to provide custom typography by instructing the browser to download a font file hosted on the server, rather than relying on fonts installed on the user's local machine.</p><p><strong>Q: What is the difference between a CSS property and an @-rule?</strong></p><p>A: A property applies styles directly to an element (e.g., <code>color: red</code>). An @-rule (at-rule) dictates broad behavioral instructions to the CSS parser itself, such as importing files, defining animations, or setting media queries.</p><h2>Summary</h2><p>At-rules (<code>@</code>) give CSS its programmatic power. They dictate how the browser parses the file (<code>@charset</code>), bring in external assets (<code>@font-face</code>), and define complex motion paths (<code>@keyframes</code>). Understanding these rules unlocks the advanced, dynamic capabilities of modern CSS.</p>
+  </div>
+  
+
+        <nav class="page-nav">
+            <a href="layers.html">&larr; Previous Chapter: Layers</a>
+            <a href="validations.html">Next Chapter: Validations &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background | Skilledu Tutorial</title>
+    <meta name="description" content="This chapter teaches you how to set backgrounds of various HTML elements. You can set the following background properties of an element −">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/background.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Background | Skilledu Tutorial">
+    <meta property="og:description" content="This chapter teaches you how to set backgrounds of various HTML elements. You can set the following background properties of an element −">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/background.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Background | Skilledu Tutorial">
+    <meta name="twitter:description" content="This chapter teaches you how to set backgrounds of various HTML elements. You can set the following background properties of an element −">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Background",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/background.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Background | Skilledu Tutorial",
+  "description": "This chapter teaches you how to set backgrounds of various HTML elements. You can set the following background properties of an element −",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/background.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'background';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-background" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-background" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 22</span>
+    <h1>Background</h1>
+  </div>
+  <div class="topic-section">
+    <p>This chapter teaches you how to set backgrounds of various HTML elements. You can set the following <code>background</code> properties of an element −</p>
+    <table class="css-table">
+  <thead>
+    <tr><th>Property</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>background-color</code></td><td>is used to set the background color of an element.</td></tr>
+    <tr><td><code>background-image</code></td><td>is used to set the background image of an element.</td></tr>
+    <tr><td><code>background-repeat</code></td><td>is used to control the repetition of an image in the background.</td></tr>
+    <tr><td><code>background-position</code></td><td>is used to control the position of an image in the background.</td></tr>
+    <tr><td><code>background-attachment</code></td><td>is used to control the scrolling of an image in the background.</td></tr>
+    <tr><td><code>background</code></td><td>is used as a shorthand to specify a number of other <code>background</code> properties.</td></tr>
+  </tbody>
+</table>
+
+    <h3>Set the Background Color</h3>
+    <p>Following is the example which demonstrates how to set the background color for an element.</p>
+
+
+    <h3>Repeat the Background Image</h3>
+    <p>The following example demonstrates how to repeat the background image if an image is small.</p>
+    <p>You can use the <code>no-repeat</code> value for the <code>background-repeat</code> property if you don't want to repeat an image; in this case the image will display only once. By default, the <code>background-repeat</code> property will have the <code>repeat</code> value.</p>
+
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         body {
+            background-image: url('assets/images/demo-pattern.png');
+            background-size: 100px;
+            background-repeat: repeat;
+            min-height: 100vh;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p&gt;Image repeats in both directions (default)&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <p>The following example which demonstrates how to repeat the background image vertically.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         body {
+            background-image: url('assets/images/demo-pattern.png');
+            background-size: 100px;
+            background-repeat: repeat-y;
+            min-height: 100vh;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p&gt;Image repeats vertically (repeat-y)&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <p>The following example demonstrates how to repeat the background image horizontally.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         body {
+            background-image: url('assets/images/demo-pattern.png');
+            background-size: 100px;
+            background-repeat: repeat-x;
+            min-height: 100vh;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p&gt;Image repeats horizontally (repeat-x)&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Set the Background Image Position</h3>
+    <p>The following example demonstrates how to set the background image position 100 pixels away from the left side.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         body {
+            background-image: url('assets/images/demo-pattern.png');
+            background-size: 100px;
+            background-position:100px;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p&gt;Positioned 100px from left&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <p>The following example demonstrates how to set the background image position 100 pixels away from the left side and 200 pixels down from the top.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         body {
+            background-image: url('assets/images/demo-pattern.png');
+            background-size: 100px;
+            background-position:100px 200px;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p&gt;Positioned 100px left, 200px top&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Set the Background Attachment</h3>
+    <p>Background attachment determines whether a background image is fixed or scrolls with the rest of the page.</p>
+    <p>The following example demonstrates how to set the fixed background image.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         body {
+            background-image: url('assets/images/demo-logo.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+      &lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+      &lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+      &lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+      &lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+      &lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+      &lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+      &lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+      &lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <p>The following example demonstrates how to set the scrolling background image.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         body {
+            background-image: url('assets/images/demo-logo.png');
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            min-height: 100vh;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+      &lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+      &lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+      &lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+      &lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+      &lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+      &lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+      &lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+      &lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Shorthand Property</h3>
+    <p>You can use the <code>background</code> property to set all the <code>background</code> properties at once. For example −</p>
+    <div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">HTML/CSS</span></div><div class="code-actions"><button type="button" class="btn-copy">Copy</button></div></div><pre class="code-block"><code>&lt;p style="background:url(assets/images/demo-pattern.png);
+            background-size: 100px repeat fixed;"&gt;
+This paragraph has fixed repeated background image.
+&lt;/p&gt;</code></pre></div>
+
+
+
+<h2>Practical Examples</h2><p>A common <code>"Hero Section"</code> pattern utilizing the background shorthand property to display a large, centered, non-repeating cover image:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+/* Shorthand: color image repeat attachment position */
+.hero-section {
+   /* Note: The fallback color #333 loads if the image fails */
+   background: #333 url("assets/images/demo-photo.jpg") no-repeat center center;
+
+   /* Force the image to cover the entire container */
+   background-size: cover;
+   height: 400px;
+}
+&lt;/style&gt;
+
+&lt;div class="hero-section"&gt;
+  &lt;h2&gt;Hero Title&lt;/h2&gt;
+&lt;/div&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Forgetting a fallback color</strong> − If you apply a background image behind white text, but the image fails to load (or loads slowly), the white text will become invisible against the default white page. Always provide a fallback <code>background-color</code>.</li><li><strong>Using massive, unoptimized images</strong> − Loading a 5MB image for a background causes massive performance delays. Always compress background images before deploying.</li><li><strong>Not preventing repeat</strong> − By default, background images tile (repeat) endlessly. Forgetting <code>background-repeat: no-repeat;</code> often results in ugly tiled layouts on large screens.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Use <code>background-size: cover</code> for full-width sections</strong> − This ensures your image scales beautifully to fill the container without distorting its aspect ratio.</li><li><strong>Add Overlays for Text Legibility</strong> − If you put text over a busy background image, use a semi-transparent dark overlay (e.g., using a linear-gradient) to ensure the text remains readable.</li><li><strong>Master the Shorthand</strong> − Use the <code>background</code> shorthand to declare the color, image, repeat, and position in a single line to keep your CSS clean.</li><li><strong>Optimize background images</strong> − Large unoptimized background images can severely slow down page load times. Always compress background images before uploading them.</li></ul><h2>Interview Questions</h2><p><strong>Q: What is the difference between <code>background-size: cover</code> and <code>contain</code>?</strong></p><p>A: <code>cover</code> scales the image to completely fill the container (cropping the edges if necessary). <code>contain</code> scales the image so the entire image is visible (leaving empty letterbox space if the aspect ratios don't match).</p><p><strong>Q: How do you create a <code>"parallax"</code> scrolling effect with a background image?</strong></p><p>A: By using <code>background-attachment: fixed;</code>, which locks the background image to the viewport while the rest of the page scrolls over it.</p><p><strong>Q: What is the default behavior of a background image if it is smaller than its container?</strong></p><p>A: It will repeat (tile) horizontally and vertically until it fills the entire container.</p><p><strong>Q: Can an element have multiple background images?</strong></p><p>A: Yes! You can separate multiple images with commas in the <code>background-image</code> property. The first image listed will appear on top.</p><h2>Summary</h2><p>The <code>background</code> properties allow you to style the layer underneath your content. Whether you are using solid colors or complex images, mastering properties like <code>background-size</code> and <code>background-repeat</code> ensures your visual design scales perfectly across all device sizes. Always remember your fallback color!</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="tables.html">&larr; Previous Chapter: Tables</a>
+            <a href="multi-background.html">Next Chapter: Multi Background &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

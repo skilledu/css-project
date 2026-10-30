@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 2d Transforms | Skilledu Tutorial</title>
+    <meta name="description" content="2D transforms are used to re-change the element structure as translate, rotate, scale, and skew. The following table has contained common values which are...">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/2d-transforms.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS 2d Transforms | Skilledu Tutorial">
+    <meta property="og:description" content="2D transforms are used to re-change the element structure as translate, rotate, scale, and skew. The following table has contained common values which are...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/2d-transforms.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS 2d Transforms | Skilledu Tutorial">
+    <meta name="twitter:description" content="2D transforms are used to re-change the element structure as translate, rotate, scale, and skew. The following table has contained common values which are...">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "2d Transforms",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/2d-transforms.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS 2d Transforms | Skilledu Tutorial",
+  "description": "2D transforms are used to re-change the element structure as translate, rotate, scale, and skew. The following table has contained common values which are...",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/2d-transforms.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = '2d-transforms';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-2d-transforms" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-2d-transforms" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 40</span>
+    <h1>2d Transforms</h1>
+  </div>
+  <div class="topic-section">
+    <p>2D transforms are used to re-change the element structure as translate, rotate, scale, and skew. The following table has contained common values which are used in 2D transforms</p>
+    <table class="css-table">
+      <thead>
+        <tr>
+          <th>Value</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>matrix(n, n, n, n, n, n)</code></td>
+          <td>Used to defines matrix transforms with six values</td>
+        </tr>
+        <tr>
+          <td><code>translate(x, y)</code></td>
+          <td>Used to transforms the element along with x-axis and y-axis</td>
+        </tr>
+        <tr>
+          <td><code>translateX(n)</code></td>
+          <td>Used to transforms the element along with x-axis</td>
+        </tr>
+        <tr>
+          <td><code>translateY(n)</code></td>
+          <td>Used to transforms the element along with y-axis</td>
+        </tr>
+        <tr>
+          <td><code>scale(x, y)</code></td>
+          <td>Used to change the width and height of element</td>
+        </tr>
+        <tr>
+          <td><code>scaleX(n)</code></td>
+          <td>Used to change the width of element</td>
+        </tr>
+        <tr>
+          <td><code>scaleY(n)</code></td>
+          <td>Used to change the height of element</td>
+        </tr>
+        <tr>
+          <td><code>rotate(angle)</code></td>
+          <td>Used to rotate the element based on an angle</td>
+        </tr>
+        <tr>
+          <td><code>skewX(angle)</code></td>
+          <td>Used to defines skew transforms along with x axis</td>
+        </tr>
+        <tr>
+          <td><code>skewY(angle)</code></td>
+          <td>Used to defines skew transforms along with y axis</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>The following examples are shown the sample of all above properties</p>
+    <h3>Rotate 20 degrees</h3>
+    <p>Box rotation with 20 degrees angle as shown below</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         div {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid black;
+         }
+         div#myDiv {
+            /* IE 9 */
+            -ms-transform: rotate(20deg);
+            /* Safari */
+            -webkit-transform: rotate(20deg);
+            /* Standard syntax */
+            transform: rotate(20deg);
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+            &lt;div id="myDiv"&gt;Hello World!&lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Rotate -20 degrees</h3>
+    <p>Box rotation with -20 degrees angle as shown below</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         div {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid black;
+         }
+         div#myDiv {
+            /* IE 9 */
+            -ms-transform: rotate(-20deg);
+            /* Safari */
+            -webkit-transform: rotate(-20deg);
+            /* Standard syntax */
+            transform: rotate(-20deg);
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+            &lt;div id="myDiv"&gt;Hello World!&lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+    <h3>Skew X axis</h3>
+    <p>Box rotation with skew x-axis as shown below</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         div {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid black;
+         }
+         div#skewDiv {
+            /* IE 9 */
+            -ms-transform: skewX(20deg);
+            /* Safari */
+            -webkit-transform: skewX(20deg);
+            /* Standard syntax */
+            transform: skewX(20deg);
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+            &lt;div id="skewDiv"&gt;Hello World!&lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+    <h3>Skew Y axis</h3>
+    <p>Box rotation with skew y-axis as shown below</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         div {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid black;
+         }
+         div#skewDiv {
+            /* IE 9 */
+            -ms-transform: skewY(20deg);
+            /* Safari */
+            -webkit-transform: skewY(20deg);
+            /* Standard syntax */
+            transform: skewY(20deg);
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+            &lt;div id="skewDiv"&gt;Hello World!&lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+    <h3>Matrix transform</h3>
+    <p>Box rotation with Matrix transforms as shown below</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         div {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid black;
+         }
+         div#myDiv1 {
+            /* IE 9 */
+            -ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
+            /* Safari */
+            -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0);
+            /* Standard syntax */
+            transform: matrix(1, -0.3, 0, 1, 0, 0);
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+            &lt;div id="myDiv1"&gt;Hello World!&lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+    <h3>Matrix transforms with another direction</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         div {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid black;
+         }
+         div#myDiv2 {
+            /* IE 9 */
+            -ms-transform: matrix(1, 0, 0.5, 1, 150, 0);
+            /* Safari */
+            -webkit-transform: matrix(1, 0, 0.5, 1, 150, 0);
+            /* Standard syntax */
+            transform: matrix(1, 0, 0.5, 1, 150, 0);
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+            &lt;div id="myDiv2"&gt;Hello World!&lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+
+<h2>Practical Examples</h2><p>The industry standard method for perfectly centering an element horizontally and vertically inside its parent, regardless of its exact dimensions:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+.centered-modal {
+   position: absolute;
+   top: 50%; /* Pushes the top edge down 50% of the parent */
+   left: 50%; /* Pushes the left edge right 50% of the parent */
+
+   /* Pulls the element back up and left by 50% of ITS OWN width/height */
+   transform: translate(-50%, -50%);
+}
+&lt;/style&gt;
+
+&lt;div style="position:relative; height:300px; background:#f0f0f0;"&gt;
+  &lt;div class="centered-modal" style="background:white; padding:20px; box-shadow:0 0 10px rgba(0,0,0,0.1);"&gt;Perfectly Centered!&lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Animating margins instead of transforms</strong> − Trying to slide a menu onto the screen by transitioning <code>margin-left</code>. Margins force the browser to recalculate the entire page layout on every frame (laggy). <code>transform: translateX()</code> is hardware-accelerated (smooth).</li><li><strong>Forgetting <code>transform-origin</code></strong> − When rotating an element (like a dropdown arrow), it rotates around its absolute center by default. If you want it to swing like a door, you must change the <code>transform-origin</code> to <code>left</code> or <code>right</code>.</li><li><strong>Overwriting transforms</strong> − Writing <code>transform: scale(2);</code> and then on hover writing <code>transform: rotate(45deg);</code>. The rotation will completely overwrite and destroy the scale. You must combine them: <code>transform: scale(2) rotate(45deg);</code>.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Always use transforms for UI animations</strong> − Limit your CSS transitions strictly to <code>transform</code> (translate, scale, rotate) and <code>opacity</code> to guarantee silky smooth 60fps animations, even on low-end mobile devices.</li><li><strong>Use individual <code>transform</code> properties (Modern CSS)</strong> − In modern CSS, you can now write <code>translate: 50px 100px;</code> or <code>scale: 2;</code> independently without needing to bundle everything inside the monolithic <code>transform: ...</code> property.</li></ul><h2>Interview Questions</h2><p><strong>Q: What is the difference between <code>translate(50px)</code> and <code>margin-left: 50px</code>?</strong></p><p>A: <code>margin</code> affects the document flow, pushing surrounding elements out of the way. <code>translate</code> moves the element visually but leaves its original physical space intact, completely ignoring surrounding elements.</p><p><strong>Q: What does <code>transform-origin: center center;</code> mean?</strong></p><p>A: It is the default setting. It means any rotation, scale, or skew operations will originate from the exact middle of the element.</p><p><strong>Q: How do you combine multiple transforms on a single element?</strong></p><p>A: Space-separate them within the single property: <code>transform: translateX(10px) scale(1.5) rotate(90deg);</code>.</p><h2>Summary</h2><p>2D Transforms (<code>translate</code>, <code>scale</code>, <code>rotate</code>, <code>skew</code>) allow you to manipulate elements visually without disrupting the underlying page layout. Because the browser hands these calculations off to the GPU, they are the absolute gold standard for creating smooth, performant UI animations.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="animation.html">&larr; Previous Chapter: Animation</a>
+            <a href="3d-transforms.html">Next Chapter: 3D Transforms &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

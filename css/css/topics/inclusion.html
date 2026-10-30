@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Inclusion | Skilledu Tutorial</title>
+    <meta name="description" content="There are four ways to associate styles with your HTML document. Most commonly used methods are inline CSS and External CSS.">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/inclusion.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Inclusion | Skilledu Tutorial">
+    <meta property="og:description" content="There are four ways to associate styles with your HTML document. Most commonly used methods are inline CSS and External CSS.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/inclusion.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Inclusion | Skilledu Tutorial">
+    <meta name="twitter:description" content="There are four ways to associate styles with your HTML document. Most commonly used methods are inline CSS and External CSS.">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Inclusion",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/inclusion.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Inclusion | Skilledu Tutorial",
+  "description": "There are four ways to associate styles with your HTML document. Most commonly used methods are inline CSS and External CSS.",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/inclusion.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'inclusion';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-inclusion" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-inclusion" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 3</span>
+    <h1>Inclusion</h1>
+  </div>
+  <div class="topic-section">
+    <p>There are four ways to associate styles with your HTML document. Most commonly used methods are inline CSS and External CSS.</p>
+    <h2>1. Embedded CSS - The &lt;style&gt; Element</h2>
+    <p>You can put your CSS rules into an HTML document using the &lt;style&gt; element. This tag is placed inside &lt;head&gt;...&lt;/head&gt; tags. Rules defined using this syntax will be applied to all the elements available in the document. Here is the generic syntax −</p>
+    <p>Following is the example of embed CSS based on the above syntax −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style type = <code>"text/css"</code> media = <code>"all"</code>&gt;
+         body {
+            background-color: linen;
+         }
+         h1 {
+            color: maroon;
+            margin-left: 40px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Attributes</h3>
+    <p>Attributes associated with &lt;style&gt; elements are −</p>
+    <table class="css-table">
+      <thead>
+        <tr><th>Attribute</th><th>Value</th><th>Description</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>type</td><td>text/css</td><td>Specifies the style sheet language as a content-type MIME type. This is a required attribute.</td></tr>
+        <tr><td>media</td><td>screen, tty, tv, projection, handheld, print, braille, aural, all</td><td>Specifies the device the document will be displayed on. Default value is all. This is an optional attribute.</td></tr>
+      </tbody>
+    </table>
+    <h2>2. Inline CSS - The style Attribute</h2>
+    <p>You can use style attribute of any HTML element to define style rules. These rules will be applied to that element only. Here is the generic syntax −</p>
+
+    <table class="css-table">
+  <thead>
+    <tr><th>Attribute</th><th>Value</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>style</td><td>style rules</td><td>The value of the style attribute is a combination of style declarations separated by semicolons.</td></tr>
+  </tbody>
+</table>
+    <h3>Example</h3>
+    <p>Following is the example of inline CSS based on the above syntax −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;h1 style = <code>"color:#36C;"</code>&gt; This is inline CSS &lt;/h1&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h2>3. External CSS - The &lt;link&gt; Element</h2>
+    <p>The &lt;link&gt; element can be used to include an external stylesheet file in your HTML document.</p>
+    <p>An external style sheet is a separate text file with .css extension. You define all the Style rules within this text file and then you can include this file in any HTML document using &lt;link&gt; element.</p>
+    <p>Here is the generic syntax of including external CSS file −</p>
+
+    <p>&lt;link type = <code>"text/css"</code> href = <code>"..."</code> media = <code>"..."</code> /&gt;</p>
+
+    <h3>Attributes</h3>
+    <p>Attributes associated with &lt;style&gt; elements are −</p>
+    <table class="css-table">
+  <thead>
+    <tr><th>Attribute</th><th>Value</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>type</td><td>text/css</td><td>Specifies the style sheet language as a content-type MIME type. This attribute is required.</td></tr>
+    <tr><td>href</td><td>URL</td><td>Specifies the style sheet file having style rules. This attribute is required.</td></tr>
+    <tr><td>media</td><td>screen, tty, tv, projection, handheld, print, braille, aural, all</td><td>Specifies the device the document will be displayed on. Default value is all. This is an optional attribute.</td></tr>
+  </tbody>
+</table>
+    <h3>Example</h3>
+    <p>Consider a simple style sheet file with a name <code>mystyle.css</code> having the following rules −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>h1, h2, h3 {
+   color: #36C;
+   font-weight: normal;
+   letter-spacing: .4em;
+   margin-bottom: 1em;
+   text-transform: lowercase;
+}</code></pre>
+    </div>
+    <p>Now you can include this file <code>mystyle.css</code> in any HTML document as follows −</p>
+
+    <p>&lt;link type = <code>"text/css"</code> href = <code>"<code>mystyle.css</code>"</code> media = <code>" all"</code> /&gt;</p>
+
+    <h2>4. Imported CSS - <code>@import</code> Rule</h2>
+    <p><code>@import</code> is used to import an external stylesheet in a manner similar to the &lt;link&gt; element. Here is the generic syntax of the <code>@import</code> rule.</p>
+
+    <div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy">Copy</button></div></div><pre class="code-block"><code>@import <code>"URL"</code>;</code></pre></div>
+
+    <p>Here URL is the URL of the style sheet file having style rules. You can use another syntax as well −</p>
+
+    <div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy">Copy</button></div></div><pre class="code-block"><code>@import url("URL");</code></pre></div>
+
+    <h3>Example</h3>
+    <p>Following is the example showing you how to import a style sheet file into HTML document −</p>
+
+    <p>This is the alternate string-based syntax for <code>@import</code> (as opposed to the <code>url()</code> form shown just above).</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions"><button type="button" class="btn-copy">Copy</button></div>
+      </div>
+      <pre class="code-block"><code>@import "<code>mystyle.css</code>";</code></pre>
+    </div>
+
+    <h2>CSS Rules Overriding</h2>
+    <p>We have discussed four ways to include style sheet rules in an HTML document. Here is the rule to override any Style Sheet Rule.</p>
+    <p>Any inline style sheet takes highest priority. So, it will override any rule defined in &lt;style&gt;...&lt;/style&gt; tags or rules defined in any external style sheet file.</p>
+    <p>Any rule defined in &lt;style&gt;...&lt;/style&gt; tags will override rules defined in any external style sheet file.</p>
+    <p>Any rule defined in external style sheet file takes lowest priority, and rules defined in this file will be applied only when above two rules are not applicable.</p>
+    <h2>Handling old Browsers</h2>
+    <p>There are still many old browsers who do not support CSS. So, we should take care while writing our Embedded CSS in an HTML document. The following snippet shows how you can use comment tags to hide CSS from older browsers −</p>
+
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;style type="text/css"&gt;
+&lt;!--
+body, td {
+   color: blue;
+}
+--&gt;
+&lt;/style&gt;</code></pre>
+    </div>
+    <h2>CSS Comments</h2>
+    <p>Many times, you may need to put additional comments in your style sheet blocks. So, it is very easy to comment any part in style sheet. You can simply put your comments inside /*.....this is a comment in style sheet.....*/.</p>
+    <p>You can use /* ....*/ to comment multi-line blocks in similar way you do in C and C++ programming languages.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         p {
+            color: red;
+            /* This is a single-line comment */
+            text-align: center;
+         }
+/* This is a multi-line comment */
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p&gt;Hello World!&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+
+<h2>Practical Examples</h2><p>The standard, best-practice way to include CSS using an External stylesheet linked in the HTML head:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;My Website&lt;/title&gt;
+   &lt;!-- External Inclusion (Best Practice) --&gt;
+   &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+   &lt;h1 class="title"&gt;Hello World&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Overusing Inline Styles</strong> − Writing <code>style="..."</code> directly on HTML elements makes your code impossible to maintain, ruins caching, and creates massive specificity issues.</li><li><strong>Putting <code>&lt;style&gt;</code> tags in the body</strong> − Internal stylesheets should exclusively be placed inside the <code>&lt;head&gt;</code> section. Putting them in the body can cause the page to flash unstyled content (FOUC).</li><li><strong>Incorrect link paths</strong> − Writing <code>href="style.css"</code> when the file is actually inside a folder like <code>href="css/style.css"</code>. A 404 error on the CSS file results in a completely broken layout.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Always Use External Stylesheets</strong> − Keep your HTML and CSS completely separated. This allows the browser to cache the CSS file across multiple page loads, drastically improving performance. Be mindful, however, that too many external stylesheet <code>&lt;link&gt;</code> requests can slow down initial page render compared to bundling them into a single file.</li><li><strong>Order Matters</strong> − If you link multiple external stylesheets (e.g., Bootstrap followed by your custom styles), always link YOUR custom stylesheet last so it can override the framework.</li><li><strong>Avoid @import</strong> − Avoid using the CSS <code>@import</code> rule to include stylesheets inside other stylesheets, as it blocks parallel downloading and slows down page load times. Use multiple <code>&lt;link&gt;</code> tags in HTML instead.</li></ul><h2>Interview Questions</h2><p><strong>Q: What are the three ways to include CSS in an HTML document?</strong></p><p>A: Inline (using the <code>style</code> attribute), Internal (using the <code>&lt;style&gt;</code> tag in the head), and External (using the <code>&lt;link&gt;</code> tag).</p><p><strong>Q: Which inclusion method has the highest priority/specificity?</strong></p><p>A: Inline CSS has the highest specificity (1,0,0,0) and will override internal and external stylesheets.</p><p><strong>Q: Why is External CSS considered the best practice?</strong></p><p>A: It separates content from presentation, keeps HTML clean, allows the same stylesheet to control multiple pages, and enables the browser to cache the CSS file for faster loading.</p><p><strong>Q: What is a FOUC?</strong></p><p>A: Flash Of Unstyled Content. It happens when HTML loads and renders before the CSS is fully downloaded and applied. Placing CSS in the <code>&lt;head&gt;</code> prevents this.</p><p><strong>Q: Can you use multiple external stylesheets on one page?</strong></p><p>A: Yes, you can use multiple <code>&lt;link&gt;</code> tags. The browser will process them sequentially from top to bottom.</p><h2>Summary</h2><p>While you can inject CSS directly onto elements (Inline) or into the document head (Internal), using External stylesheets via the <code>&lt;link&gt;</code> tag is the undisputed industry standard. It enforces a clean separation of concerns, ensures maintainability, and maximizes web performance through browser caching.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="syntax.html">&larr; Previous Chapter: Syntax</a>
+            <a href="selectors.html">Next Chapter: CSS Selectors &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

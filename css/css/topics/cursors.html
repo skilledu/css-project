@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cursors | Skilledu Tutorial</title>
+    <meta name="description" content="The cursor property of CSS allows you to specify the type of cursor that should be displayed to the user. One good usage of this property is in using...">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/cursors.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Cursors | Skilledu Tutorial">
+    <meta property="og:description" content="The cursor property of CSS allows you to specify the type of cursor that should be displayed to the user. One good usage of this property is in using...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/cursors.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Cursors | Skilledu Tutorial">
+    <meta name="twitter:description" content="The cursor property of CSS allows you to specify the type of cursor that should be displayed to the user. One good usage of this property is in using...">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Cursors",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/cursors.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Cursors | Skilledu Tutorial",
+  "description": "The cursor property of CSS allows you to specify the type of cursor that should be displayed to the user. One good usage of this property is in using...",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/cursors.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'cursors';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-cursors" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-cursors" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 44</span>
+    <h1>Cursors</h1>
+  </div>
+  <div class="topic-section">
+    <p>The <code>cursor</code> property of CSS allows you to specify the type of cursor that should be displayed to the user. One good usage of this property is in using images for submit buttons on forms. By default, when a cursor hovers over a link, the cursor changes from a pointer to a hand. However, it does not change form for a submit button on a form. Therefore, whenever someone hovers over an image that is a submit button, it provides a visual clue that the image is clickable. The following table shows the possible values for the <code>cursor</code> property:</p>
+
+    <table class="css-table">
+      <thead>
+        <tr>
+          <th>Value</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><code>auto</code></td><td>Shape of the cursor depends on the context area it is over.</td></tr>
+        <tr><td><code>crosshair</code></td><td>A crosshair or plus sign</td></tr>
+        <tr><td><code>default</code></td><td>An arrow</td></tr>
+        <tr><td><code>pointer</code></td><td>A pointing hand</td></tr>
+        <tr><td><code>move</code></td><td>The 'I' bar (Move indicator)</td></tr>
+        <tr><td><code>e-resize</code></td><td>Edge of a box is to be moved right (east)</td></tr>
+        <tr><td><code>ne-resize</code></td><td>Edge of a box is to be moved up and right (north/east)</td></tr>
+        <tr><td><code>nw-resize</code></td><td>Edge of a box is to be moved up and left (north/west)</td></tr>
+        <tr><td><code>n-resize</code></td><td>Edge of a box is to be moved up (north)</td></tr>
+        <tr><td><code>se-resize</code></td><td>Edge of a box is to be moved down and right (south/east)</td></tr>
+        <tr><td><code>sw-resize</code></td><td>Edge of a box is to be moved down and left (south/west)</td></tr>
+        <tr><td><code>s-resize</code></td><td>Edge of a box is to be moved down (south)</td></tr>
+        <tr><td><code>w-resize</code></td><td>Edge of a box is to be moved left (west)</td></tr>
+        <tr><td><code>text</code></td><td>The I bar</td></tr>
+        <tr><td><code>wait</code></td><td>An hour glass</td></tr>
+        <tr><td><code>help</code></td><td>A question mark or balloon, ideal for use over help buttons</td></tr>
+        <tr><td><code>&lt;url&gt;</code></td><td>The source of a cursor image file</td></tr>
+      </tbody>
+    </table>
+
+    <p>NOTE: You should try to use only these values to add helpful information for users, and in places they would expect to see that cursor. For example, using the crosshair when someone hovers over a link can confuse visitors.</p>
+
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p&gt;Move the mouse over the words to see the cursor change:&lt;/p&gt;
+      &lt;div style="cursor:auto"&gt;Auto&lt;/div&gt;
+      &lt;div style="cursor:crosshair"&gt;Crosshair&lt;/div&gt;
+      &lt;div style="cursor:default"&gt;Default&lt;/div&gt;
+      &lt;div style="cursor:pointer"&gt;Pointer&lt;/div&gt;
+      &lt;div style="cursor:move"&gt;Move&lt;/div&gt;
+      &lt;div style="cursor:e-resize"&gt;e-resize&lt;/div&gt;
+      &lt;div style="cursor:ne-resize"&gt;ne-resize&lt;/div&gt;
+      &lt;div style="cursor:nw-resize"&gt;nw-resize&lt;/div&gt;
+      &lt;div style="cursor:n-resize"&gt;n-resize&lt;/div&gt;
+      &lt;div style="cursor:se-resize"&gt;se-resize&lt;/div&gt;
+      &lt;div style="cursor:sw-resize"&gt;sw-resize&lt;/div&gt;
+      &lt;div style="cursor:s-resize"&gt;s-resize&lt;/div&gt;
+      &lt;div style="cursor:w-resize"&gt;w-resize&lt;/div&gt;
+      &lt;div style="cursor:text"&gt;text&lt;/div&gt;
+      &lt;div style="cursor:wait"&gt;wait&lt;/div&gt;
+      &lt;div style="cursor:help"&gt;help&lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+<h2>Practical Examples</h2><p>Applying specific cursors to UI elements to give users clear feedback about what can be clicked and what is disabled:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">HTML/CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+/* A custom div acting as a button needs the pointer cursor */
+.custom-btn {
+   cursor: pointer;
+   background-color: #3b82f6;
+}
+
+/* A disabled submit button */
+.submit-btn[disabled] {
+   cursor: not-allowed;
+   opacity: 0.5;
+}
+
+/* A read-only input field */
+input[readonly] {
+   cursor: default;
+   background-color: #f3f4f6;
+}
+&lt;/style&gt;
+
+&lt;div class="custom-btn" style="padding:10px; background:blue; color:white; width:fit-content; margin-bottom:10px;"&gt;Clickable Div&lt;/div&gt;
+&lt;button class="submit-btn" disabled&gt;Disabled Button&lt;/button&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;input type="text" value="Read only" readonly&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Forgetting <code>cursor: pointer</code> on custom interactive elements</strong> − If you attach a JavaScript click listener to a <code>&lt;div&gt;</code> or an SVG icon, the browser will not automatically change the cursor. Users won't know it's clickable unless you manually add <code>cursor: pointer</code>.</li><li><strong>Using <code>pointer</code> on non-clickable elements</strong> − Adding a pointer cursor to a decorative image just because it looks nice. This is extremely frustrating for users who will click it expecting something to happen.</li><li><strong>Assuming <code>&lt;button&gt;</code> tags have a pointer by default</strong> − Surprisingly, many browsers (like older Safari versions) use the standard <code>default</code> arrow for buttons. It is a best practice to explicitly declare <code>button { cursor: pointer; }</code> in your CSS reset.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Provide feedback for disabled states</strong> − Always use <code>cursor: not-allowed</code> combined with a lower opacity when a form button or input is temporarily disabled.</li><li><strong>Use <code>cursor: text</code> for custom inputs</strong> − If you build a complex custom search bar out of divs, ensure it shows the I-beam text cursor so users know they can click to type.</li><li><strong>Don't rely on cursors alone</strong> − Cursor changes are a visual-only cue. They shouldn't be the only indicator of interactivity, as keyboard-only and touchscreen users will not see them before interacting.</li></ul><h2>Interview Questions</h2><p><strong>Q: What cursor value indicates to a user that an element is a clickable link?</strong></p><p>A: <code>cursor: pointer;</code> (it typically displays as a hand with an extended index finger).</p><p><strong>Q: What cursor should be used for a form submit button that is currently disabled due to invalid inputs?</strong></p><p>A: <code>cursor: not-allowed;</code></p><p><strong>Q: Can you use a custom image as a cursor?</strong></p><p>A: Yes. You can use <code>cursor: url("custom-cursor.png"), auto;</code> (always provide a fallback like <code>auto</code> or <code>pointer</code> in case the image fails to load).</p><h2>Summary</h2><p>Cursors are a vital part of web accessibility and user experience. They provide immediate, non-verbal feedback to the user about how they can interact with the interface. Ensuring your clickable elements have pointers and your disabled elements show restrictions builds trust and intuition into your design.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="user-interface.html">&larr; Previous Chapter: User Interface</a>
+            <a href="text-overflow.html">Next Chapter: Text &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

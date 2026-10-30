@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning | Skilledu Tutorial</title>
+    <meta name="description" content="CSS helps you to position your HTML element. You can put any HTML element at whatever location you like. You can specify whether you want the element...">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/positioning.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Positioning | Skilledu Tutorial">
+    <meta property="og:description" content="CSS helps you to position your HTML element. You can put any HTML element at whatever location you like. You can specify whether you want the element...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/positioning.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Positioning | Skilledu Tutorial">
+    <meta name="twitter:description" content="CSS helps you to position your HTML element. You can put any HTML element at whatever location you like. You can specify whether you want the element...">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Positioning",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/positioning.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Positioning | Skilledu Tutorial",
+  "description": "CSS helps you to position your HTML element. You can put any HTML element at whatever location you like. You can specify whether you want the element...",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/positioning.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'positioning';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-positioning" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-positioning" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 12</span>
+    <h1>Positioning</h1>
+  </div>
+  <div class="topic-section">
+    <p>CSS helps you to position your HTML element. You can put any HTML element at whatever location you like. You can specify whether you want the element positioned relative to its natural position in the page or absolute based on its parent element.</p>
+    <p>Now, we will see all the CSS positioning related properties with examples −</p>
+    <h3>Relative Positioning</h3>
+    <p>Relative positioning changes the position of the HTML element relative to where it normally appears. So <code>"left:20"</code> adds 20 pixels to the element's LEFT position.</p>
+    <p>You can use two values <code>top</code> and <code>left</code> along with the <code>position</code> property to move an HTML element anywhere in the HTML document.</p>
+    <table class="css-table">
+  <thead>
+    <tr><th>Action</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Move Left</strong></td><td>Use a negative value for <code>left</code>.</td></tr>
+    <tr><td><strong>Move Right</strong></td><td>Use a positive value for <code>left</code>.</td></tr>
+    <tr><td><strong>Move Up</strong></td><td>Use a negative value for <code>top</code>.</td></tr>
+    <tr><td><strong>Move Down</strong></td><td>Use a positive value for <code>top</code>.</td></tr>
+  </tbody>
+</table>
+    <p>NOTE − You can use bottom or right values as well in the same way as <code>top</code> and <code>left</code>. Here is the example −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;div style="position:relative;left:80px;top:2px;background-color:yellow;"&gt;
+      This div has relative positioning.
+      &lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Absolute Positioning</h3>
+    <p>An element with <code>position: absolute</code> is removed from the normal document flow and positioned relative to its nearest ancestor that has a position value other than <code>static</code> (i.e. an ancestor with <code>position: relative</code>, <code>absolute</code>, <code>fixed</code>, or <code>sticky</code>). If no such ancestor exists, it is positioned relative to the initial containing block (roughly the html element / viewport).</p>
+    <p>You can use two values <code>top</code> and <code>left</code> along with the <code>position</code> property to move an HTML element anywhere in the HTML document.</p>
+    <table class="css-table">
+  <thead>
+    <tr><th>Action</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Move Left</strong></td><td>Use a negative value for <code>left</code>.</td></tr>
+    <tr><td><strong>Move Right</strong></td><td>Use a positive value for <code>left</code>.</td></tr>
+    <tr><td><strong>Move Up</strong></td><td>Use a negative value for <code>top</code>.</td></tr>
+    <tr><td><strong>Move Down</strong></td><td>Use a positive value for <code>top</code>.</td></tr>
+  </tbody>
+</table>
+    <p>NOTE − You can use bottom or right values as well in the same way as <code>top</code> and <code>left</code>.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;div style="position:absolute;left:80px;top:20px;background-color:yellow;"&gt;
+      This div has absolute positioning.
+      &lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+    <h3>Fixed Positioning</h3>
+    <p>Fixed positioning allows you to fix the position of an element to a particular spot on the page, regardless of scrolling. Specified coordinates will be relative to the browser window.</p>
+    <p>You can use two values <code>top</code> and <code>left</code> along with the <code>position</code> property to move an HTML element anywhere in the HTML document.</p>
+    <table class="css-table">
+  <thead>
+    <tr><th>Action</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Move Left</strong></td><td>Use a negative value for <code>left</code>.</td></tr>
+    <tr><td><strong>Move Right</strong></td><td>Use a positive value for <code>left</code>.</td></tr>
+    <tr><td><strong>Move Up</strong></td><td>Use a negative value for <code>top</code>.</td></tr>
+    <tr><td><strong>Move Down</strong></td><td>Use a positive value for <code>top</code>.</td></tr>
+  </tbody>
+</table>
+    <p>NOTE − You can use bottom or right values as well in the same way as <code>top</code> and <code>left</code>.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;div style="position:fixed;left:80px;top:20px;background-color:yellow;"&gt;
+      This div has fixed positioning.
+      &lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+<h2>Practical Examples</h2><p>The classic absolute-in-relative pattern used to place a close button perfectly in the top-right corner of a modal card:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+.modal-card {
+   position: relative; /* Establishes the coordinate boundary */
+   width: 400px;
+   padding: 20px;
+   background: white;
+}
+
+.close-btn {
+   position: absolute; /* Positions itself relative to .modal-card */
+   top: 10px;
+   right: 10px;
+}
+&lt;/style&gt;
+
+&lt;div class="modal-card" style="border:1px solid #ccc; height:200px; width:300px; position:relative; background:#fff;"&gt;
+  &lt;h3&gt;Modal Content&lt;/h3&gt;
+  &lt;button class="close-btn"&gt;X&lt;/button&gt;
+&lt;/div&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Forgetting <code>position: relative</code> on the parent</strong> − If you set a child to <code>position: absolute</code> but forget to set the parent to <code>relative</code>, the child will fly all the way up and position itself relative to the entire page (the <code>&lt;body&gt;</code>).</li><li><strong>Using absolute positioning for layout structure</strong> − Using absolute coordinates to build multi-column layouts is a disaster for responsiveness. Absolute positioning should be reserved for overlays, tooltips, and small UI tweaks.</li><li><strong>Misusing fixed positioning on mobile</strong> − Fixed headers can glitch on iOS Safari when the URL bar shrinks or expands, causing the fixed element to jump unexpectedly.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>The "Relative Parent, Absolute Child" Rule</strong> − Memorize this pattern. You will use it on almost every website to precisely place badges, tooltips, and icons.</li><li><strong>Use Sticky for modern headers</strong> − Instead of writing complex JavaScript scroll listeners to make a header lock to the top, simply use <code>position: sticky; top: 0;</code> for native, buttery-smooth performance.</li><li><strong>Use absolute positioning sparingly</strong> − Excessive absolutely-positioned elements can increase the browser's repaint and reflow costs, negatively impacting performance.</li></ul><h2>Interview Questions</h2><p><strong>Q: What is the containing block for an absolutely positioned element?</strong></p><p>A: It is the nearest ancestor element that has a <code>position</code> value other than <code>static</code> (usually <code>relative</code>).</p><p><strong>Q: What is the difference between <code>fixed</code> and <code>absolute</code> positioning?</strong></p><p>A: <code>absolute</code> positions the element relative to its closest positioned ancestor and scrolls with the page. <code>fixed</code> positions it relative to the browser viewport itself, meaning it stays locked in place even when the user scrolls.</p><p><strong>Q: How does <code>position: sticky</code> work?</strong></p><p>A: It acts like <code>relative</code> positioning until the user scrolls past a specified threshold (e.g., <code>top: 0</code>), at which point it acts like <code>fixed</code> and locks to the screen.</p><h2>Summary</h2><p>Positioning breaks elements out of the normal, top-to-bottom document flow. <code>relative</code> nudges elements, <code>absolute</code> places them precisely inside boundaries, <code>fixed</code> locks them to the screen, and <code>sticky</code> creates modern scroll effects. These properties are the scalpel in a CSS developer's toolkit.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="display.html">&larr; Previous Chapter: CSS Display</a>
+            <a href="float.html">Next Chapter: CSS Float &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

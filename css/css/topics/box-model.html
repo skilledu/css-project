@@ -1,0 +1,1804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model | Skilledu Tutorial</title>
+    <meta name="description" content="The CSS Box Model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/box-model.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Box Model | Skilledu Tutorial">
+    <meta property="og:description" content="The CSS Box Model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/box-model.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Box Model | Skilledu Tutorial">
+    <meta name="twitter:description" content="The CSS Box Model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Box Model",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/box-model.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Box Model | Skilledu Tutorial",
+  "description": "The CSS Box Model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/box-model.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'box-model';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-box-model" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-box-model" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+
+  <div class="topic-header">
+    <span class="topic-badge">Topic 10</span>
+    <h1>Box Model</h1>
+  </div>
+  <div class="topic-section">
+
+
+
+    <h2>Introduction to the CSS Box Model</h2>
+    <p>The <b>CSS Box Model</b> is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.</p>
+    <p>The box model allows us to add a border around elements, and to define space between elements. Understanding it is crucial for creating accurate layouts and aligning items on a webpage.</p>
+
+    <h3>The Four Areas of the Box Model</h3>
+    <table class="css-table">
+  <thead>
+    <tr><th>Property</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Content</strong></td><td>The actual content of the box, where text and images appear.</td></tr>
+<tr><td><strong>Padding</strong></td><td>Clears an area around the content. The padding is transparent.</td></tr>
+<tr><td><strong>Border</strong></td><td>A border that goes around the padding and content.</td></tr>
+<tr><td><strong>Margin</strong></td><td>Clears an area outside the border. The margin is transparent.</td></tr>
+  </tbody>
+</table>
+
+    <div style="background:var(--border-light); padding:20px; text-align:center; margin: 20px 0; border:1px solid var(--border); border-radius: var(--radius-sm);">
+        <div style="background:#fcd34d; padding:20px; border:2px dashed #b45309; display:inline-block;">
+            <div style="margin-bottom:10px; font-weight:bold; color:#78350f;">Margin</div>
+            <div style="background:#6ee7b7; padding:20px; border:2px solid #047857; display:inline-block;">
+                <div style="margin-bottom:10px; font-weight:bold; color:#064e3b;">Border</div>
+                <div style="background:#93c5fd; padding:20px; border:2px dashed #1d4ed8; display:inline-block;">
+                    <div style="margin-bottom:10px; font-weight:bold; color:#1e3a8a;">Padding</div>
+                    <div style="background:white; padding:20px; border:1px solid #ccc; display:inline-block; font-weight:bold; color:#333;">
+                        Content Area
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <h2>Content Area</h2>
+    <p>The content area is the innermost part of the box model. It contains the actual content of the element, such as text, images, or other nested elements.</p>
+    <p>The dimensions of this area are typically defined by the <code>width</code> and <code>height</code> properties (unless <code>box-sizing: border-box</code> is used).</p>
+
+
+  <h2>Dimensions</h2>
+
+    <p>You have seen the border that surrounds every box ie. element, the padding that can appear inside each box and the margin that can go around them. In this tutorial we will how we can change the dimensions of boxes.</p>
+    <p>We have the following properties that allow you to control the dimensions of a box.</p>
+    <table class="css-table">
+  <thead>
+    <tr><th>Property</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>height</code></td><td>Used to set the height of a box.</td></tr>
+<tr><td><code>width</code></td><td>Used to set the width of a box.</td></tr>
+<tr><td><code>line-height</code></td><td>Used to set the height of a line of text.</td></tr>
+<tr><td><code>max-height</code></td><td>Used to set a maximum height that a box can be.</td></tr>
+<tr><td><code>min-height</code></td><td>Used to set the minimum height that a box can be.</td></tr>
+<tr><td><code>max-width</code></td><td>Used to set the maximum width that a box can be.</td></tr>
+<tr><td><code>min-width</code></td><td>Used to set the minimum width that a box can be.</td></tr>
+  </tbody>
+</table>
+    <h3>The Height and Width Properties</h3>
+    <p>The height and <code>width</code> properties allow you to set the height and width for boxes. They can take values of a length, a percentage, or the keyword auto.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="width:400px; height:100px;border:1px solid red;padding:5px;
+margin:10px;"&gt;
+      This paragraph is 400pixels wide and 100 pixels high
+   &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>The line-height Property</h3>
+    <p>The <code>line-height</code> property allows you to increase the space between lines of text. The value of the <code>line-height</code> property can be a number, a length, or a percentage.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+&lt;body&gt;
+      &lt;p style="width:400px; height:100px;border:1px solid red;padding:5px;
+margin:10px;line-height:30px;"&gt;
+This paragraph is 400pixels wide and 100 pixels high and here line height is  30pixels.
+This paragraph is 400 pixels wide and 100 pixels high and here line height is 30pixels.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/head&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>The max-height Property</h3>
+    <p>The <code>max-height</code> property allows you to specify maximum height of a box. The value of the <code>max-height</code> property can be a number, a length, or a percentage.</p>
+    <p>NOTE − This property does not work in either Netscape 7 or IE 6.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="width:400px; max-height:10px;border:1px solid red;padding:5px;
+margin:10px;"&gt;
+      This paragraph is 400px wide and max height is 10px
+      This paragraph is 400px wide and max height is 10px
+      This paragraph is 400px wide and max height is 10px
+      This paragraph is 400px wide and max height is 10px
+      &lt;/p&gt;
+      &lt;br&gt;
+      &lt;br&gt;
+      &lt;br&gt;
+      &lt;img alt="logo" src="../assets/images/demo-logo.png" width="150" width="195" height="84" /&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>The min-height Property</h3>
+    <p>The <code>min-height</code> property allows you to specify minimum height of a box. The value of the <code>min-height</code> property can be a number, a length, or a percentage.</p>
+    <p>NOTE − This property does not work in either Netscape 7 or IE 6.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="width:400px; min-height:200px;border:1px solid red;padding:5px;
+margin:10px;"&gt;
+      This paragraph is 400px wide and min height is 200px
+      This paragraph is 400px wide and min height is 200px
+      This paragraph is 400px wide and min height is 200px
+      This paragraph is 400px wide and min height is 200px
+      &lt;/p&gt;
+      &lt;img alt="logo" src="../assets/images/demo-logo.png" width="150" width="95" height="84" /&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>The max-width Property</h3>
+    <p>The <code>max-width</code> property allows you to specify maximum width of a box. The value of the <code>max-width</code> property can be a number, a length, or a percentage.</p>
+    <p>NOTE − This property does not work in either Netscape 7 or IE 6.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="max-width:100px; height:200px;border:1px solid red;padding:5px;
+margin:10px;"&gt;
+      This paragraph is 200px high and max width is 100px
+      This paragraph is 200px high and max width is 100px
+      &lt;/p&gt;
+      &lt;img alt="logo" src="../assets/images/demo-logo.png" width="150" width="95" height="84" /&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>The min-width Property</h3>
+    <p>The <code>min-width</code> property allows you to specify minimum width of a box. The value of the <code>min-width</code> property can be a number, a length, or a percentage.</p>
+    <p>NOTE − This property does not work in either Netscape 7 or IE 6.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="min-width:400px; height:100px;border:1px solid red;padding:5px;
+margin:10px;"&gt;
+      This paragraph is 100px high and min width is 400px
+      This paragraph is 100px high and min width is 400px
+      &lt;img alt="logo" src="../assets/images/demo-pattern.png" width="95" height="84" /&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+
+    <h3>Aspect Ratio</h3>
+    <p>The <code>aspect-ratio</code> property lets you set a fixed width-to-height ratio for an element, so it scales proportionally without needing a fixed height. This is particularly useful for responsive video wrappers or image containers to prevent layout shifts as the page loads.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+    <div class="code-header-left">
+      <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+      <span class="code-lang-tag">CSS</span>
+    </div>
+    <div class="code-actions">
+      <button type="button" class="btn-copy">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        Copy
+      </button>
+      <button type="button" class="btn-try">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        Try It Yourself
+      </button>
+    </div>
+      </div>
+      <pre class="code-block"><code>.video-wrapper {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}</code></pre>
+    </div>
+    <h2>Padding</h2>
+
+    <p>The <code>padding</code> property allows you to specify how much space should appear between the content of an element and its border − The value of this attribute should be either a length, a percentage, or the word inherit. If the value is inherit, it will have the same padding as its parent element. If a percentage is used, the percentage is of the containing box.</p>
+    <p>The following CSS properties can be used to control lists. You can also set different values for the padding on each side of the box using the following properties −</p>
+    <table class="css-table">
+  <thead>
+    <tr><th>Property</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>padding-bottom</code></td><td>Specifies the bottom padding of an element.</td></tr>
+<tr><td><code>padding-top</code></td><td>Specifies the top padding of an element.</td></tr>
+<tr><td><code>padding-left</code></td><td>Specifies the left padding of an element.</td></tr>
+<tr><td><code>padding-right</code></td><td>Specifies the right padding of an element.</td></tr>
+<tr><td><code>padding</code></td><td>Serves as shorthand for the preceding properties.</td></tr>
+  </tbody>
+</table>
+    <p>Now, we will see how to use these properties with examples.</p>
+    <h3>The padding-bottom Property</h3>
+    <p>The <code>padding-bottom</code> property sets the bottom padding space of an element. This can take a value in terms of length of %.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="padding-bottom: 15px; border:1px solid black;"&gt;
+      This is a paragraph with a specified bottom padding
+      &lt;/p&gt;
+      &lt;p style="padding-bottom: 5%; border:1px solid black;"&gt;
+      This is another paragraph with a specified bottom padding in percent
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>The padding-top Property</h3>
+    <p>The <code>padding-top</code> property sets the top padding space of an element. This can take a value in terms of length of %.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="padding-top: 15px; border:1px solid black;"&gt;
+      This is a paragraph with a specified top padding
+      &lt;/p&gt;
+      &lt;p style="padding-top: 5%; border:1px solid black;"&gt;
+      This is another paragraph with a specified top padding in percent
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>The padding-left Property</h3>
+    <p>The <code>padding-left</code> property sets the left padding space of an element. This can take a value in terms of length of %.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="padding-left: 15px; border:1px solid black;"&gt;
+      This is a paragraph with a specified left padding
+      &lt;/p&gt;
+      &lt;p style="padding-left: 15%; border:1px solid black;"&gt;
+      This is another paragraph with a specified left padding in percent
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>The padding-right Property</h3>
+    <p>The <code>padding-right</code> property sets the right padding space of an element. This can take a value in</p>
+    <p>terms of length of %.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="padding-right: 15px; border:1px solid black;"&gt;
+      This is a paragraph with a specified right padding
+      &lt;/p&gt;
+      &lt;p style="padding-right: 5%; border:1px solid black;"&gt;
+      This is another paragraph with a specified right padding in percent
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>The Padding Property</h3>
+    <p>The <code>padding</code> property sets the left, right, top and bottom padding space of an element. This can take a value in terms of length of %.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="padding: 15px; border:1px solid black;"&gt;
+      all four padding will be 15px
+      &lt;/p&gt;
+      &lt;p style="padding:10px 2%; border:1px solid black;"&gt;
+      top and bottom padding will be 10px, left and right
+      padding will be 2% of the total width of the document.
+      &lt;/p&gt;
+      &lt;p style="padding: 10px 2% 10px; border:1px solid black;"&gt;
+      top padding will be 10px, left and right padding will
+      be 2% of the total width of the document, bottom padding will be 10px
+      &lt;/p&gt;
+      &lt;p style="padding: 10px 2% 10px 10px; border:1px solid black;"&gt;
+      top padding will be 10px, right padding will be 2% of
+      the total width of the document, bottom padding and top padding will be 10px
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+  <h2>Borders</h2>
+
+    <p>The <code>border</code> properties allow you to specify how the border of the box representing an element should look. There are three properties of a border you can change:</p>
+    <p>The <code>border-color</code> specifies the color of a border.</p>
+    <p>The <code>border-style</code> specifies whether a border should be solid, dashed line, double line, or one of the other possible values.</p>
+    <p>The <code>border-width</code> specifies the width of a border.</p>
+    <p>Now, we will see how to use these properties with examples.</p>
+    <h3>The border-color Property</h3>
+    <p>The <code>border-color</code> property allows you to change the color of the border surrounding an element. You can individually change the color of the bottom, left, top and right sides of an element's border using the properties −</p>
+    <table class="css-table">
+  <thead>
+    <tr><th>Property</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>border-bottom-color</code></td><td>Changes the color of bottom border.</td></tr>
+<tr><td><code>border-top-color</code></td><td>Changes the color of top border.</td></tr>
+<tr><td><code>border-left-color</code></td><td>Changes the color of left border.</td></tr>
+<tr><td><code>border-right-color</code></td><td>Changes the color of right border.</td></tr>
+  </tbody>
+</table>
+    <p>The following example shows the effect of all these properties −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style type="text/css"&gt;
+         p.example1{
+            border:1px solid;
+            border-bottom-color:#009900; /* Green */
+            border-top-color:#FF0000;    /* Red */
+            border-left-color:#330000;   /* Black */
+            border-right-color:#0000CC;  /* Blue */
+         }
+         p.example2{
+            border:1px solid;
+            border-color:#009900;        /* Green */
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p class="example1"&gt;This example is showing all borders in different colors.&lt;/p&gt;
+      &lt;p class="example2"&gt;This example is showing all borders in green color only.&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+
+
+    <h3>The border-style Property</h3>
+    <p>The <code>border-style</code> property allows you to select one of the following styles of border −</p>
+    <table class="css-table">
+  <thead>
+    <tr><th>Property</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>none</code></td><td>No border. Equivalent to border-width: 0.</td></tr>
+    <tr><td><code>solid</code></td><td>Border is a single solid line.</td></tr>
+    <tr><td><code>dotted</code></td><td>Border is a series of dots.</td></tr>
+    <tr><td><code>dashed</code></td><td>Border is a series of short lines.</td></tr>
+    <tr><td><code>double</code></td><td>Border is two solid lines.</td></tr>
+    <tr><td><code>groove</code></td><td>Border looks as though it is carved into the page.</td></tr>
+    <tr><td><code>ridge</code></td><td>Border looks the opposite of groove.</td></tr>
+    <tr><td><code>inset</code></td><td>Border makes the box look like it is embedded in the page.</td></tr>
+    <tr><td><code>outset</code></td><td>Border makes the box look like it is coming out of the canvas.</td></tr>
+    <tr><td><code>hidden</code></td><td>Same as none, except in terms of border-conflict resolution for table elements.</td></tr>
+  </tbody>
+</table>
+
+    <p>You can individually change the style of the bottom, left, top, and right borders of an element using the following properties −</p>
+    <table class="css-table">
+  <thead>
+    <tr><th>Property</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>border-bottom-style</code></td><td>Changes the style of bottom border.</td></tr>
+<tr><td><code>border-top-style</code></td><td>Changes the style of top border.</td></tr>
+<tr><td><code>border-left-style</code></td><td>Changes the style of left border.</td></tr>
+<tr><td><code>border-right-style</code></td><td>Changes the style of right border.</td></tr>
+  </tbody>
+</table>
+    <p>The following example shows all these border styles −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;.
+      &lt;p style="border-width:4px; border-style:none;"&gt;
+      This is a border with none width.
+      &lt;/p&gt;
+      &lt;p style="border-width:4px; border-style:solid;"&gt;
+      This is a solid border.
+      &lt;/p&gt;
+      &lt;p style="border-width:4px; border-style:dashed;"&gt;
+      This is a dashed border.
+      &lt;/p&gt;
+      &lt;p style="border-width:4px; border-style:double;"&gt;
+      This is a double border.
+      &lt;/p&gt;
+      &lt;p style="border-width:4px; border-style:groove;"&gt;
+      This is a groove border.
+      &lt;/p&gt;
+      &lt;p style="border-width:4px; border-style:ridge"&gt;
+      This is a ridge  border.
+      &lt;/p&gt;
+      &lt;p style="border-width:4px; border-style:inset;"&gt;
+      This is a inset border.
+      &lt;/p&gt;
+      &lt;p style="border-width:4px; border-style:outset;"&gt;
+      This is a outset border.
+      &lt;/p&gt;
+      &lt;p style="border-width:4px; border-style:hidden;"&gt;
+      This is a hidden border.
+      &lt;/p&gt;
+      &lt;p style="border-width:4px;border-top-style:solid;
+      border-bottom-style:dashed;border-left-style:groove;border-right-style:double;"&gt;
+      This is a a border with four different styles.
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+<p>The border-width Property −</p>
+    <p>The <code>border-width</code> property allows you to set the width of an element borders. The value of this property could be either a length in px, pt or cm or it should be set to thin, medium or thick.</p>
+    <p>You can individually change the width of the bottom, top, left, and right borders of an element using the following properties −</p>
+    <table class="css-table">
+  <thead>
+    <tr><th>Property</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>border-bottom-width</code></td><td>Changes the width of bottom border.</td></tr>
+<tr><td><code>border-top-width</code></td><td>Changes the width of top border.</td></tr>
+<tr><td><code>border-left-width</code></td><td>Changes the width of left border.</td></tr>
+<tr><td><code>border-right-width</code></td><td>Changes the width of right border.</td></tr>
+  </tbody>
+</table>
+    <p>The following example shows all these border width −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="border-width:4px; border-style:solid;"&gt;
+      This is a solid border whose width is 4px.
+      &lt;/p&gt;
+      &lt;p style="border-width:4pt; border-style:solid;"&gt;
+      This is a solid border whose width is 4pt.
+      &lt;/p&gt;
+      &lt;p style="border-width:thin; border-style:solid;"&gt;
+      This is a solid border whose width is thin.
+      &lt;/p&gt;
+      &lt;p style="border-width:medium; border-style:solid;"&gt;
+      This is a solid border whose width is medium;
+      &lt;/p&gt;
+      &lt;p style="border-width:thick; border-style:solid;"&gt;
+      This is a solid border whose width is thick.
+      &lt;/p&gt;
+      &lt;p style="border-bottom-width:4px;border-top-width:10px;
+      border-left-width: 2px;border-right-width:15px;border-style:solid;"&gt;
+      This is a a border with four different width.
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Border Properties Using Shorthand</h3>
+    <p>The <code>border</code> property allows you to specify color, style, and width of lines in one property −</p>
+    <p>The following example shows how to use all the three properties into a single property. This is the most frequently used property to set border around any element.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="border:4px solid red;"&gt;
+      This example is showing shorthand property for border.
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+  <h2>Margins</h2>
+
+    <p>The <code>margin</code> property defines the space around an HTML element. It is possible to use negative values to overlap content.</p>
+    <p>The values of the <code>margin</code> property are not inherited by the child elements. Remember that the adjacent vertical margins (top and bottom margins) will collapse into each other so that the distance between the blocks is not the sum of the margins, but only the greater of the two margins or the same size as one margin if both are equal.</p>
+    <p>We have the following properties to set an element margin.</p>
+    <table class="css-table">
+  <thead>
+    <tr><th>Property</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>margin</code></td><td>Specifies a shorthand property for setting the <code>margin</code> properties in one declaration.</td></tr>
+<tr><td><code>margin-bottom</code></td><td>Specifies the bottom margin of an element.</td></tr>
+<tr><td><code>margin-top</code></td><td>Specifies the top margin of an element.</td></tr>
+<tr><td><code>margin-left</code></td><td>Specifies the left margin of an element.</td></tr>
+<tr><td><code>margin-right</code></td><td>Specifies the right margin of an element.</td></tr>
+  </tbody>
+</table>
+    <p>Now, we will see how to use these properties with examples.</p>
+    <h3>The Margin Property</h3>
+    <p>The <code>margin</code> property allows you set all of the properties for the four margins in one declaration. Here is the syntax to set margin around a paragraph −</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="margin: 15px; border:1px solid black;"&gt;
+      all four margins will be 15px
+      &lt;/p&gt;
+      &lt;p style="margin:10px 2%; border:1px solid black;"&gt;
+      top and bottom margin will be 10px, left and right margin will be 2% of the total
+width of the document.
+      &lt;/p&gt;
+      &lt;p style="margin: 10px 2% -10px; border:1px solid black;"&gt;
+      top margin will be 10px, left and right margin will be 2% of the total width of
+the document, bottom margin will be -10px
+      &lt;/p&gt;
+      &lt;p style="margin: 10px 2% -10px auto; border:1px solid black;"&gt;
+      top margin will be 10px, right margin will be 2% of the total width of the
+document, bottom margin will be -10px, left margin will be set by the browser
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>The margin-bottom Property</h3>
+    <p>The <code>margin-bottom</code> property allows you set bottom margin of an element. It can have a value in length, % or auto.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="margin-bottom: 15px; border:1px solid black;"&gt;
+      This is a paragraph with a specified bottom margin.
+      &lt;/p&gt;
+      &lt;p style="margin-bottom: 5%; border:1px solid black;"&gt;
+      This is another paragraph with a specified bottom margin in percent
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>The margin-top Property</h3>
+    <p>The <code>margin-top</code> property allows you set top margin of an element. It can have a value in length, % or auto.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="margin-top: 15px; border:1px solid black;"&gt;
+      This is a paragraph with a specified top margin
+      &lt;/p&gt;
+      &lt;p style="margin-top: 5%; border:1px solid black;"&gt;
+      This is another paragraph with a specified top margin in percent
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>The margin-left Property</h3>
+    <p>The <code>margin-left</code> property allows you set left margin of an element. It can have a value in length, % or auto.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="margin-left: 15px; border:1px solid black;"&gt;
+      This is a paragraph with a specified left margin
+      &lt;/p&gt;
+      &lt;p style="margin-left: 5%; border:1px solid black;"&gt;
+      This is another paragraph with a specified top margin in percent
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>The margin-right Property</h3>
+    <p>The <code>margin-right</code> property allows you set right margin of an element. It can have a value in length, % or auto.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="margin-right: 15px; border:1px solid black;"&gt;
+      This is a paragraph with a specified right margin
+      &lt;/p&gt;
+      &lt;p style="margin-right: 5%; border:1px solid black;"&gt;
+      This is another paragraph with a specified right margin in percent
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+
+
+    <h2>Total Width &amp; Height Calculation</h2>
+    <p>When you set the <code>width</code> and <code>height</code> properties of an element with CSS, you just set the width and height of the <b>content area</b>.</p>
+    <p>To calculate the full size of an element, you must also add padding, borders and margins.</p>
+    <ul class="list">
+        <li><b>Total Width</b> = width + left padding + right padding + left border + right border + left margin + right margin</li>
+        <li><b>Total Height</b> = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin</li>
+    </ul>
+    <p>For example, if you set a width of 300px, 20px padding, 5px border, and 10px margin, the total horizontal space the element takes is: <code>300 + 20 + 20 + 5 + 5 + 10 + 10 = 370px</code>.</p>
+
+
+  <h2>Box Sizing</h2>
+
+    <p>Box sizing property is using to change the height and width of element.</p>
+    <p>Since CSS2, the box property has worked as shown below −</p>
+    <p>width + padding + border = actual visible/rendered width of an element's box</p>
+    <p>height + padding + border = actual visible/rendered height of an element's box</p>
+    <p>Means when you set the height and width, it appears a little bit bigger than the given size because the element's border and padding are added to the element's height and width.</p>
+    <h3>CSS2 sizing property</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         .div1 {
+            width: 200px;
+            height: 100px;
+            border: 1px solid green;
+         }
+         .div2 {
+            width: 200px;
+            height: 100px;
+            padding: 50px;
+            border: 1px solid pink;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;div id="multibackground"&gt;Hello World&lt;/div&gt;&lt;/br&gt;
+&lt;div class="div2"&gt;Hello World&lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <p>Above image is having same width and height of two element but giving result is different, because the second one is included <code>padding</code> property.</p>
+    <h3>CSS3 box sizing property</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         .div1 {
+            width: 300px;
+            height: 100px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+         }
+         .div2 {
+            width: 300px;
+            height: 100px;
+            padding: 50px;
+            border: 1px solid red;
+            box-sizing: border-box;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;div id="multibackground"&gt;Hello World&lt;/div&gt;&lt;/br&gt;
+&lt;div class="div2"&gt;Hello World&lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+    <p>Above sample is having same height and width with <code>box-sizing: border-box</code>. Here the result is shown below.</p>
+    <ul class="list">
+        <li>Above elements are having same height and width with <code>box-sizing: border-box</code> so result is always same for both elements as shown above.</li>
+    </ul>
+
+
+
+
+
+
+  <h2>Outlines</h2>
+
+    <p>An outline does not take up space.</p>
+    <p>Outlines do not have to be rectangular.</p>
+    <p>Outline is always the same on all sides; you cannot specify different values for different sides of an element.</p>
+    <p>NOTE − The outline properties are not supported by IE 6 or Netscape 7.</p>
+    <ul class="list">
+        <li>You can set the following outline properties using CSS.</li>
+    </ul>
+
+    <p>You can set the following outline properties using CSS.</p>
+    <table class="css-table">
+  <thead>
+    <tr><th>Property</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>outline-width</code></td><td>Used to set the width of the outline.</td></tr>
+<tr><td><code>outline-style</code></td><td>Used to set the line style for the outline.</td></tr>
+<tr><td><code>outline-color</code></td><td>Used to set the color of the outline.</td></tr>
+<tr><td><code>outline</code></td><td>Used to set all the above three properties in a single statement.</td></tr>
+  </tbody>
+</table>
+    <h3>The outline-width Property</h3>
+    <p>The <code>outline-width</code> property specifies the width of the outline to be added to the box. Its value should be a length or one of the values thin, medium, or thick, just like the border-width attribute.</p>
+    <p>A width of zero pixels means no outline.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="outline-width:thin; outline-style:solid;"&gt;
+      This text is having thin outline.
+      &lt;/p&gt;
+      &lt;br /&gt;
+      &lt;p style="outline-width:thick; outline-style:solid;"&gt;
+      This text is having thick outline.
+      &lt;/p&gt;
+      &lt;br /&gt;
+      &lt;p style="outline-width:5px; outline-style:solid;"&gt;
+      This text is having 5x outline.
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>The outline-style Property</h3>
+    <p>The <code>outline-style</code> property specifies the style for the line solid, dotted, or dashed that goes around an element. It can take one of the following values −</p>
+    <table class="css-table">
+  <thead>
+    <tr><th>Property</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>none</code></td><td>No border. Equivalent to outline-width: 0;</td></tr>
+<tr><td><code>solid</code></td><td>Outline is a single solid line.</td></tr>
+<tr><td><code>dotted</code></td><td>Outline is a series of dots.</td></tr>
+<tr><td><code>dashed</code></td><td>Outline is a series of short lines.</td></tr>
+<tr><td><code>double</code></td><td>Outline is two solid lines.</td></tr>
+<tr><td><code>groove</code></td><td>Outline looks as though it is carved into the page.</td></tr>
+<tr><td><code>ridge</code></td><td>Outline looks the opposite of groove.</td></tr>
+<tr><td><code>inset</code></td><td>Outline makes the box look like it is embedded in the page.</td></tr>
+<tr><td><code>outset</code></td><td>Outline makes the box look like it is coming out of the canvas.</td></tr>
+<tr><td><code>hidden</code></td><td>Same as none.</td></tr>
+  </tbody>
+</table>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="outline-width:thin; outline-style:solid;"&gt;
+      This text is having thin solid  outline.
+      &lt;/p&gt;
+      &lt;br /&gt;
+      &lt;p style="outline-width:thick; outline-style:dashed;"&gt;
+      This text is having thick dashed outline.
+      &lt;/p&gt;
+      &lt;br /&gt;
+      &lt;p style="outline-width:5px;outline-style:dotted;"&gt;
+      This text is having 5x dotted outline.
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>The outline-color Property</h3>
+    <p>The <code>outline-color</code> property allows you to specify the color of the outline. Its value should either be a color name, a hex color, or an RGB value, as with the color and <code>border-color</code> properties.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="outline-width:thin; outline-style:solid;outline-color:red"&gt;
+      This text is having thin solid red  outline.
+      &lt;/p&gt;
+      &lt;br /&gt;
+      &lt;p style="outline-width:thick; outline-style:dashed;outline-color:#009900"&gt;
+      This text is having thick dashed green outline.
+      &lt;/p&gt;
+      &lt;br /&gt;
+      &lt;p style="outline-width:5px;outline-style:dotted;outline-color:rgb(13,33,232)"&gt;
+      This text is having 5x dotted blue outline.
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>The outline Property</h3>
+    <p>The <code>outline</code> property is a shorthand property that allows you to specify values for any of the three properties discussed previously in any order but in a single statement.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="outline:thin solid red;"&gt;
+      This text is having thin solid red outline.
+      &lt;/p&gt;
+      &lt;br /&gt;
+      &lt;p style="outline:thick dashed #009900;"&gt;
+      This text is having thick dashed green outline.
+      &lt;/p&gt;
+      &lt;br /&gt;
+      &lt;p style="outline:5px dotted rgb(13,33,232);"&gt;
+      This text is having 5x dotted blue outline.
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+  <h2>Rounded Corners (Border Radius)</h2>
+
+    <p>CSS3 Rounded corners are used to add special colored corner to body or text by using the <code>border-radius</code> property. A simple syntax of rounded corners is as follows −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>#rcorners7 {
+   border-radius: 60px/15px;
+   background: #FF0000;
+   padding: 20px;
+   width: 200px;
+   height: 150px;
+}</code></pre>
+    </div>
+    <p>The following table shows the possible values for Rounded corners as follows −</p>
+    <table class="css-table">
+      <thead>
+        <tr>
+          <th>Value</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>border-radius</td>
+          <td>Use this element for setting four border radius property</td>
+        </tr>
+        <tr>
+          <td>border-top-left-radius</td>
+          <td>Use this element for setting the border of top left corner</td>
+        </tr>
+        <tr>
+          <td>border-top-right-radius</td>
+          <td>Use this element for setting the border of top right corner</td>
+        </tr>
+        <tr>
+          <td>border-bottom-right-radius</td>
+          <td>Use this element for setting the border of bottom right corner</td>
+        </tr>
+        <tr>
+          <td>border-bottom-left-radius</td>
+          <td>Use this element for setting the border of bottom left corner</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Example</h3>
+    <p>This property can have three values. The following example uses both the values:</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         #rcorners1 {
+            border-radius: 25px;
+            background: #8AC007;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+         }
+         #rcorners2 {
+            border-radius: 25px;
+            border: 2px solid #8AC007;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+         }
+         #rcorners3 {
+            border-radius: 25px;
+            background: url(paper.gif);
+            background-position: left top;
+            background-repeat: repeat;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p &gt;Rounded corners!&lt;/p&gt;
+&lt;p &gt;Rounded corners!&lt;/p&gt;
+&lt;p &gt;Rounded corners!&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Each Corner property</h3>
+    <p>We can specify the each corner property as shown below example</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         #rcorners1 {
+            border-radius: 15px 50px 30px 5px;
+            background: #a44170;
+            padding: 20px;
+            width: 100px;
+            height: 100px;
+         }
+         #rcorners2 {
+            border-radius: 15px 50px 30px;
+            background: #a44170;
+            padding: 20px;
+            width: 100px;
+            height: 100px;
+         }
+         #rcorners3 {
+            border-radius: 15px 50px;
+            background: #a44170;
+            padding: 20px;
+            width: 100px;
+            height: 100px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p id="rcorners1"&gt;Four values: 15px 50px 30px 5px&lt;/p&gt;
+      &lt;p id="rcorners2"&gt;Three values: 15px 50px 30px&lt;/p&gt;
+      &lt;p id="rcorners3"&gt;Two values: 15px 50px&lt;/p&gt;
+   &lt;/body&gt;
+&lt;body&gt;
+      &lt;/html&gt;</code></pre>
+    </div>
+
+
+  <h2>Box Shadow</h2>
+
+    <h3>Text shadow</h3>
+<p>CSS3 supported to add shadow effects to text. Following is the example to add shadow effects to text.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         h1 {
+            text-shadow: 2px 2px;
+         }
+         h2 {
+            text-shadow: 2px 2px red;
+         }
+         h3 {
+            text-shadow: 2px 2px 5px red;
+         }
+         h4 {
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+         }
+         h5 {
+            text-shadow: 0 0 3px #FF0000;
+         }
+         h6 {
+            text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+         }
+         p {
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;h2&gt;Hello World&lt;/h2&gt;
+&lt;h3&gt;Hello World&lt;/h3&gt;
+&lt;h4&gt;Hello World&lt;/h4&gt;
+&lt;h5&gt;Hello World&lt;/h5&gt;
+&lt;h6&gt;Hello World&lt;/h6&gt;
+&lt;p&gt;Hello World&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Box Shadow</h3>
+    <p>Used to add shadow effects to elements,Following is the example to add shadow effects to element.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         div {
+            width: 300px;
+            height: 100px;
+            padding: 15px;
+            background-color: red;
+            box-shadow: 10px 10px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;div&gt;This is a div element with a box-shadow&lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <p>CSS3 contained several extra features, which is added later on</p>
+
+  <h2>Scrollbars &amp; Overflow</h2>
+
+    <p>There may be a case when an element's content might be larger than the amount of space allocated to it. CSS provides a property called <strong>overflow</strong> which tells the browser what to do if the box's contents is larger than the box itself.</p>
+    <table class="css-table">
+  <thead>
+    <tr><th>Value</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>visible</code></td><td>Allows the content to overflow the borders of its containing element.</td></tr>
+    <tr><td><code>hidden</code></td><td>Content is cut off at the border and no scrollbars are visible.</td></tr>
+    <tr><td><code>scroll</code></td><td>Scrollbars are added so the user can scroll to see the content.</td></tr>
+    <tr><td><code>auto</code></td><td>Same as scroll, but the scrollbar is only shown if the content does overflow.</td></tr>
+  </tbody>
+</table>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style type="text/css"&gt;
+         .scroll {
+            display: block;
+            border: 1px solid red;
+            padding: 5px;
+            margin-top: 5px;
+            width: 300px;
+            height: 50px;
+            overflow: scroll;
+         }
+         .auto {
+            display: block;
+            border: 1px solid red;
+            padding: 5px;
+            margin-top: 5px;
+            width: 300px;
+            height: 50px;
+            overflow: auto;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;p&gt;Example of scroll value:&lt;/p&gt;
+      &lt;div class="scroll"&gt;
+         I am going to keep a lot of content here just to show you how scrollbars works
+         if there is an overflow in an element box. This provides your horizontal
+         as well as vertical scrollbars.
+      &lt;/div&gt;
+      &lt;br /&gt;
+      &lt;p&gt;Example of auto value:&lt;/p&gt;
+      &lt;div class="auto"&gt;
+         I am going to keep a lot of content here just to show you how scrollbars works
+         if there is an overflow in an element box. This provides your horizontal
+         as well as vertical scrollbars.
+      &lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+
+
+    <h3>Scroll Snapping</h3>
+    <p>The <code>scroll-snap</code> properties let a scrolling container "snap" to specific child elements as the user scrolls. When combined with a scrollable overflow container, this makes it incredibly easy to build native-feeling image carousels and galleries without complex JavaScript.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+    <div class="code-header-left">
+      <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+      <span class="code-lang-tag">CSS</span>
+    </div>
+    <div class="code-actions">
+      <button type="button" class="btn-copy">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        Copy
+      </button>
+      <button type="button" class="btn-try">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        Try It Yourself
+      </button>
+    </div>
+      </div>
+      <pre class="code-block"><code>.gallery {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.gallery img {
+  scroll-snap-align: center;
+}</code></pre>
+    </div>
+    <h2>Practical Examples</h2>
+    <p>Here is a complete example bringing all the box model properties together:</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.box {
+  width: 250px;
+  padding: 20px;
+  border: 5px solid gray;
+  margin: 15px;
+  background-color: lightblue;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+  border-radius: 8px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class="box"&gt;
+  This box has a width of 250px, but takes up 300px of actual space (250 + 20 + 20 + 5 + 5).
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+
+
+    <h2>Common Mistakes</h2>
+    <ul class="list">
+        <li><b>Forgetting Total Size:</b> Setting an element to <code>width: 100%</code> and then adding padding, which causes it to overflow its container. Solution: use <code>box-sizing: border-box</code>.</li>
+        <li><b>Margin Collapse:</b> Vertical margins of adjacent elements sometimes collapse into a single margin. This is normal behavior but can be confusing for beginners.</li>
+        <li><b>Inline Elements:</b> Trying to set top/bottom margins or width/height on inline elements (like <code>&lt;span&gt;</code> or <code>&lt;a&gt;</code>). These properties only work on block or inline-block elements.</li>
+    </ul>
+
+
+
+
+    <h2>Best Practices</h2>
+    <ul class="list">
+        <li><b>Universal Border-Box:</b> It is highly recommended to apply <code>box-sizing: border-box;</code> to all elements using the universal selector <code>*</code> to make sizing much more intuitive.</li>
+        <li><b>Use Shorthands:</b> Instead of writing four separate <code>margin</code> properties, use the shorthand <code>margin: 10px 20px;</code> to keep your CSS clean.</li>
+        <li><b>Avoid Magic Numbers:</b> Instead of randomly tweaking margins/paddings by 1px until it looks right, stick to a consistent spacing system (e.g., multiples of 4px or 8px).</li>
+    </ul>
+
+
+
+
+    <h2>Interview Questions</h2>
+    <ul class="list">
+        <li><b>What is the CSS Box Model and what are its elements?</b><br>It's a box wrapping every HTML element, consisting of content, padding, borders, and margins.</li>
+        <li><b>What is the difference between content-box and border-box?</b><br>In <code>content-box</code>, padding and borders are added to the width/height. In <code>border-box</code>, the width/height includes the padding and borders.</li>
+        <li><b>What is Margin Collapsing?</b><br>When the top margin of one block element touches the bottom margin of another, they combine into a single margin (the larger of the two).</li>
+    </ul>
+
+
+
+
+    <h2>Summary</h2>
+    <p>The CSS Box Model is the fundamental building block of web layout. Every element is a rectangular box. By mastering how width, height, padding, borders, and margins interact, you gain full control over the spacing and alignment of your web pages. Always remember the magic of <code>box-sizing: border-box</code> to make layout math easier!</p>
+
+
+
+
+  </div>
+
+        <nav class="page-nav">
+            <a href="colors-advanced.html">&larr; Previous Chapter: Colors — Advanced (RGBA, HSL &amp; Opacity)</a>
+            <a href="display.html">Next Chapter: CSS Display &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

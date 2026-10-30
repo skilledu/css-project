@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Colors — Basics | Skilledu Tutorial</title>
+    <meta name="description" content="CSS uses color values to specify colors for text, backgrounds, borders, and other decorative effects. You can specify colors in several formats: Hex...">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/colors-basics.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Colors — Basics | Skilledu Tutorial">
+    <meta property="og:description" content="CSS uses color values to specify colors for text, backgrounds, borders, and other decorative effects. You can specify colors in several formats: Hex...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/colors-basics.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Colors — Basics | Skilledu Tutorial">
+    <meta name="twitter:description" content="CSS uses color values to specify colors for text, backgrounds, borders, and other decorative effects. You can specify colors in several formats: Hex...">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Colors — Basics",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/colors-basics.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Colors — Basics | Skilledu Tutorial",
+  "description": "CSS uses color values to specify colors for text, backgrounds, borders, and other decorative effects. You can specify colors in several formats: Hex...",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/colors-basics.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'colors-basics';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-colors-basics" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-colors-basics" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 8</span>
+    <h1>Colors — Basics</h1>
+  </div>
+  <div class="topic-section">
+    <p>CSS uses color values to specify colors for text, backgrounds, borders, and other decorative effects. You can specify colors in several formats: Hex codes, RGB values, and keyword names.</p>
+
+    <h3>Color Formats</h3>
+    <table class="css-table">
+  <thead>
+    <tr><th>Format</th><th>Syntax</th><th>Example</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Hex Code</td><td><code>#RRGGBB</code></td><td><code>p { color: #FF0000; }</code></td></tr>
+    <tr><td>Short Hex</td><td><code>#RGB</code></td><td><code>p { color: #F00; }</code></td></tr>
+    <tr><td>RGB</td><td><code>rgb(r, g, b)</code></td><td><code>p { color: rgb(255,0,0); }</code></td></tr>
+    <tr><td>RGB %</td><td><code>rgb(r%, g%, b%)</code></td><td><code>p { color: rgb(50%,0%,0%); }</code></td></tr>
+    <tr><td>Keyword</td><td><code>color-name</code></td><td><code>p { color: red; }</code></td></tr>
+  </tbody>
+</table>
+  </div>
+
+  <div class="topic-section">
+    <h3>Color Swatches</h3>
+    <p>Hover over any color to see it lift up. Click the hex code to copy it!</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:14px;margin:20px 0;">
+        <div style="background:#000000;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#000000;border:3px solid #ffffff22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#ffffff;letter-spacing:.5px;">Black</span>
+          <code style="font-size:11px;background:#ffffff22;color:#ffffff;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#000000</code>
+        </div>
+        <div style="background:#FF0000;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#FF0000;border:3px solid #ffffff22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#ffffff;letter-spacing:.5px;">Red</span>
+          <code style="font-size:11px;background:#ffffff22;color:#ffffff;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#FF0000</code>
+        </div>
+        <div style="background:#00FF00;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#00FF00;border:3px solid #1e293b22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#1e293b;letter-spacing:.5px;">Green</span>
+          <code style="font-size:11px;background:#1e293b22;color:#1e293b;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#00FF00</code>
+        </div>
+        <div style="background:#0000FF;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#0000FF;border:3px solid #ffffff22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#ffffff;letter-spacing:.5px;">Blue</span>
+          <code style="font-size:11px;background:#ffffff22;color:#ffffff;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#0000FF</code>
+        </div>
+        <div style="background:#FFFF00;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#FFFF00;border:3px solid #1e293b22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#1e293b;letter-spacing:.5px;">Yellow</span>
+          <code style="font-size:11px;background:#1e293b22;color:#1e293b;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#FFFF00</code>
+        </div>
+        <div style="background:#00FFFF;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#00FFFF;border:3px solid #1e293b22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#1e293b;letter-spacing:.5px;">Cyan</span>
+          <code style="font-size:11px;background:#1e293b22;color:#1e293b;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#00FFFF</code>
+        </div>
+        <div style="background:#FF00FF;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#FF00FF;border:3px solid #ffffff22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#ffffff;letter-spacing:.5px;">Magenta</span>
+          <code style="font-size:11px;background:#ffffff22;color:#ffffff;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#FF00FF</code>
+        </div>
+        <div style="background:#C0C0C0;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#C0C0C0;border:3px solid #1e293b22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#1e293b;letter-spacing:.5px;">Silver</span>
+          <code style="font-size:11px;background:#1e293b22;color:#1e293b;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#C0C0C0</code>
+        </div>
+        <div style="background:#FFFFFF;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#FFFFFF;border:3px solid #1e293b22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#1e293b;letter-spacing:.5px;">White</span>
+          <code style="font-size:11px;background:#1e293b22;color:#1e293b;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#FFFFFF</code>
+        </div>
+        <div style="background:#FFA500;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#FFA500;border:3px solid #1e293b22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#1e293b;letter-spacing:.5px;">Orange</span>
+          <code style="font-size:11px;background:#1e293b22;color:#1e293b;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#FFA500</code>
+        </div>
+        <div style="background:#800080;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#800080;border:3px solid #ffffff22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#ffffff;letter-spacing:.5px;">Purple</span>
+          <code style="font-size:11px;background:#ffffff22;color:#ffffff;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#800080</code>
+        </div>
+        <div style="background:#800000;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#800000;border:3px solid #ffffff22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#ffffff;letter-spacing:.5px;">Maroon</span>
+          <code style="font-size:11px;background:#ffffff22;color:#ffffff;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#800000</code>
+        </div>
+        <div style="background:#000080;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#000080;border:3px solid #ffffff22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#ffffff;letter-spacing:.5px;">Navy</span>
+          <code style="font-size:11px;background:#ffffff22;color:#ffffff;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#000080</code>
+        </div>
+        <div style="background:#008080;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#008080;border:3px solid #ffffff22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#ffffff;letter-spacing:.5px;">Teal</span>
+          <code style="font-size:11px;background:#ffffff22;color:#ffffff;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#008080</code>
+        </div>
+        <div style="background:#808000;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#808000;border:3px solid #ffffff22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#ffffff;letter-spacing:.5px;">Olive</span>
+          <code style="font-size:11px;background:#ffffff22;color:#ffffff;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#808000</code>
+        </div>
+        <div style="background:#FF6347;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#FF6347;border:3px solid #1e293b22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#1e293b;letter-spacing:.5px;">Coral</span>
+          <code style="font-size:11px;background:#1e293b22;color:#1e293b;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#FF6347</code>
+        </div>
+        <div style="background:#FFD700;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#FFD700;border:3px solid #1e293b22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#1e293b;letter-spacing:.5px;">Gold</span>
+          <code style="font-size:11px;background:#1e293b22;color:#1e293b;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#FFD700</code>
+        </div>
+        <div style="background:#4B0082;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#4B0082;border:3px solid #ffffff22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#ffffff;letter-spacing:.5px;">Indigo</span>
+          <code style="font-size:11px;background:#ffffff22;color:#ffffff;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#4B0082</code>
+        </div>
+        <div style="background:#EE82EE;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#EE82EE;border:3px solid #1e293b22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#1e293b;letter-spacing:.5px;">Violet</span>
+          <code style="font-size:11px;background:#1e293b22;color:#1e293b;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#EE82EE</code>
+        </div>
+        <div style="background:#A52A2A;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#A52A2A;border:3px solid #ffffff22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#ffffff;letter-spacing:.5px;">Brown</span>
+          <code style="font-size:11px;background:#ffffff22;color:#ffffff;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#A52A2A</code>
+        </div>
+        <div style="background:#FFC0CB;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#FFC0CB;border:3px solid #1e293b22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#1e293b;letter-spacing:.5px;">Pink</span>
+          <code style="font-size:11px;background:#1e293b22;color:#1e293b;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#FFC0CB</code>
+        </div>
+        <div style="background:#32CD32;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#32CD32;border:3px solid #1e293b22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#1e293b;letter-spacing:.5px;">Lime</span>
+          <code style="font-size:11px;background:#1e293b22;color:#1e293b;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#32CD32</code>
+        </div>
+        <div style="background:#DC143C;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#DC143C;border:3px solid #ffffff22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#ffffff;letter-spacing:.5px;">Crimson</span>
+          <code style="font-size:11px;background:#ffffff22;color:#ffffff;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#DC143C</code>
+        </div>
+        <div style="background:#D2B48C;border-radius:12px;padding:20px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,0.15);cursor:default;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:#D2B48C;border:3px solid #1e293b22;"></div>
+          <span style="font-weight:700;font-size:13px;color:#1e293b;letter-spacing:.5px;">Tan</span>
+          <code style="font-size:11px;background:#1e293b22;color:#1e293b;padding:3px 8px;border-radius:6px;font-family:'Fira Code',monospace;">#D2B48C</code>
+        </div>
+    </div>
+  </div>
+
+  <div class="topic-section">
+    <h3>Hex Color Reference Table</h3>
+    <p>Each color name, its hex code, and RGB equivalent:</p>
+    <table class="css-table">
+      <thead>
+        <tr>
+          <th>Color Name</th>
+          <th>Hex Code</th>
+          <th>RGB Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#000000;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Black</strong>
+            </div>
+          </td>
+          <td><code>#000000</code></td>
+          <td><code>rgb(0, 0, 0)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#FF0000;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Red</strong>
+            </div>
+          </td>
+          <td><code>#FF0000</code></td>
+          <td><code>rgb(255, 0, 0)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#00FF00;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Green</strong>
+            </div>
+          </td>
+          <td><code>#00FF00</code></td>
+          <td><code>rgb(0, 255, 0)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#0000FF;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Blue</strong>
+            </div>
+          </td>
+          <td><code>#0000FF</code></td>
+          <td><code>rgb(0, 0, 255)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#FFFF00;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Yellow</strong>
+            </div>
+          </td>
+          <td><code>#FFFF00</code></td>
+          <td><code>rgb(255, 255, 0)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#00FFFF;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Cyan</strong>
+            </div>
+          </td>
+          <td><code>#00FFFF</code></td>
+          <td><code>rgb(0, 255, 255)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#FF00FF;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Magenta</strong>
+            </div>
+          </td>
+          <td><code>#FF00FF</code></td>
+          <td><code>rgb(255, 0, 255)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#C0C0C0;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Silver</strong>
+            </div>
+          </td>
+          <td><code>#C0C0C0</code></td>
+          <td><code>rgb(192, 192, 192)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#FFFFFF;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>White</strong>
+            </div>
+          </td>
+          <td><code>#FFFFFF</code></td>
+          <td><code>rgb(255, 255, 255)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#FFA500;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Orange</strong>
+            </div>
+          </td>
+          <td><code>#FFA500</code></td>
+          <td><code>rgb(255, 165, 0)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#800080;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Purple</strong>
+            </div>
+          </td>
+          <td><code>#800080</code></td>
+          <td><code>rgb(128, 0, 128)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#800000;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Maroon</strong>
+            </div>
+          </td>
+          <td><code>#800000</code></td>
+          <td><code>rgb(128, 0, 0)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#000080;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Navy</strong>
+            </div>
+          </td>
+          <td><code>#000080</code></td>
+          <td><code>rgb(0, 0, 128)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#008080;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Teal</strong>
+            </div>
+          </td>
+          <td><code>#008080</code></td>
+          <td><code>rgb(0, 128, 128)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#808000;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Olive</strong>
+            </div>
+          </td>
+          <td><code>#808000</code></td>
+          <td><code>rgb(128, 128, 0)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#FF6347;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Coral</strong>
+            </div>
+          </td>
+          <td><code>#FF6347</code></td>
+          <td><code>rgb(255, 99, 71)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#FFD700;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Gold</strong>
+            </div>
+          </td>
+          <td><code>#FFD700</code></td>
+          <td><code>rgb(255, 215, 0)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#4B0082;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Indigo</strong>
+            </div>
+          </td>
+          <td><code>#4B0082</code></td>
+          <td><code>rgb(75, 0, 130)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#EE82EE;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Violet</strong>
+            </div>
+          </td>
+          <td><code>#EE82EE</code></td>
+          <td><code>rgb(238, 130, 238)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#A52A2A;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Brown</strong>
+            </div>
+          </td>
+          <td><code>#A52A2A</code></td>
+          <td><code>rgb(165, 42, 42)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#FFC0CB;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Pink</strong>
+            </div>
+          </td>
+          <td><code>#FFC0CB</code></td>
+          <td><code>rgb(255, 192, 203)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#32CD32;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Lime</strong>
+            </div>
+          </td>
+          <td><code>#32CD32</code></td>
+          <td><code>rgb(50, 205, 50)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#DC143C;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Crimson</strong>
+            </div>
+          </td>
+          <td><code>#DC143C</code></td>
+          <td><code>rgb(220, 20, 60)</code></td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="display:inline-block;width:28px;height:28px;border-radius:6px;background:#D2B48C;border:1px solid var(--border-light);flex-shrink:0;"></span>
+              <strong>Tan</strong>
+            </div>
+          </td>
+          <td><code>#D2B48C</code></td>
+          <td><code>rgb(210, 180, 140)</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="topic-section">
+    <h3>Code Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>/* Hex color */
+h1 { color: #FF0000; }       /* Red */
+
+/* RGB color */
+p  { color: rgb(0, 128, 0); } /* Green */
+
+/* Keyword color */
+body { background-color: navy; }
+
+/* Hex shorthand */
+a  { color: #0F0; }           /* Same as #00FF00 */</code></pre>
+    </div>
+
+
+<h2>Practical Examples</h2><p>A standard button component utilizing HEX colors for the background, border, and text to ensure exact color matching:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+.btn-primary {
+   /* Named colors are rarely used in production */
+   background-color: #3b82f6;
+   color: #ffffff;
+   border: 1px solid #2563eb;
+}
+
+.btn-primary:hover {
+   background-color: #1d4ed8;
+}
+&lt;/style&gt;
+
+&lt;button class="btn-primary"&gt;Primary Action&lt;/button&gt;
+&lt;button class="btn-secondary"&gt;Secondary Action&lt;/button&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Forgetting the hash (#) in HEX colors</strong> − Writing <code>color: 333333;</code> instead of <code>color: #333333;</code>. The browser will ignore the invalid value entirely.</li><li><strong>Using unreadable color names</strong> − Relying on named colors like <code>color: goldenrod;</code> which provides very little control over exact branding shades and often fails contrast tests.</li><li><strong>Low Contrast Ratios</strong> − Using light gray text on a white background (e.g., <code>color: #cccccc</code> on <code>#ffffff</code>). This makes the text unreadable and fails accessibility guidelines.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Stick to HEX or RGB in Production</strong> − They provide millions of exact shades, allowing you to match brand guidelines perfectly.</li><li><strong>Use 3-Digit HEX Shorthand</strong> − You can abbreviate HEX codes if the pairs match. <code>#ff0000</code> can be written as <code>#f00</code> to save space.</li><li><strong>Check Contrast for Accessibility</strong> − Color contrast between text and background matters greatly for readability, especially for low-vision users. A common guideline is to check contrast ratios via a contrast checker tool to ensure a minimum of 4.5:1, rather than relying purely on visual judgment.</li></ul><h2>Interview Questions</h2><p><strong>Q: How many characters does a valid HEX color code contain?</strong></p><p>A: Either 3 (shorthand, like <code>#fff</code>), 6 (standard, like <code>#ffffff</code>), or 8 (if including an alpha transparency channel at the end).</p><p><strong>Q: What does the RGB format stand for?</strong></p><p>A: Red, Green, Blue. It defines colors by specifying the intensity of those three light colors on a scale from 0 to 255.</p><p><strong>Q: How do you represent pure black in both HEX and RGB?</strong></p><p>A: HEX: <code>#000000</code>. RGB: <code>rgb(0, 0, 0)</code>.</p><p><strong>Q: Why are CSS named colors rarely used in professional web design?</strong></p><p>A: There are only 140 named colors, which is far too limiting for exact brand color matching, and their names can be ambiguous across different screen calibrations.</p><h2>Summary</h2><p>Colors breathe life into your web layout. While CSS offers simple named colors for quick prototyping, mastering 6-digit HEX codes and RGB values gives you access to the entire visual spectrum. Always prioritize high contrast between your text and backgrounds to ensure your site is readable for everyone.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="inheritance.html">&larr; Previous Chapter: CSS Inheritance</a>
+            <a href="colors-advanced.html">Next Chapter: Colors — Advanced (RGBA, HSL &amp; Opacity) &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

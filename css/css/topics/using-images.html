@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Using Images | Skilledu Tutorial</title>
+    <meta name="description" content="Images play an important role in any webpage. Though it is not recommended to include a lot of images, but it is still important to use good images...">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/using-images.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Using Images | Skilledu Tutorial">
+    <meta property="og:description" content="Images play an important role in any webpage. Though it is not recommended to include a lot of images, but it is still important to use good images...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/using-images.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Using Images | Skilledu Tutorial">
+    <meta name="twitter:description" content="Images play an important role in any webpage. Though it is not recommended to include a lot of images, but it is still important to use good images...">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Using Images",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/using-images.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Using Images | Skilledu Tutorial",
+  "description": "Images play an important role in any webpage. Though it is not recommended to include a lot of images, but it is still important to use good images...",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/using-images.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'using-images';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-using-images" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-using-images" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 26</span>
+    <h1>Using Images</h1>
+  </div>
+  <div class="topic-section">
+    <p>Images play an important role in any webpage. Though it is not recommended to include a lot of images, but it is still important to use good images wherever required.</p>
+    <p>CSS plays a good role to control image display. You can set the following image properties using CSS.</p>
+    <p>The <code>border</code> property is used to set the width of an image border.</p>
+    <p>The <code>height</code> property is used to set the height of an image.</p>
+    <p>The <code>width</code> property is used to set the width of an image.</p>
+    <p>The -moz-<code>opacity</code> property is used to set the opacity of an image.</p>
+    <h3>The Image Border Property</h3>
+    <p>The <code>border</code> property of an image is used to set the width of an image border. This property can have a value in length or in %.</p>
+    <p>A width of zero pixels means no border. Here is the example −</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;img style="border:0px;" src="../assets/images/demo-logo.png" width="150" /&gt;
+      &lt;br /&gt;
+      &lt;img style="border:3px dashed red;" src="../assets/images/demo-logo.png" width="150" /&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>The Image Height Property</h3>
+    <p>The <code>height</code> property of an image is used to set the height of an image. This property can have a value in length or in %. While giving value in %, it applies it in respect of the box in which an image is available.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;img style="border:1px solid red; height:100px;" src="../assets/images/demo-logo.png" width="150" /&gt;
+      &lt;br /&gt;
+      &lt;img style="border:1px solid red; height:50%;" src="../assets/images/demo-logo.png" width="150" /&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>The Image Width Property</h3>
+    <p>The <code>width</code> property of an image is used to set the width of an image. This property can have a value in length or in %. While giving value in %, it applies it in respect of the box in which an image is available.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;img style="border:1px solid red; width:150px;" src="../assets/images/demo-logo.png" width="150" /&gt;
+      &lt;br /&gt;
+      &lt;img style="border:1px solid red; width:100%;" src="../assets/images/demo-logo.png" width="150" /&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>The -moz-opacity Property</h3>
+    <p>The -moz-<code>opacity</code> property of an image is used to set the opacity of an image. This property is used to create a transparent image in Mozilla. IE uses filter:alphaopacity = x to create transparent images.</p>
+    <p>In Mozilla <code>-moz-opacity: x</code>, <code>x</code> can be a value from 0.0 - 1.0. A lower value makes the element more transparent. The same thing goes for the CSS3 - valid syntax is <code>opacity: x</code>.</p>
+    <p>In IE <code>filter: alpha(opacity=x)</code>, <code>x</code> can be a value from 0 - 100. A lower value makes the element more transparent.</p>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;img style="border:1px solid red;-moz-opacity:0.4;filter:alpha(opacity=40);"
+src="../assets/images/demo-logo.png" width="150" /&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+
+
+
+<h2>Practical Examples</h2><p>Creating a foolproof responsive image class and a circular profile avatar modifier:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+/* 1. Make all images responsive by default */
+img {
+   max-width: 100%;
+   height: auto;
+   display: block; /* Removes weird bottom spacing */
+}
+
+/* 2. Create a circular avatar class */
+.avatar-circle {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   object-fit: cover; /* Prevents stretching if image isn't a perfect square */
+}
+&lt;/style&gt;
+
+&lt;img class="avatar-circle" src="../assets/images/demo-photo.jpg" alt="Avatar"&gt;</code></pre></div>
+    <h3>Clipping &amp; Masking</h3>
+    <p>The <code>clip-path</code> property allows you to cut an element down to a defined shape, hiding everything outside its boundaries. This gives you powerful control over what part of an image or element is visible, enabling complex geometric designs without an image editor.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+    <div class="code-header-left">
+      <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+      <span class="code-lang-tag">CSS</span>
+    </div>
+    <div class="code-actions">
+      <button type="button" class="btn-copy">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        Copy
+      </button>
+      <button type="button" class="btn-try">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        Try It Yourself
+      </button>
+    </div>
+      </div>
+      <pre class="code-block"><code>img {
+  clip-path: circle(50%);
+}</code></pre>
+    </div>
+    <h2>Common Mistakes</h2><ul class="list"><li><strong>Not setting max-width: 100%</strong> − If an image is 1200px wide but viewed on a 400px phone screen, it will blow out the layout and create horizontal scrolling.</li><li><strong>Forgetting <code>height: auto</code></strong> − If you set <code>max-width: 100%</code> but hardcode a height attribute in the HTML, the image will squish and distort. <code>height: auto</code> preserves the aspect ratio.</li><li><strong>Baking borders/shadows into the image file</strong> − Using Photoshop to add a drop shadow to an image. If the site theme changes, the image is ruined. Always use CSS <code>box-shadow</code> and <code>border</code> on the image element instead.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Global Responsive Rule</strong> − Add <code>img { max-width: 100%; height: auto; }</code> to your base CSS reset to ensure no image ever breaks out of its container.</li><li><strong>Always include the alt attribute</strong> − While technically an HTML requirement, missing alt tags can mess up layout alignment if the image fails to load. More importantly, the <code>alt</code> text is essential for screen readers to describe the image to visually impaired users.</li><li><strong>Use <code>object-fit: cover</code> for fixed dimensions</strong> − If you must force an image into a specific box size (like a square grid), use <code>object-fit: cover</code> to crop it beautifully without distorting the pixels.</li></ul><h2>Interview Questions</h2><p><strong>Q: How do you make an image responsive in CSS?</strong></p><p>A: By applying <code>max-width: 100%;</code> and <code>height: auto;</code>. This allows the image to scale down to fit its container without stretching.</p><p><strong>Q: What does the <code>object-fit</code> property do?</strong></p><p>A: It dictates how an <code>&lt;img&gt;</code> or <code>&lt;video&gt;</code> should be resized to fit its container. <code>cover</code> fills the box by cropping, while <code>contain</code> fits it inside entirely.</p><p><strong>Q: Why is there often a small gap (few pixels) directly below an <code>&lt;img&gt;</code> tag, and how do you remove it?</strong></p><p>A: Images are <code>inline</code> elements by default, so they sit on the text baseline, leaving space for descenders (like the tail of a <code>"y"</code>). Fix it by setting <code>display: block;</code> on the image.</p><p><strong>Q: How do you create a perfect circle from a square image?</strong></p><p>A: Apply <code>border-radius: 50%;</code> to the image.</p><h2>Summary</h2><p>Images are the heaviest visual elements on most websites. Ensuring they behave responsively (never exceeding their container width) and maintain their aspect ratios is critical. Modern properties like <code>object-fit</code> give developers Photoshop-like cropping control directly in the browser.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="border-image.html">&larr; Previous Chapter: Border Image</a>
+            <a href="measurement-units-absolute.html">Next Chapter: Measurement Units — Absolute &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators | Skilledu Tutorial</title>
+    <meta name="description" content="A combinator is something that explains the relationship between the selectors. A CSS selector can contain more than one simple selector. Between the...">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/combinators.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Combinators | Skilledu Tutorial">
+    <meta property="og:description" content="A combinator is something that explains the relationship between the selectors. A CSS selector can contain more than one simple selector. Between the...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/combinators.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Combinators | Skilledu Tutorial">
+    <meta name="twitter:description" content="A combinator is something that explains the relationship between the selectors. A CSS selector can contain more than one simple selector. Between the...">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "CSS Combinators",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/combinators.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Combinators | Skilledu Tutorial",
+  "description": "A combinator is something that explains the relationship between the selectors. A CSS selector can contain more than one simple selector. Between the...",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/combinators.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'combinators';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-combinators" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-combinators" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        <div class="topic-header"><span class="topic-badge">Topic 5</span><h1>CSS Combinators</h1></div><div class="topic-section"><p>A combinator is something that explains the relationship between the selectors. A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.</p><h3>Descendant Combinator (space)</h3><p>The descendant combinator matches all elements that are descendants of a specified element.</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>div p {
+   background-color: yellow;
+}</code></pre></div><h3>Child Combinator (<code>&gt;</code>)</h3><p>The child combinator selects all elements that are the children of a specified element.</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>div > p {
+   background-color: yellow;
+}</code></pre></div><h3>Adjacent Sibling Combinator (<code>+</code>)</h3><p>The adjacent sibling combinator is used to select an element that is directly after another specific element. Sibling elements must have the same parent element.</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>h1 + p {
+   background-color: yellow;
+}</code></pre></div><h3>General Sibling Combinator (<code>~</code>)</h3><p>The general sibling combinator selects all elements that are next siblings of a specified element.</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>h1 ~ p {
+   background-color: yellow;
+}</code></pre></div><h3>Combinators Summary</h3><table class="css-table"><thead><tr><th>Symbol</th><th>Name</th><th>What it Selects</th></tr></thead><tbody><tr><td>(space)</td><td>Descendant combinator</td><td>All elements that are inside the specified element.</td></tr><tr><td><code>&gt;</code></td><td>Child combinator</td><td>All elements that are direct children of the specified element.</td></tr><tr><td><code>+</code></td><td>Adjacent sibling combinator</td><td>The element that is placed immediately after the specified element.</td></tr><tr><td><code>~</code></td><td>General sibling combinator</td><td>All elements that are placed after the specified element on the same DOM level.</td></tr></tbody></table>
+
+<h2>Practical Examples</h2><p>A realistic dropdown menu scenario utilizing child (<code>&gt;</code>) and adjacent sibling (<code>+</code>) combinators to prevent styling bleed into nested sub-menus:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+/* Direct Child Combinator: Only styles the top-level list items */
+.nav-menu > li {
+   display: inline-block;
+   margin-right: 20px;
+}
+
+/* Adjacent Sibling: Adds a border between adjacent menu items */
+.nav-menu > li + li {
+   border-left: 1px solid #ccc;
+   padding-left: 20px;
+}
+&lt;/style&gt;
+
+&lt;div class="card"&gt;
+  &lt;h2&gt;Combinators&lt;/h2&gt;
+  &lt;p&gt;Adjacent sibling paragraph.&lt;/p&gt;
+  &lt;p&gt;General sibling paragraph.&lt;/p&gt;
+  &lt;div&gt;
+    &lt;p&gt;Descendant, but not direct child.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Confusing Descendant (space) with Child (&gt;)</strong> − Using a space selects ALL descendants (even grandchildren). Using <code>&gt;</code> selects ONLY direct children. Confusing them causes unintended styling on deeply nested elements.</li><li><strong>Over-nesting descendant combinators</strong> − Writing <code>.main .sidebar .widget ul li a</code>. This creates fragile CSS that breaks if the HTML structure changes slightly, and makes it incredibly hard to override later.</li><li><strong>Misunderstanding Sibling Combinators</strong> − The <code>+</code> combinator only selects the sibling IMMEDIATELY following the first element. If there is a <code>&lt;br&gt;</code> tag between them, the selector fails.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Prefer the Child Combinator (&gt;)</strong> − Whenever possible, use <code>&gt;</code> instead of a space. It strictly scopes your styles to direct children and prevents <code>"style leaking"</code> into nested components.</li><li><strong>Limit Combinator Depth</strong> − A strict rule of thumb is never to exceed a depth of 3 combinators (e.g., <code>.card > .body > h2</code>). If you go deeper, you should probably just add a new class to the target element.</li><li><strong>Use Adjacent Siblings for Spacing</strong> − The <code>* + *</code> selector (known as the lobotomized owl) is highly effective for adding top-margins only between adjacent sibling elements in a stack.</li><li><strong>Keep selectors shallow</strong> − Overly complex or deeply nested selector chains can slow down CSS matching on large pages. Simpler selectors perform better.</li></ul><h2>Interview Questions</h2><p><strong>Q: What is the exact difference between <code>div p</code> and <code>div &gt; p</code>?</strong></p><p>A: <code>div p</code> (descendant) selects all <code>&lt;p&gt;</code> tags that exist anywhere inside the <code>div</code>, no matter how deeply nested. <code>div &gt; p</code> (child) selects only <code>&lt;p&gt;</code> tags that are direct children of the <code>div</code>.</p><p><strong>Q: How does the adjacent sibling combinator <code>+</code> work?</strong></p><p>A: It selects an element that is placed immediately after a specified element, provided they share the same parent (e.g., <code>h1 + p</code> targets only the very first paragraph directly after an <code>h1</code>).</p><p><strong>Q: What does the general sibling combinator <code>~</code> do?</strong></p><p>A: It selects ALL sibling elements that follow the specified element on the same level, not just the immediately adjacent one.</p><p><strong>Q: Why might deeply nested descendant combinators cause performance issues?</strong></p><p>A: Browsers read CSS selectors from right-to-left. For <code>.container div span a</code>, the browser first finds all <code>a</code> tags on the page, then checks if they have a <code>span</code> parent, then a <code>div</code> grandparent, etc., which is computationally expensive.</p><p><strong>Q: Write a selector to target a <code>&lt;ul&gt;</code> that immediately follows an element with the class <code>.header</code>.</strong></p><p>A: <code>.header + ul</code></p><h2>Summary</h2><p>Combinators define the relationship between multiple simple selectors. By mastering the descendant (space), child (<code>&gt;</code>), adjacent sibling (<code>+</code>), and general sibling (<code>~</code>) combinators, you can precisely target elements based on their exact location in the DOM tree without needing to clutter your HTML with excessive classes.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="selectors.html">&larr; Previous Chapter: CSS Selectors</a>
+            <a href="specificity.html">Next Chapter: CSS Specificity &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

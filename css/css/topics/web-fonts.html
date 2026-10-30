@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Web Fonts | Skilledu Tutorial</title>
+    <meta name="description" content="Web Fonts allows you to use fonts that are not installed on the user's computer.">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/web-fonts.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Web Fonts | Skilledu Tutorial">
+    <meta property="og:description" content="Web Fonts allows you to use fonts that are not installed on the user's computer.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/web-fonts.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Web Fonts | Skilledu Tutorial">
+    <meta name="twitter:description" content="Web Fonts allows you to use fonts that are not installed on the user's computer.">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Web Fonts",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/web-fonts.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Web Fonts | Skilledu Tutorial",
+  "description": "Web Fonts allows you to use fonts that are not installed on the user's computer.",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/web-fonts.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'web-fonts';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-web-fonts" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-web-fonts" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 17</span>
+    <h1>Web Fonts</h1>
+  </div>
+  <div class="topic-section">
+    <p>Web Fonts allows you to use fonts that are not installed on the user's computer.</p>
+    <p>You can use the <code>@font-face</code> rule to define a Web Font. When you have found or bought the font you wish to use, just include the font file on your web server, and it will be automatically downloaded to the user when needed.</p>
+
+    <h3>Different web fonts formats</h3>
+    <table class="css-table">
+  <thead>
+    <tr><th>Format</th><th>Extension</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>TrueType Fonts</strong></td><td><code>.ttf</code></td><td>Developed by Apple and Microsoft. Very common font format for both Mac and Windows operating systems.</td></tr>
+    <tr><td><strong>OpenType Fonts</strong></td><td><code>.otf</code></td><td>Built on TrueType, developed by Microsoft and Adobe. Scalable computer font format.</td></tr>
+    <tr><td><strong>Web Open Font Format</strong></td><td><code>.woff</code></td><td>Font format for use in web pages, essentially TrueType/OpenType with compression.</td></tr>
+    <tr><td><strong>WOFF 2.0</strong></td><td><code>.woff2</code></td><td>Provides better compression than WOFF 1.0.</td></tr>
+    <tr><td><strong>SVG Fonts</strong></td><td><code>.svg / .svgz</code></td><td>Use SVG elements to define glyphs. Excellent for mobile devices.</td></tr>
+    <tr><td><strong>Embedded OpenType</strong></td><td><code>.eot</code></td><td>Compact form of OpenType designed by Microsoft for use as embedded fonts.</td></tr>
+  </tbody>
+</table>
+
+    <h3>Defining a Web Font</h3>
+    <p>To use a web font, you define it with the <code>@font-face</code> rule and then apply it via <code>font-family</code>.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>@font-face {
+   font-family: myFirstFont;
+   src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2);
+}
+div {
+   font-family: myFirstFont;
+}</code></pre>
+    </div>
+
+
+<h2>Practical Examples</h2><p>Declaring a custom local font using <code>@font-face</code> and applying it to the document with modern performance best practices:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+/* Define the custom font */
+@font-face {
+   font-family: <code>"MyCustomFont"</code>;
+   src: url("https://fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2") format(<code>"woff2"</code>);
+   font-weight: 400;
+   font-style: normal;
+
+   /* Crucial for performance: prevents invisible text while loading */
+   font-display: swap;
+}
+
+body {
+   /* Apply the font with a safe generic fallback */
+   font-family: <code>"MyCustomFont"</code>, sans-serif;
+}
+&lt;/style&gt;
+
+&lt;div&gt;
+  &lt;h1&gt;Custom Font Heading&lt;/h1&gt;
+  &lt;p&gt;Custom font text.&lt;/p&gt;
+&lt;/div&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Using heavy, unoptimized font formats</strong> − Loading massive <code>.ttf</code> or <code>.otf</code> files directly. Always convert your web fonts to the highly compressed <code>.woff2</code> format to drastically improve page speed.</li><li><strong>Forgetting <code>font-display: swap</code></strong> − By default, browsers hide text entirely until the custom font finishes downloading (Flash of Invisible Text). Adding <code>font-display: swap</code> forces the browser to show the fallback font immediately, swapping in the custom font once it loads. This ensures text remains visible and readable while a custom web font loads.</li><li><strong>Loading unused font weights</strong> − Importing 100, 200, 300, 400, 500, 600, 700, 800, and 900 weights from Google Fonts when your design only actually uses 400 and 700.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Preload Critical Fonts</strong> − If a custom font is used for your main headings above the fold, add <code>&lt;link rel="preload" href="font.woff2" as="font" type="font/woff2" crossorigin&gt;</code> in your HTML <code>&lt;head&gt;</code> to download it instantly.</li><li><strong>Limit Font Families</strong> − Every new font family adds HTTP requests and rendering time. Stick to a maximum of 2 custom web font families per site.</li></ul><h2>Interview Questions</h2><p><strong>Q: What is the preferred file format for web fonts today?</strong></p><p>A: WOFF2 (Web Open Font Format 2). It offers the best compression algorithms specifically designed for the web, resulting in the smallest file sizes.</p><p><strong>Q: What does the <code>font-display: swap</code> property do?</strong></p><p>A: It instructs the browser to immediately render text using the system fallback font, and then <code>"swap"</code> the custom font in as soon as it finishes downloading, preventing invisible text delays.</p><p><strong>Q: How do you serve different styles (like italic or bold) of the same font?</strong></p><p>A: You write multiple <code>@font-face</code> rules that share the exact same <code>font-family</code> name, but define different <code>font-weight</code> or <code>font-style</code> values, pointing to their respective font files.</p><h2>Summary</h2><p>Web Fonts break developers free from the limited pool of <code>"web-safe"</code> system fonts. By utilizing the <code>@font-face</code> rule and sticking to highly compressed <code>.woff2</code> formats, you can deliver stunning typography without crippling your website's load time.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="fonts.html">&larr; Previous Chapter: Fonts</a>
+            <a href="icons.html">Next Chapter: CSS Icons &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

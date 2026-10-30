@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Visibility | Skilledu Tutorial</title>
+    <meta name="description" content="A property called visibility allows you to hide an element from view. You can use this property along with JavaScript to create very complex menu and...">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/visibility.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Visibility | Skilledu Tutorial">
+    <meta property="og:description" content="A property called visibility allows you to hide an element from view. You can use this property along with JavaScript to create very complex menu and...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/visibility.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Visibility | Skilledu Tutorial">
+    <meta name="twitter:description" content="A property called visibility allows you to hide an element from view. You can use this property along with JavaScript to create very complex menu and...">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Visibility",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/visibility.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Visibility | Skilledu Tutorial",
+  "description": "A property called visibility allows you to hide an element from view. You can use this property along with JavaScript to create very complex menu and...",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/visibility.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'visibility';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-visibility" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-visibility" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 14</span>
+    <h1>Visibility</h1>
+  </div>
+  <div class="topic-section">
+    <p>A property called <code>visibility</code> allows you to hide an element from view. You can use this property along with JavaScript to create very complex menu and webpage layouts.</p>
+    <p><strong>NOTE:</strong> Remember that the source code will still contain whatever is in the invisible element, so you should not use this to hide sensitive information such as credit card details or passwords.</p>
+    <table class="css-table">
+  <thead>
+    <tr><th>Value</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>visible</code></td><td>The box and its contents are shown to the user (default).</td></tr>
+    <tr><td><code>hidden</code></td><td>The box and its content are made invisible, although they still affect the layout of the page.</td></tr>
+    <tr><td><code>collapse</code></td><td>This is for use only with dynamic table columns and row effects.</td></tr>
+  </tbody>
+</table>
+    <h3>Example</h3>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">Copy</button>
+          <button type="button" class="btn-try">Try It Yourself</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p&gt;This paragraph is visible in normal way.&lt;/p&gt;
+      &lt;p style="visibility:hidden;"&gt;This paragraph is hidden (still takes space).&lt;/p&gt;
+      &lt;p&gt;This paragraph is also visible.&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+<h2>Practical Examples</h2><p>Fading out an element while keeping its physical space intact, ensuring the layout below it doesn't jump:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+.hidden-element {
+   /* Visually hidden, but still takes up space */
+   visibility: hidden;
+   opacity: 0;
+   transition: visibility 0s 0.3s, opacity 0.3s linear;
+}
+
+.hidden-element.active {
+   visibility: visible;
+   opacity: 1;
+   transition: opacity 0.3s linear;
+}
+&lt;/style&gt;
+
+&lt;div class="hidden-element active" style="padding:20px; background:blue; color:white;"&gt;I fade out smoothly! (Remove the 'active' class via JS)&lt;/div&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Confusing visibility with display</strong> − <code>display: none</code> removes the element entirely, causing surrounding text to collapse and fill the space. <code>visibility: hidden</code> leaves an empty <code>"hole"</code> exactly the size of the element. This difference matters for accessibility: content hidden with <code>visibility: hidden</code> can still confuse screen reader users in some cases, and may remain in the tab order in certain browsers.</li><li><strong>Trying to transition visibility alone</strong> − You cannot smoothly animate <code>visibility</code> (it snaps instantly from hidden to visible). You must pair it with <code>opacity</code> to get a smooth fade effect.</li><li><strong>Assuming hidden elements can be clicked</strong> − A <code>visibility: hidden</code> element cannot be clicked, whereas an <code>opacity: 0</code> element (without hidden visibility) CAN still be clicked!</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Use visibility for UI states</strong> − It is perfect for hiding validation error messages beneath form inputs before the user types anything, preserving the form's height so it doesn't jump around.</li><li><strong>Combine with Opacity for animations</strong> − Always toggle both <code>opacity</code> and <code>visibility</code> together when fading out interactive elements (like modals) to ensure they look good AND block unwanted clicks.</li></ul><h2>Interview Questions</h2><p><strong>Q: What is the main difference between <code>visibility: hidden</code> and <code>display: none</code>?</strong></p><p>A: <code>display: none</code> completely removes the element from the document flow, meaning it takes up zero physical space. <code>visibility: hidden</code> makes the element invisible, but it still occupies its exact original dimensions in the layout.</p><p><strong>Q: What does <code>visibility: collapse</code> do?</strong></p><p>A: It is specifically designed for table rows (<code>&lt;tr&gt;</code>) or columns. It acts exactly like <code>display: none</code> for those elements (collapsing the row), but acts like <code>visibility: hidden</code> on standard elements.</p><p><strong>Q: Will screen readers announce text inside a <code>visibility: hidden</code> element?</strong></p><p>A: No. Screen readers ignore both <code>display: none</code> and <code>visibility: hidden</code> content.</p><h2>Summary</h2><p>The <code>visibility</code> property is a subtle but vital layout tool. It allows you to hide elements while preserving the structural integrity of your grid or page flow. Mastering its relationship with <code>opacity</code> and <code>display</code> is crucial for building smooth, non-jumping UI animations.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="float.html">&larr; Previous Chapter: CSS Float</a>
+            <a href="text-basics.html">Next Chapter: Text &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>

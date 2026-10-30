@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text | Skilledu Tutorial</title>
+    <meta name="description" content="This chapter teaches you how to manipulate text using CSS properties. You can set following text properties of an element −">
+
+    <link rel="canonical" href="https://REPLACE-WITH-REAL-DOMAIN.com/topics/text-basics.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CSS Text | Skilledu Tutorial">
+    <meta property="og:description" content="This chapter teaches you how to manipulate text using CSS properties. You can set following text properties of an element −">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://REPLACE-WITH-REAL-DOMAIN.com/topics/text-basics.html">
+    <meta property="og:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+    <meta property="og:site_name" content="Skilledu">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Text | Skilledu Tutorial">
+    <meta name="twitter:description" content="This chapter teaches you how to manipulate text using CSS properties. You can set following text properties of an element −">
+    <meta name="twitter:image" content="https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        .page-header { padding: 20px; background: var(--bg-surface, #fff); border-bottom: 1px solid var(--border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; }
+        .page-header a.logo-link { text-decoration: none; }
+        .page-header img { height: 30px; }
+        .page-header a.button { padding: 10px 15px; background: var(--primary, #3b82f6); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; }
+        .topic-content-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .page-nav { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border, #e5e7eb); }
+        .page-nav a { color: var(--primary, #3b82f6); font-weight: 600; text-decoration: none; }
+        .page-footer { text-align: center; padding: 30px; margin-top: 40px; color: var(--text-muted, #6b7280); font-size: 0.9rem; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CSS Tutorial",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/#topics"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Text",
+      "item": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/text-basics.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Text | Skilledu Tutorial",
+  "description": "This chapter teaches you how to manipulate text using CSS properties. You can set following text properties of an element −",
+  "author": {
+    "@type": "Organization",
+    "name": "Skilledu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skilledu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://REPLACE-WITH-REAL-DOMAIN.com/assets/images/logo-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://REPLACE-WITH-REAL-DOMAIN.com/topics/text-basics.html"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "Complete Interactive CSS Tutorial",
+    "url": "https://REPLACE-WITH-REAL-DOMAIN.com/"
+  }
+}
+    </script>
+</head>
+<body>
+    <script>window.__INITIAL_TOPIC__ = 'text-basics';</script>
+    <header class="page-header">
+        <a href="../index.html#topic-text-basics" class="logo-link">
+            <img src="assets/images/logo-light.png" alt="Skilledu" width="135" height="30">
+        </a>
+        <a href="../index.html#topic-text-basics" class="button">Open in Interactive Tutorial</a>
+    </header>
+
+    <main class="topic-content-main">
+        
+  <div class="topic-header">
+    <span class="topic-badge">Topic 15</span>
+    <h1>Text</h1>
+  </div>
+  <div class="topic-section">
+    <p>This chapter teaches you how to manipulate text using CSS properties. You can set following text properties of an element −</p>
+    <table class="css-table">
+  <thead>
+    <tr><th>Property</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>color</code></td><td>is used to set the color of a text.</td></tr>
+    <tr><td><code>direction</code></td><td>is used to set the text direction.</td></tr>
+    <tr><td><code>letter-spacing</code></td><td>is used to add or subtract space between the letters that make up a word.</td></tr>
+    <tr><td><code>word-spacing</code></td><td>is used to add or subtract space between the words of a sentence.</td></tr>
+    <tr><td><code>text-indent</code></td><td>is used to indent the text of a paragraph.</td></tr>
+    <tr><td><code>text-align</code></td><td>is used to align the text of a document.</td></tr>
+    <tr><td><code>text-decoration</code></td><td>is used to underline, overline, and strikethrough text.</td></tr>
+    <tr><td><code>text-transform</code></td><td>is used to capitalize text or convert text to uppercase or lowercase letters.</td></tr>
+    <tr><td><code>white-space</code></td><td>is used to control the flow and formatting of text.</td></tr>
+    <tr><td><code>text-shadow</code></td><td>is used to set the text shadow around a text.</td></tr>
+  </tbody>
+</table>
+
+    <h3>Set the Text Color</h3>
+    <p>The following example demonstrates how to set the text color. Possible value could be any color name in any valid format.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="color:red;"&gt;
+      This text will be written in red.
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Set the Text Direction</h3>
+    <p>The following example demonstrates how to set the direction of a text. Possible values are <code>ltr</code> or <code>rtl</code>.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="direction:rtl;"&gt;
+      This text will be renedered from right to left
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Set the Space between Characters</h3>
+    <p>The following example demonstrates how to set the space between characters. Possible values are <code>normal</code> or a number specifying space.</p>
+
+
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="letter-spacing:5px;"&gt;
+      This text is having space between letters.
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Set the Space between Words</h3>
+    <p>The following example demonstrates how to set the space between words. Possible values are <code>normal</code> or a number specifying space.</p>
+
+
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="word-spacing:5px;"&gt;
+      This text is having space between words.
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Set the Text Indent</h3>
+    <p>The following example demonstrates how to indent the first line of a paragraph. Possible values are % or a number specifying indent space.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="text-indent:1cm;"&gt;
+      This text will have first line indented by 1cm and this line will remain at
+      its actual position this is done by CSS text-indent property.
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Set the Text Alignment</h3>
+    <p>The following example demonstrates how to align a text. Possible values are <code>left</code>, <code>right</code>, <code>center</code>, <code>justify</code>.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="text-align:right;"&gt;
+      This will be right aligned.
+      &lt;/p&gt;
+      &lt;p style="text-align:center;"&gt;
+      This will be center aligned.
+      &lt;/p&gt;
+      &lt;p style="text-align:left;"&gt;
+      This will be left aligned.
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Decorating the Text</h3>
+    <p>The following example demonstrates how to decorate a text. Possible values are <code>none</code>, <code>underline</code>, <code>overline</code>, <code>line-through</code>, <code>blink</code>.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="text-decoration:underline;"&gt;
+      This will be underlined
+      &lt;/p&gt;
+      &lt;p style="text-decoration:line-through;"&gt;
+      This will be striked through.
+      &lt;/p&gt;
+      &lt;p style="text-decoration:overline;"&gt;
+      This will have a over line.
+      &lt;/p&gt;
+      &lt;p style="text-decoration:blink;"&gt;
+      This text will have blinking effect
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Set the Text Cases</h3>
+    <p>The following example demonstrates how to set the cases for a text. Possible values are <code>none</code>, <code>capitalize</code>, <code>uppercase</code>, <code>lowercase</code>.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="text-transform:capitalize;"&gt;
+      This will be capitalized
+      &lt;/p&gt;
+      &lt;p style="text-transform:uppercase;"&gt;
+      This will be in uppercase
+      &lt;/p&gt;
+      &lt;p style="text-transform:lowercase;"&gt;
+      This will be in lowercase
+      &lt;/p&gt;
+      &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Set the White Space between Text</h3>
+    <p>The following example demonstrates how white space inside an element is handled. Possible values are <code>normal</code>, <code>pre</code>, <code>nowrap</code>.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="white-space:pre;"&gt;
+      This text has a line break and the white-space pre setting tells the browser to
+honor
+      it just like the HTML pre tag.&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Set the Text Shadow</h3>
+    <p>The following example demonstrates how to set the shadow around a text. This may not be supported by all the browsers.</p>
+    <div class="code-wrap">
+      <div class="code-header">
+        <div class="code-header-left">
+          <div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div>
+          <span class="code-lang-tag">HTML/CSS</span>
+        </div>
+        <div class="code-actions">
+          <button type="button" class="btn-copy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+          <button type="button" class="btn-try">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try It Yourself
+          </button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;p style="text-shadow:4px 4px 8px blue;"&gt;
+      If your browser supports the CSS text-shadow property, this text will have a blue
+shadow.
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+
+<h2>Practical Examples</h2><p>Styling an article heading with capitalization and a paragraph with comfortable reading spacing:</p><div class="code-wrap"><div class="code-header"><div class="code-header-left"><div class="code-dots"><div class="code-dot red"></div><div class="code-dot amber"></div><div class="code-dot green"></div></div><span class="code-lang-tag">CSS</span></div><div class="code-actions"><button type="button" class="btn-copy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy</button><button type="button" class="btn-try"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Try It Yourself</button></div></div><pre class="code-block"><code>&lt;style&gt;
+.article-title {
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+
+.article-body {
+   /* Increases space between lines for readability */
+   line-height: 1.6;
+   color: #333333;
+}
+&lt;/style&gt;
+
+&lt;h1 class="article-title"&gt;Breaking News&lt;/h1&gt;
+&lt;p class="article-body"&gt;This is an article body with beautifully spaced and aligned text, demonstrating good typographic readability.&lt;/p&gt;</code></pre></div><h2>Common Mistakes</h2><ul class="list"><li><strong>Using <code>text-align: justify</code> on web</strong> − Unlike print, web browsers don't hyphenate well automatically. Justified text creates ugly, uneven <code>"rivers of whitespace"</code> between words, hurting readability.</li><li><strong>Ignoring line-height</strong> − Leaving <code>line-height</code> at its default makes multi-line paragraphs feel cramped and extremely hard to read.</li><li><strong>Using underlines for non-links</strong> − Using <code>text-decoration: underline</code> for emphasis on normal text. Users have been trained for decades that underlined text is clickable. This causes immense UX confusion.</li><li><strong>Typing ALL CAPS in HTML</strong> − Writing <code>&lt;h1&gt;WELCOME&lt;/h1&gt;</code> in HTML. Screen readers might read this out letter-by-letter. Write normal case in HTML and use <code>text-transform: uppercase;</code> in CSS.</li></ul><h2>Best Practices</h2><ul class="list"><li><strong>Set a comfortable Line Height</strong> − Always set paragraph <code>line-height</code> between <code>1.4</code> and <code>1.6</code> to give the text room to breathe.</li><li><strong>Keep Line Lengths Optimal</strong> − For maximum readability, limit your paragraph widths to about 60-75 characters per line (e.g., using <code>max-width: 65ch;</code>).</li><li><strong>Use Text-Transform for styling</strong> − Keep your source HTML semantically accurate (Sentence case) and use <code>text-transform</code> to visually alter case.</li><li><strong>Optimize for readability</strong> − Sufficient line-height (usually 1.5 or higher) and adequate font-size significantly improve readability for users with dyslexia or low vision.</li></ul><h2>Interview Questions</h2><p><strong>Q: What is the difference between <code>text-align</code> and <code>justify-content</code>?</strong></p><p>A: <code>text-align</code> is used to align inline content (like text) inside a block container. <code>justify-content</code> is a Flexbox/Grid property used to align entire elements within a layout.</p><p><strong>Q: How do you remove the default underline from a link?</strong></p><p>A: By applying <code>text-decoration: none;</code> to the <code>&lt;a&gt;</code> tag.</p><p><strong>Q: What property modifies the spacing between individual letters?</strong></p><p>A: The <code>letter-spacing</code> property.</p><p><strong>Q: Why is <code>line-height</code> usually written as a unitless number (e.g., <code>1.5</code>) rather than pixels (<code>24px</code>)?</strong></p><p>A: A unitless number acts as a multiplier based on the element's font size. If the font size scales up, the line height scales proportionately. Fixed pixels do not.</p><h2>Summary</h2><p>While the <code>fonts</code> properties control what typeface is drawn, the <code>text</code> properties control how that type is arranged, spaced, and formatted. Mastering properties like <code>line-height</code>, <code>text-align</code>, and <code>text-transform</code> is the key to creating highly legible and professional-looking content on the web.</p>
+  </div>
+
+        <nav class="page-nav">
+            <a href="visibility.html">&larr; Previous Chapter: Visibility</a>
+            <a href="fonts.html">Next Chapter: Fonts &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">
+        &copy; 2026 Skilledu CSS Tutorial. All rights reserved.
+    </footer>
+</body>
+</html>
